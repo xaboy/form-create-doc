@@ -21,10 +21,10 @@
 </p>
 
 
-**具有动态渲染、数据收集、校验和提交功能的表单生成器，支持双向数据绑定和事件扩展，组件包含有复选框、单选框、输入框、下拉选择框等表单元素以及省市区三级联动,时间选择,日期选择,颜色选择,滑块,评分,框架,树型,文件/图片上传等功能组件。**
+**具有动态渲染、数据收集、校验和提交功能的表单生成器，支持双向数据绑定和事件扩展，可快速生成包含有复选框、单选框、输入框、下拉选择框等表单元素以及省市区三级联动,时间选择,日期选择,颜色选择,滑块,评分,框架,树型,文件/图片上传等17种功能组件。**
 
-> 1.4.5版本已支持 iview3
+> 已支持 iview3
 
-[Github](https://github.com/xaboy/form-create) | [Gitee](https://gitee.com/xaboy/form-create) | [Npm](https://www.npmjs.com/package/form-create) | [文档](https://www.kancloud.cn/xaboy/form-create/749554) | [在线示例](http://jsrun.net/LQhKp)
+[Github](https://github.com/xaboy/form-create) | [Gitee](https://gitee.com/xaboy/form-create) | [Npm](https://www.npmjs.com/package/form-create) | [文档](http://fc.gd8.top) | [在线示例](http://jsrun.net/LQhKp)
 
 ![](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)

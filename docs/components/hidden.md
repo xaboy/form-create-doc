@@ -2,7 +2,8 @@
 
 #### 举例:
 ```js
-        type:"hidden",
+{
+		type:"hidden",
         field:"id",
         value:"14",
 }
