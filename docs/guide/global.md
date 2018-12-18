@@ -14,6 +14,7 @@
 
 ```js
 vm.$formCreate(rule,option)
+//window.formCreate.create(rule,option)
 ```
 
 

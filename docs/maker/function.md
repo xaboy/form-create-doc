@@ -11,7 +11,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 ::: tip 获取 maker 生成器
 
 - window.formCreate.maker
-- Vue.prototype.\$formCreate.maker  ( vm.\$formCreate.maker )
+- import { maker } from 'form-create'
 
 :::
 

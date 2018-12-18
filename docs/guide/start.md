@@ -15,13 +15,10 @@
 <script src="https://cdn.jsdelivr.net/npm/iview@2.14.3/dist/iview.min.js"></script>
 
 <!-- 省市区三级联动json数据,不使用三级联动不需要引入 -->
-<script src="district/province_city_area.js"></script>
-
-<!-- 模拟数据,实际使用中不需要引入 -->
-<script src="demo/mock.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/form-create/district/province_city_area.js"></script>
 
 <!-- import formCreate -->
-<script src="dist/form-create.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/form-create/dist/form-create.min.js"></script>
 ```
 
 ##### NodeJs:
@@ -32,12 +29,10 @@
 import Vue from 'vue';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-import formCreat from 'form-create'
+import formCreat,{ maker } from 'form-create'
 
 //三级联动数据,不用可以不引入
 import 'form-create/district/province_city_area.js'
-//示例规则,实际使用中不需要引入
-import 'form-create/mock.js'
 
 Vue.use(iView);
 Vue.use(formCreat)
@@ -64,12 +59,14 @@ Vue.use(formCreat)
 ```
 
 ```js
-let rules = mock();
 new Vue({
     el:'#app1',
     data:{
         //表单生成规则
-        rule:rules,
+        rule:[
+        	window.formCreate.maker.input('商品名称','goods_name',''),
+            window.formCreate.maker.date('创建时间','created_at')
+        ],
         //组件参数配置
         option:{
             //显示表单重置按钮
@@ -118,7 +115,6 @@ new Vue({
 ```
 
 ```js
-let rules = mock();
 new Vue({
     el:'#app2',
     data:{
@@ -134,7 +130,10 @@ new Vue({
         //$f为表单api
         this.$f = this.$formCreate(
             //表单生成规则
-            rules,
+            [
+        		window.formCreate.maker.input('商品名称','goods_name',''),
+           		window.formCreate.maker.date('创建时间','created_at')
+        	],
             //组件参数配置
             {
                 el:root,
@@ -178,7 +177,10 @@ new Vue({
 
 ```js
 //表单插入的节点
-var root = document.getElementById('form-create'),rules = mock();
+var root = document.getElementById('form-create'),rules = [
+        	window.formCreate.maker.input('商品名称','goods_name',''),
+            window.formCreate.maker.date('创建时间','created_at')
+        ];
 //初始化变量
 var $f = {},model = {};
 
