@@ -27,7 +27,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
   maker.hidden('field','value')
   ```
 
-生成一个 hidden 组件
+  生成一个 hidden 组件
 
 - **参考**：[hidden组件](http://fc.gd8.top/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 

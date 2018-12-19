@@ -37,7 +37,7 @@ vm.$formCreate(rule,option)
 
 - **onSubmit**：**表单提交事件**
 
-- **mounted**：表单创建成功事件
+- **mounted**：**表单创建成功事件**
 
 
 

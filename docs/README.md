@@ -1,6 +1,6 @@
  <p align="center">
     <a href="https://github.com/xaboy/form-create">
-        <img width="200" src="http://file.lotkk.com/form-create.png">
+        <img width="200" src="http://file.lotkk.com/form-create.png?3">
     </a>
 </p>
 <h1 align="center">form-create</h1>

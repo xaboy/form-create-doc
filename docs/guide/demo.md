@@ -1,6 +1,17 @@
 ### 在线示例
 
-#### 各组件示例:
+以下是 from-create 的功能演示和参考案例
+
+
+
+## 案例
+
+- [CRMEB客户管理+电商管理系统](https://gitee.com/ZhongBangKeJi/CRMEB) ([演示站](http://demo25.crmeb.net) 账号：demo 密码：crmeb.com)
+- [深入使用 maker 自定义组件案例](https://github.com/HeyMrLin/fc-demo)
+
+
+
+## 组件示例
 
 - [Input 输入框](http://jsrun.net/7ehKp/edit)
 - [AutoComplete 自动生成](http://jsrun.net/TnhKp/edit)
@@ -19,7 +30,10 @@
 - [Tree 树形组件](http://jsrun.net/AehKp/edit)
 - [Frame 框架](http://jsrun.net/mehKp/edit)
 
-#### 功能示例:
+
+
+## 功能示例
+
 - [使用参数生成表单](http://jsrun.net/NQhKp/edit)
 - [使用 maker 生成器生成表单](http://jsrun.net/LQhKp/edit)
 - [Validator 表单验证](http://jsrun.net/LchKp/edit)

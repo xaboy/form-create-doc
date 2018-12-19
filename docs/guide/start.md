@@ -50,7 +50,7 @@ Vue.use(formCreat)
 
 ##### 组件模式
 
-使用  `<form-create>` 组件创建表单
+使用  `<form-create></form-create>` 标签创建表单
 
 ```html
 <div id="app1">
