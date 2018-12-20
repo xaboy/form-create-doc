@@ -1,8 +1,10 @@
 ### Cascader 多级联动
 
-> 省市区联动json数据
->
-> [https://github.com/xaboy/form-create/tree/master/district](https://github.com/xaboy/form-create/tree/master/district)
+::: tip 省市区联动json数据
+
+[https://github.com/xaboy/form-create/tree/master/district](https://github.com/xaboy/form-create/tree/master/district)
+
+:::
 
 #### [在线预览](https://jsrun.net/EehKp/edit)
 

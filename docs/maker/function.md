@@ -29,7 +29,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 hidden 组件
 
-- **参考**：[hidden组件](http://fc.gd8.top/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[hidden组件](http://www.form-create.com/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -47,7 +47,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 input 组件,**type 默认为 text**
 
-- **参考**：[input组件](http://fc.gd8.top/components/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[input组件](http://www.form-create.com/components/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -125,7 +125,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 inputNumber 组件,**`maker.number`是该方法的别名**
 
-- **参考**：[InputNumber 组件](http://fc.gd8.top/components/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[InputNumber 组件](http://www.form-create.com/components/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -145,7 +145,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 autoComplete 组件,**`maker.auto`是该方法的别名**
 
-- **参考**：[autoComplete 组件](http://fc.gd8.top/components/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[autoComplete 组件](http://www.form-create.com/components/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -166,7 +166,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 radio 组件
 
-- **参考**：[Radio 组件](http://fc.gd8.top/components/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[Radio 组件](http://www.form-create.com/components/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -189,7 +189,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 checkbox 组件
 
-- **参考**：[checkbox 组件](http://fc.gd8.top/components/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[checkbox 组件](http://www.form-create.com/components/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -214,7 +214,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 select 组件,`props.multiple` 默认为 `false`
 
-- **参考**：[select 组件](http://fc.gd8.top/components/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[select 组件](http://www.form-create.com/components/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -264,7 +264,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 switch 组件
 
-- **参考**：[switch 组件](http://fc.gd8.top/components/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[switch 组件](http://www.form-create.com/components/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -284,7 +284,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 cascader 组件
 
-- **参考**：[cascader 组件](http://fc.gd8.top/components/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[data 数据结构](https://github.com/xaboy/form-create/blob/master/district/province_city.js)、[省市区二、三级联动数据](https://github.com/xaboy/form-create/tree/master/district)
+- **参考**：[cascader 组件](http://www.form-create.com/components/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[data 数据结构](https://github.com/xaboy/form-create/blob/master/district/province_city.js)、[省市区二、三级联动数据](https://github.com/xaboy/form-create/tree/master/district)
 
 
 
@@ -306,7 +306,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 datePicker 组件,**`type` 默认为 `date`**
 
-- **参考**：[datePicker 组件](http://fc.gd8.top/components/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[datePicker 组件](http://www.form-create.com/components/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -420,7 +420,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 timePicker 组件,**`type` 默认为 `time`**
 
-- **参考**：[timePicker 组件](http://fc.gd8.top/components/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[timePicker 组件](http://www.form-create.com/components/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -468,7 +468,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 colorPicker 组件,**`maker.color`是该方法的别名**
 
-- **参考**：[colorPicker 组件](http://fc.gd8.top/components/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[colorPicker 组件](http://www.form-create.com/components/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -488,7 +488,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
   生成一个 upload 组件,**`type` 默认为 `field`**
 
-- **参考**：[upload 组件](http://fc.gd8.top/components/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[upload 组件](http://www.form-create.com/components/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 

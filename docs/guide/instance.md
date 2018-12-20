@@ -354,7 +354,7 @@ sidebarDepth: 3
 
   更新全局配置
 
-- **参考**：[全局配置](http://fc.gd8.top/guide/global.html)
+- **参考**：[全局配置](http://www.form-create.com/guide/global.html)
 
 
 

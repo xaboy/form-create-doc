@@ -25,6 +25,6 @@
 
 > 已支持 iview3
 
-[Github](https://github.com/xaboy/form-create) | [Gitee](https://gitee.com/xaboy/form-create) | [Npm](https://www.npmjs.com/package/form-create) | [文档](http://fc.gd8.top) | [在线示例](http://jsrun.net/LQhKp)
+[Github](https://github.com/xaboy/form-create) | [Gitee](https://gitee.com/xaboy/form-create) | [Npm](https://www.npmjs.com/package/form-create) | [文档](http://www.form-create.com/) | [在线示例](http://jsrun.net/LQhKp)  
 
 ![](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)

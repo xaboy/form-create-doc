@@ -1,8 +1,14 @@
 ### Upload 上传
 
-> accept 文件类型
->
-> [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\#attr-accept](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
+
+
+::: tip accept 文件类型
+
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\#attr-accept](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
+
+:::
+
+
 
 #### [在线预览](https://jsrun.net/dehKp/edit)
 
