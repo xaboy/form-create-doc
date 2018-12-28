@@ -17,7 +17,7 @@
 7. **col\(Object\)** 组件布局配置
 8. **emitPrefix** 自定义 组件`emit `事件的前缀
 
-#### 自定义组件额外支持一下配置项
+#### 自定义组件额外支持以下配置项
 
 1. **children\(Array\)** 组件元素生成规则
 2. **scopedSlots\(Object\)**
