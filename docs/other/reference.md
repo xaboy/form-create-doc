@@ -16,5 +16,5 @@ icon图标：[图标](https://www.iviewui.com/components/icon#示例)
 
 form-builder：[使用PHP快速生成现代化表单](https://github.com/xaboy/form-builder)
 
-laravel-form-builder：[laravel框架专用版表单生成器]([https://github.com/xaboy/laravel-form-builder)
+laravel-form-builder：[laravel框架专用版表单生成器](https://github.com/xaboy/laravel-form-builder)
 

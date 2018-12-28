@@ -2,7 +2,7 @@
 title: 更新日志
 ---
 
-### 当前版本 1.5.1
+### 当前版本 1.5.2
 
 --------
 
@@ -11,6 +11,19 @@ title: 更新日志
 建议保持在最新的版本
 
 :::
+
+
+
+#### 1.5.2 (2018-12-26)
+
+- 修复 `rule.value`未同步 bug
+- 修复 `options.mounted` 多次触发 bug
+- 增强 `iframeHelper`,新增全局方法`form_create_helper`
+- 新增 `emitPrefix` 配置项,可自定义 组件`emit `事件的前缀
+- 优化 `iview` 版本获取
+- 新增 `option.submitBtn.col` 配置项,自定义提交按钮布局规则
+- 新增 `option.resetBtn.col` 配置项,自定义重置按钮布局规则
+- 新增 通过 `v-model` 获取$f
 
 
 
@@ -179,5 +192,3 @@ title: 更新日志
 5. 表单元素事件扩展
 
 
-
----

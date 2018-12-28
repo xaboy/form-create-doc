@@ -106,7 +106,4 @@ $formCreate.maker.cascader('所在区域','address',['陕西省','西安市','�
 | change | 选择完成后的回调，返回值 value 即已选值 value，selectedData 为已选项的具体数据 | Function | false | - |
 | visible-change | 展开和关闭弹窗时触发 | Function | false | - |
 
----
-
-
 

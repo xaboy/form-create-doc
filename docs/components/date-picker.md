@@ -96,7 +96,4 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 | open-change | 弹出日历和关闭日历时触发 true 或 false | Function | false | - |
 | clear | 在 confirm 模式或 clearable = true 时有效，在清空日期时触发 | Function | false\` | - |
 
----
-
-
 

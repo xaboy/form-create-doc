@@ -1,10 +1,16 @@
-### 快速上手
+---
+sidebarDepth: 3
+---
+
+
+
+# 快速上手
 
 本节将介绍如何在项目中使用 form-create
 
-#### 引入 form-create
+## 引入 form-create
 
-##### 浏览器:
+#### 浏览器:
 
 ```markdown
 <!-- import Vue 2.5-->
@@ -21,7 +27,7 @@
 <script src="https://cdn.jsdelivr.net/npm/form-create/dist/form-create.min.js"></script>
 ```
 
-##### NodeJs:
+#### NodeJs:
 
 在 main.js 中写入以下内容：
 
@@ -29,7 +35,9 @@
 import Vue from 'vue';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-import formCreat,{ maker } from 'form-create'
+import formCreat from 'form-create'
+//获取生成器
+import { maker } from 'form-create'
 
 //三级联动数据,不用可以不引入
 import 'form-create/district/province_city_area.js'
@@ -38,23 +46,21 @@ Vue.use(iView);
 Vue.use(formCreat)
 ```
 
-
-
-#### 创建表单
+## 生成表单
 
 ::: tip 可使用3种方式创建表单: 
 
-   组件模式, Vue 全局方法, Window 全局方法
+   组件模式, Vue 原型方法, Window 全局方法
 
 ::: 
 
-##### 组件模式
+### 组件模式
 
 使用  `<form-create></form-create>` 标签创建表单
 
 ```html
 <div id="app1">
-    <form-create ref="fc" :rule="rule" :option="option"></form-create>
+    <form-create ref="fc" v-model="fApi" :rule="rule" :option="option"></form-create>
 </div>
 ```
 
@@ -69,6 +75,7 @@ new Vue({
         ],
         //组件参数配置
         option:{
+            fApi:{},
             //显示表单重置按钮
             resetBtn:true,
             //表单提交事件
@@ -87,26 +94,18 @@ new Vue({
                 //this.$f.btn.loading(false);
             }
         },
-        //初始化变量
-        $f: {},
         model: {}
     },
     mounted:function () {
-
-        //获取表单api
-        this.$f = this.$refs.fc.$f;
-
         //获取双向数据绑定的数据规则
-        this.model = this.$f.model();
+        this.model = this.fApi.model();
     }
 });
 ```
 
+### Vue 原型方法
 
-
-##### Vue 全局方法
-
-使用 vue 全局方法`$formCreate` 创建表单
+使用 vue 原型方法`$formCreate` 创建表单
 
 ```html
 <div id="app2">
@@ -118,7 +117,6 @@ new Vue({
 new Vue({
     el:'#app2',
     data:{
-        //初始化变量
         $f:{},
         model:{}
     },
@@ -163,9 +161,7 @@ new Vue({
 })
 ```
 
-
-
-##### 全局方法
+### 全局方法
 
 使用 window 全局方法`formCreate.create()`创建表单
 
@@ -177,17 +173,17 @@ new Vue({
 
 ```js
 //表单插入的节点
-var root = document.getElementById('form-create'),rules = [
-        	window.formCreate.maker.input('商品名称','goods_name',''),
-            window.formCreate.maker.date('创建时间','created_at')
-        ];
-//初始化变量
+var root = document.getElementById('form-create');
+
 var $f = {},model = {};
 
 //$f为表单api
 $f = window.formCreate.create(
     //表单生成规则
-    rules,
+    [
+        window.formCreate.maker.input('商品名称','goods_name',''),
+        window.formCreate.maker.date('创建时间','created_at')
+    ],
     //组件参数配置
     {
         el:root,

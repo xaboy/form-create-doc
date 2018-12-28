@@ -78,7 +78,4 @@ $formCreate.maker.color('颜色','color','#ff7271').props({
 | change | 当绑定值变化时触发，返回当前值 | Function | false | - |
 | active-change | 聚焦时触发 面板中当前显示的颜色发生改变时触发 | Function | false | - |
 
----
-
-
 

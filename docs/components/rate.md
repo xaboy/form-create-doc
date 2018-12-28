@@ -78,7 +78,4 @@ $formCreate.maker.rate('推荐级别','rate',2)
 | :--- | :--- | :--- | :--- | :--- |
 | change | 评分改变时触发 | Function | false | - |
 
----
-
-
 

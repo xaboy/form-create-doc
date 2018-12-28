@@ -6,41 +6,37 @@
 
 :::
 
-
 #### 举例
 
-```javascript
-//生成一个的按钮组件,通过col规则设置组件长度为50%
-maker.create('i-button').props({
-    type:"primary",
-    size:"large",
-    shape:undefined,
-    long:true,
-    htmlType:"button",
-    disabled:false,
-    icon:"ios-upload",
-    loading:false,
-    show:true
-    })
-.on({
-    "click":()=>{
-        console.log('click');
-    },
-}).col({span:12,labelWidth:1}).children([
-    maker.create('span').domProps({
-        innerHTML:'测试自定义按钮'
-    })
-])
+生成器
 
-//生成一个文字提示组件,通过col规则设置组件长度为50%
-maker.create('Tooltip').props({
-    content:"这里是提示文字",
-}).col({span:11,labelWidth:1,push:1}).children([
-    maker.create('span').domProps({
-        innerHTML:'当鼠标经过这段文字时，会显示一个气泡框'
-    })
-]),
+>  使用 maker 生成生成器设置组件布局规则
+
+```js
+//生成一个的input组件,通过col规则设置组件长度为50%
+maker.input('col','text','').col({span:12,labelWidth:200,xs:24})
 ```
+
+json
+
+>  使用 json 设置组件规则
+
+```js
+{
+    type:'input',
+    title:'col',
+    field:'text',
+    value:'',
+    col:{
+        span:12,
+        labelWidth:200,
+        xs:24
+    }
+}
+```
+
+
+
 
 
 #### col规则配置项
@@ -48,7 +44,7 @@ maker.create('Tooltip').props({
 | 属性 | 说明 | 类型 | 默认值 |
 | :--- | :--- | :--- | :--- |
 | span | 栅格的占位格数，可选值为0~24的整数，为 0 时，相当于`display:none` | Number ,String | 24 |
-| labelWidth | 表单域标签的的宽度 | Number | 150 |
+| labelWidth | 设置表单域 `label` 的宽度 | Number | 150 |
 | order | 栅格的顺序，在`flex`布局模式下有效 | Number ,String | - |
 | offset | 栅格左侧的间隔格数，间隔内不可以有栅格 | Number ,String | - |
 | push | 栅格向右移动格数 | Number ,String | - |
@@ -58,7 +54,3 @@ maker.create('Tooltip').props({
 | sm | `≥768px`响应式栅格，可为栅格数或一个包含其他属性的对象 | Number ,Object | - |
 | md | `≥992px`响应式栅格，可为栅格数或一个包含其他属性的对象 | Number ,Object | - |
 | lg | `≥1200px`响应式栅格，可为栅格数或一个包含其他属性的对象 | Number ,Object | - |
-
-
-
----

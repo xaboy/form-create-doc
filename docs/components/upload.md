@@ -178,7 +178,4 @@ option:{
 | onHandle | 点击辅助操作按钮事件,返回src | Function | false | - |
 | allowRemove | 是否可删除,设置为false是不显示删除按钮 | Boolean | false | true |
 
----
-
-
 

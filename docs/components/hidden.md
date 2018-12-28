@@ -36,7 +36,4 @@ $formCreate.maker.hidden('id','14')
 | field | 字段名称 | String | true | - |
 | value | 字段值 | String,Number | false | '' |
 
----
-
-
 

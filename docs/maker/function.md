@@ -4,7 +4,7 @@ sidebarDepth: 3
 
 # Maker 使用方法
 
-maker 生成器是用来生成组件规则的助手方法,通过链式操作即可快速生成对应的组件规则
+maker 组件生成器是用来生成组件规则的助手方法,通过链式操作即可快速生成对应的组件规则
 
 
 
@@ -492,7 +492,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
 
 
-#### maker.uploadImage (1.5.1版本)
+#### maker.uploadImage <Badge text="1.5.1+"/>
 
 - **参数**：`{string} field`、`{string} title`、`{array} value`、`{object} props`
 
@@ -506,7 +506,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
 
 
-#### maker.uploadFile (1.5.1版本)
+#### maker.uploadFile <Badge text="1.5.1+"/>
 
 - **参数**：`{string} field`、`{string} title`、`{array} value`、`{object} props`
 
@@ -520,7 +520,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
 
 
-#### maker.uploadImageOne (1.5.1版本)
+#### maker.uploadImageOne <Badge text="1.5.1+"/>
 
 - **参数**：`{string} field`、`{string} title`、`{string|array} value`、`{object} props`
 
@@ -538,7 +538,7 @@ maker 生成器是用来生成组件规则的助手方法,通过链式操作即�
 
 
 
-#### maker.uploadFileOne (1.5.1版本)
+#### maker.uploadFileOne <Badge text="1.5.1+"/>
 
 - **参数**：`{string} field`、`{string} title`、`{string} value`、`{object} props`
 

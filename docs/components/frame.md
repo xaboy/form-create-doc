@@ -98,7 +98,4 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 | remove | 点击删除按钮事件,返回false将不删除 |
 | cancel | 弹出框关闭是触发 |
 
----
-
-
 

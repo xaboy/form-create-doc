@@ -28,8 +28,18 @@ npm install form-create
 
 
 
+#### 图例
+
+![form-create 图例](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)
+
+
+
 #### 示例
 
 通过 CDN 可以快速使用 iView 写出一个示例，您可以复制下面代码或[在线预览](http://fiddle.jshell.net/xaboy/j2zg6et0/show)。
 
-<iframe width="100%" height="600" src="//jsfiddle.net/xaboy/j2zg6et0/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<ClientOnly>
+
+<iframe width="100%" height="600" src="//jsfiddle.net/xaboy/j2zg6et0/3/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+</ClientOnly>

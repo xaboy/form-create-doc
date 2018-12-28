@@ -1,15 +1,30 @@
 ---
 sidebarDepth: 3
-
 ---
 
 # 实例方法
 
-::: warning 注意
+::: tip 获取 $f 实例对象
 
-1.4.1版本之后 `model`方法无需传参, 使用方法 `form = $f.model()`。
+
+
+- 全局方法
+
+  - $f = formCreate.create(rules)
+  - $f = vm.\$formCreate(rules)
+
+- 标签模式
+
+  ```js
+  <form-create ref="fc" v-model="fApi" :rule="rules"></form-create>
+  ```
+
+  - $f = vm.\$refs.fc.\$f
+  - $f = vm.fApi <Badge text="1.5.2+"/>
 
 :::
+
+**当通过修改`rules`增加、删除组件时需要重新获取 `$f` 实例对象**
 
 ## $f.fields
 

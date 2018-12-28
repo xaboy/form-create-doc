@@ -97,7 +97,4 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
 | :--- | :--- | :--- | :--- | :--- |
 | change | 开关变化时触发，返回当前的状态 0 或 1 | Function | false | - |
 
----
-
-
 

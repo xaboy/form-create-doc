@@ -119,7 +119,4 @@ $formCreate.maker.input('商品名称','goods_name').props({
 | keydown | 原生的 keydown 事件 | Function | false | - |
 | keypress | 原生的 keypress 事件 | Function | false | - |
 
----
-
-
 

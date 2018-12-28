@@ -1,30 +1,25 @@
- <p align="center">
-    <a href="https://github.com/xaboy/form-create">
-        <img width="200" src="http://file.lotkk.com/form-create.png?3">
-    </a>
-</p>
-<h1 align="center">form-create</h1>
-<p align="center">
-  <a href="https://github.com/xaboy/form-create/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://github.com/xaboy">
-    <img src="https://img.shields.io/badge/Author-xaboy-blue.svg" />
-  </a>
-  <a href="https://www.npmjs.com/package/form-create">
-    <img src="https://badge.fury.io/js/form-create.svg" alt="version" />
-  </a>
-  <a href="https://www.npmjs.com/package/form-create">
-    <img src="https://img.shields.io/npm/dt/form-create.svg" alt="npm" />
-  </a>
-  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/gh/xaboy/form-create/dist/form-create.min.js?compression=gzip&amp;label=gzip%20size&amp;style=flat-square" alt="JS gzip size">
-</p>
-
-
-**具有动态渲染、数据收集、校验和提交功能的表单生成器，支持双向数据绑定和事件扩展，可快速生成包含有复选框、单选框、输入框、下拉选择框等表单元素以及省市区三级联动,时间选择,日期选择,颜色选择,滑块,评分,框架,树型,文件/图片上传等17种功能组件。**
-
-> 已支持 iview3
-
-[Github](https://github.com/xaboy/form-create) | [Gitee](https://gitee.com/xaboy/form-create) | [Npm](https://www.npmjs.com/package/form-create) | [文档](http://www.form-create.com/) | [在线示例](http://jsrun.net/LQhKp)  
-
-![](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)
+---
+home: true
+heroImage: http://file.lotkk.com/form-create.png?3
+title: a
+description: 具有动态渲染、数据收集、校验和提交功能的表单生成器。
+actionText: 快速上手 →
+actionLink: /guide/install
+features:
+  - title: 双向数据绑定
+    details: 生成规则变化后，页面会实时更新。
+  - title: JSON
+    details: 支持使用 json 数据生成表单。
+  - title: 栅格布局
+    details: 栅格系统进行网页布局，可以使页面排版美观、舒适。
+  - title: 局部更新
+    details: 内置组件缓存功能，提升渲染速度。
+  - title: 快速生成
+    details: 内置组件生成器，通过链式操作即可快速生成对应的组件规则。
+  - title: 自定义组件
+    details: 支持生成任何组件，提升表单的灵活性，可以实现功能更复杂的表单。
+footer: MIT Licensed | Copyright © 2018-present xaboy
+---
+<style>
+.home .hero .description {font-size: 1.3rem !important;}
+</style>

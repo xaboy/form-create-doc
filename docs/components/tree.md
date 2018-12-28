@@ -145,5 +145,3 @@ $formCreate.maker.tree('权限','rule',[]).props({
 | children | 子节点属性数组 | Array | - |
 | render | 自定义当前节点渲染内容，见示例 | Function | - |
 
----
-

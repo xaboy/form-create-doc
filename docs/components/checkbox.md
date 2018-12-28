@@ -91,7 +91,4 @@ $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
 | :--- | :--- | :--- | :--- | :--- |
 | change | 只在单独使用时有效。在选项状态发生改变时触发，通过修改外部的数据改变时不会触发 | Function | false | - |
 
----
-
-
 

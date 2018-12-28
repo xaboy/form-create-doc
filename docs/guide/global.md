@@ -23,25 +23,18 @@ vm.$formCreate(rule,option)
 
 全局配置由一下几个部分构成。
 
-- **el**：表单插入的节点,标签模式下无需设置,
-
+- **el**：表单插入的节点,标签模式下无需设置
+- **onSubmit**：**表单提交事件**
+- **mounted**：**表单创建成功事件**
 - **form**：表单整体显示规则配置
-
 - **row**：表单组件布局配置  [参考iview栅格布局](https://www.iviewui.com/components/grid)
-
 - **upload**：upload组件全局配置
-
 - **submitBtn**：提交按钮样式配置
-
 - **resetBtn**：重置按钮样式配置
 
-- **onSubmit**：**表单提交事件**
-
-- **mounted**：**表单创建成功事件**
 
 
-
-#### 完整配置
+#### 默认配置
 
 下列是完整的配置项及配置说明。
 
@@ -53,7 +46,12 @@ vm.$formCreate(rule,option)
 	//是否自动转换规则中的 maker 生成器为对象
     switchMaker:true,
         
-    //是否开启iframe组件子页面助手函数`${field}_change(value)`
+    //是否开启iframe组件子页面助手函数
+    //`${field}_change(value)`
+    //只能设置当前字段的 value
+    //form_create_helper.close(field)
+    //form_create_helper.get(field)
+    //form_create_helper.set(field,value)
     //快速修改该组件的value. 跨域无效!!
     iframeHelper:false,
         
@@ -148,8 +146,9 @@ vm.$formCreate(rule,option)
         //设置按钮为加载中状态
         loading:false,
         //默认显示
-        show:true
-
+        show:true,
+        //设置提交按钮布局规则,参考 col 栅格布局规则
+		col:undefined
     },
 
     //重置按钮默认配置,设置resetBtn=true或resetBtn.show=true时显示
@@ -166,7 +165,9 @@ vm.$formCreate(rule,option)
         innerText:"重置",
         loading:false,
         //默认不显示
-        show:false
+        show:false,
+        //设置重置按钮布局规则,参考 col 栅格布局规则
+		col:undefined
 
     }
 }

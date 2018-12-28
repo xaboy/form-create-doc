@@ -84,7 +84,5 @@ $formCreate.maker.number('排序','sort',0)
 | focus | 聚焦时触发 | Function | false | - |
 | blur | 失焦时触发 | Function | false | - |
 
----
-
 
 

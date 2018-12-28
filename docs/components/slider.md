@@ -85,7 +85,4 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 | change | 在松开滑动时触发，返回当前的选值，在滑动过程中不会触发 | Function | false | - |
 | input | 滑动条数据变化时触发，返回当前的选值，在滑动过程中实时触发 | Function | false | - |
 
----
-
-
 

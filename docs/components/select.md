@@ -117,7 +117,4 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 | change | 选中的Option变化时触发，返回 value | Function | false | - |
 | query-change | 搜索词改变时触发 | Function | false | - |
 
----
-
-
 
