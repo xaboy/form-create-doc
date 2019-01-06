@@ -20,7 +20,7 @@ sidebarDepth: 3
 
 ```js
 vm.$formCreate(rule,option)
-//window.formCreate.create(rule,option)
+window.formCreate.create(rule,option)
 ```
 
 
@@ -29,7 +29,7 @@ vm.$formCreate(rule,option)
 
 全局配置由一下几个部分构成。
 
-- **el**：表单插入的节点,标签模式下无需设置
+- **el**：表单插入的节点,组件模式下无需设置
 - **switchMaker**：是否自动转换规则中的 maker 生成器为对象
 - **iframeHelper**：是否开启iframe组件子页面助手函数,**跨域无效**
 - **onSubmit**：**表单提交回调函数**
@@ -46,7 +46,7 @@ vm.$formCreate(rule,option)
 ## el
 
 - **类型**：`string | HTMLElement`
-- **说明**: 提供一个在页面上已存在的 DOM 元素作为表单的挂载目标,**标签模式下无需设置**
+- **说明**: 提供一个在页面上已存在的 DOM 元素作为表单的挂载目标,**组件模式下无需设置**
 
 
 
@@ -72,7 +72,7 @@ vm.$formCreate(rule,option)
 
   ```js
   //在iframe 子页面中,field 为字段名
-  //field 只能为iframe 组件的 field,其他无效
+  //field 只能为生成iframe 组件的 field,其他无效
   
   //修改表单 field 字段的值
   window[`${field}_change`](value);
@@ -223,7 +223,7 @@ vm.$formCreate(rule,option)
     //文件上传时的钩子，返回字段为 event, file, fileList
     onProgress:(event, file, fileList)=>{},
     //文件上传成功时的钩子，返回字段为 response, file, fileList,
-    //若需有把文件添加到文件列表中,在函数值返回即可
+    //若需要把文件添加到文件列表中,在函数值返回即可
     onSuccess:(response, file, fileList)=>{
     // return 'filePath';
    	},
@@ -242,7 +242,7 @@ vm.$formCreate(rule,option)
     handleIcon:'ios-eye-outline',
     //点击辅助操作按钮事件
     onHandle:(src)=>{},
-    //是否可删除,设置为false是不显示删除按钮
+    //是否可删除,设置为false不显示删除按钮
     allowRemove:true,
     
   }
@@ -282,7 +282,7 @@ vm.$formCreate(rule,option)
     innerText:"提交",
     //设置按钮为加载中状态
     loading:false,
-    //默认显示
+    //是否显示,默认显示
     show:true,
     //设置提交按钮布局规则,参考 col 栅格布局规则
     col:undefined

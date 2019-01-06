@@ -96,6 +96,6 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 | ok | 点击确定时的回调 |
 | handle | 点击操作按钮事件,默认为图片预览 |
 | remove | 点击删除按钮事件,返回false将不删除 |
-| cancel | 弹出框关闭是触发 |
+| cancel | 弹出框关闭时触发 |
 
 

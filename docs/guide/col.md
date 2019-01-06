@@ -10,7 +10,7 @@
 
 生成器
 
->  使用 maker 生成生成器设置组件布局规则
+>  使用 maker 生成生成器并设置组件布局规则
 
 ```js
 //生成一个的input组件,通过col规则设置组件长度为50%
@@ -19,7 +19,7 @@ maker.input('col','text','').col({span:12,labelWidth:200,xs:24})
 
 json
 
->  使用 json 设置组件规则
+>  使用 json 设置组件布局规则
 
 ```js
 {

@@ -85,7 +85,7 @@ sidebarDepth: 2
 
 
 
-1. **children\(Array\)** 组件元素生成规则
+1. **children\(Array\)** 子组件元素生成规则
 2. **scopedSlots\(Object\)**
 3. **nativeOn\(Object\)**
 4. **on\(Object\)**

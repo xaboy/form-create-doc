@@ -2,18 +2,18 @@
 sidebarDepth: 3
 ---
 
-# 实例方法
+# Instance method
 
-::: tip 获取 $f 实例对象
+::: tip Get $f instance object
 
 
 
-- 全局方法
+- Global method
 
   - $f = formCreate.create(rules)
   - $f = vm.\$formCreate(rules)
 
-- 组件模式
+- Component mode
 
   ```js
   <form-create ref="fc" v-model="fApi" :rule="rules"></form-create>
@@ -24,92 +24,92 @@ sidebarDepth: 3
 
 :::
 
-**当通过修改`rules`增加、删除组件时需要重新获取 `$f` 实例对象**
+**Retrieve the `$f` instance object when adding or removing components by modifying `rules`**
 
 ## $f.fields
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.fields()
   ```
 
-  获取表单所有字段名
+  Get all field names of the form
 
 
 ## $f.formData
 
-- **用法**：
+- **usage**：
 
   ```js
   formData = $f.formData()
   ```
 
-  获取表单的键值对
+  Get the key-value pairs of the form
 
 
 ## $f.getValue
 
-- **参数**：`{string} field`
+- **parameter**：`{string} field`
 
-- **用法**：
+- **usage**：
 
   ```js
   field_value = $f.getValue(field)
   ```
 
-   获取指定字段的值
+   Get the value of the specified field
 
 
 
 ## $f.changeField
 
-- **参数**：`{string} field`、`value`
+- **parameter**：`{string} field`、`value`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.changeField(field,value)
   ```
 
-  修改指定字段的值
+  Modify the value of the specified field
 
 
 
 ## $f.resetFields
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.resetFields()
   ```
 
-  重置表单
+  Reset form
 
 
 ## $f.removeField
 
-- **参数**：`{string} field`
+- **parameter**：`{string} field`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.removeField(field)
   ```
 
-  删除指定字段
+  Delete specified field
 
 
 
 ## $f.model
 
-- **用法**：
+- **usage**：
 
   ```js
   model = $f.model()
   ```
 
-- **数据结构**：
+- **data structure**：
 
   ```js
   {
@@ -118,89 +118,89 @@ sidebarDepth: 3
   }
   ```
 
-  获取双向数据绑定的表单生成规则
+  Get form generation rules for two-way data binding
 
 
 ## $f.bind 
 
-- **用法**：**`>=1.4.1版本`**
+- **usage**：**`>=1.4.1版本`**
 
   ```js
   bind = $f.bind()
   ```
 
-  获取双向数据绑定的表单键值对
+  Get two-way data-bound form key-value pairs
 
 
 ## $f.hidden
 
-- **参数**：`{string} field`、`{bool} hidden`
+- **parameter**：`{string} field`、`{bool} hidden`
 
-- **用法**：**`>=1.4.1版本`**
+- **usage**：**`>=1.4.1版本`**
 
   ```js
   $f.hidden(field,true)
   ```
 
-  隐藏或显示指定组件
+  Hide or show the specified component
 
 
 ## $f.visibility 
 
-- **参数**：`{string} field`、`{bool} visibility`
+- **parameter**：`{string} field`、`{bool} visibility`
 
-- **用法**：**`>=1.4.1版本`**
+- **usage**：**`>=1.4.1版本`**
 
   ```js
   $f.visibility(field,true)
   ```
 
-  隐藏或显示指定组件
+  Hide or show the specified component
 
 
 ## $f.validate
 
-- **参数**：`{function} success`、`{function} error`
+- **parameter**：`{function} success`、`{function} error`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.validate(()=>console.log('验证通过'),()=>console.log('验证未通过'))
   ```
 
-  表单验证,如果验证通过执行`success`,未通过则执行`error`
+  Form validation, if the validation is done by executing `success`, failing to execute `error`
 
 
 ## $f.validateField
 
-- **参数**：`{string} field`、`{function} callback`
+- **parameter**：`{string} field`、`{function} callback`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.validateField(field,(errMsg)=>{
       if(errMsg){
-          //TODO 验证未通过
+          //TODO fail
       }else{
-          //TODO 验证通过
+          //TODO success
       }
   });
   ```
 
-  表单验证指定字段
+  Form validation specified field
 
 
 ## $f.prepend
 
-::: warning 建议
+::: warning Suggest
 
-建议直接操作生成规则`rules`，插入到数组对应的位置即可
+It is recommended to directly generate the rule `rules` and insert it into the corresponding position of the array.
 
 :::
 
-- **参数**：`{object} rule`、`{stirng} field`
+- **parameter**：`{object} rule`、`{stirng} field`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.prepend({
@@ -218,20 +218,20 @@ sidebarDepth: 3
   },undefined);
   ```
 
-  在`field`的字段之前插入指定表单元素,不传入`field`默认在第一个
+  Insert the specified form element before the field of `field`, not passing `field` by default in the first
 
 
 ## $f.append
 
-::: warning 建议
+::: warning Suggest
 
-建议直接操作生成规则`rules`，插入到数组对应的位置即可
+It is recommended to directly generate the rule `rules` and insert it into the corresponding position of the array.
 
 :::
 
-- **参数**：`{object} rule`、`{stirng} field`
+- **parameter**：`{object} rule`、`{stirng} field`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.prepend({
@@ -249,23 +249,23 @@ sidebarDepth: 3
   },null);
   ```
 
-  在`field`的字段之后插入指定表单元素,不传入`field`默认在最后一个
+  Insert the specified form element after the field of `field`, not passing `field` by default in the last one
 
 
 ## $f.submitStatus
 
-- **参数**：`{object} props`
+- **parameter**：`{object} props`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.submitStatus({loading:true})
   ```
 
-- **快捷操作**:
+- **Quick operation**:
 
-  - `$f.btn.loading(loading = true)` 设置提交按钮进入loading状态
-  - `$f.btn.disabled(disabled = true)` 设置提交按钮禁用状态
+  - `$f.btn.loading(loading = true)` Set the submit button to enter the loading state
+  - `$f.btn.disabled(disabled = true)` Set submit button disabled state
 
 - **props**：
 
@@ -292,23 +292,23 @@ sidebarDepth: 3
   }
   ```
 
-  修改表单提交按钮规则
+  Modify form submission button rules
 
 
 ## $f.resetStatus
 
-- **参数**：`{object} props`
+- **parameter**：`{object} props`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.resetStatus({disabled:true})
   ```
 
-- **快捷操作**:
+- **Quick operation**:
 
-  - `$f.resetBtn.loading(loading = true)` 设置重置按钮进入loading状态
-  - `$f.resetBtn.disabled(disabled = true)` 设置重置按钮禁用状态
+  - `$f.resetBtn.loading(loading = true)` Set the reset button to enter the loading state
+  - `$f.resetBtn.disabled(disabled = true)` Set reset button disabled state
 
 - **props**：
 
@@ -335,14 +335,14 @@ sidebarDepth: 3
   }
   ```
 
-  修改表单重置按钮规则
+  Modify form reset button rules
 
 
 ## $f.submit
 
-- **参数**：`{function} onSubmit`
+- **parameter**：`{function} onSubmit`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.submit((formData)=>{
@@ -350,14 +350,14 @@ sidebarDepth: 3
   })
   ```
 
-  手动提交表单,如果传入`onSubmit`参数,就不会再触发`option.onSubmit`
+  Submit the form manually, if you pass the `onSubmit` parameter, it will no longer trigger `option.onSubmit`
 
 
 ## $f.options
 
-- **参数**：`{object} options`
+- **parameter**：`{object} options`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.options(({
@@ -367,82 +367,82 @@ sidebarDepth: 3
   })
   ```
 
-  更新全局配置
+  Update global configuration
 
-- **参考**：[全局配置](http://www.form-create.com/guide/global.html)
+- **参考**：[global configuration](http://www.form-create.com/guide/global.html)
 
 
 
 ## $f.reload
 
-- **参数**：`{array} rules`
+- **parameter**：`{array} rules`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.reload()
   ```
 
-  按照新的生成规则重载表单生成器,如果不传入`rules`会按照当前规则重载
+  Reload the form generator according to the new build rule. If you don't pass `rules`, it will be overloaded according to the current rule.
 
 
 ## $f.refresh
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.refresh()
   ```
 
-  重新渲染表单
+  Re-render the form
 
 
 ## $f.sync
 
-- **参数**：`{string} field`
+- **parameter**：`{string} field`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.sync(field)
   ```
 
-  重新渲染`field`组件
+  Re-rendering the `field` component
 
 
 ## $f.destroy
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.destroy()
   ```
 
-  销毁表单
+  Destroy form
 
 
 ## $f.set
 
-- **参数**：`{object} node`、`{string} key`、`value`
+- **parameter**：`{object} node`、`{string} key`、`value`
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.set(field.rule.col,'span',12)
   ```
 
-  如果修改组件的规则后页面没有更新时可以尝试使用该方法,该方法使用方法与`Vue.$set`相同
+  You can try this method if the page is not updated after modifying the rules of the component. The method uses the same method as `Vue.$set`
 
 
 ## $f.closeModal
 
-- **用法**：
+- **usage**：
 
   ```js
   $f.closeModal()
   ```
 
-  关闭frame组件的弹出框
+  Close the popup of the frame component
 
 
 

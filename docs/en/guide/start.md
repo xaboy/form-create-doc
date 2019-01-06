@@ -4,13 +4,13 @@ sidebarDepth: 3
 
 
 
-# 快速上手
+# Quick Start
 
-本节将介绍如何在项目中使用 form-create
+This section describes how to use form-create in your project.
 
-## 引入 form-create
+## Import form-create
 
-#### 浏览器:
+#### Browser:
 
 ```markdown
 <!-- import Vue 2.5-->
@@ -46,17 +46,17 @@ Vue.use(iView);
 Vue.use(formCreat)
 ```
 
-## 生成表单
+## Generate form
 
-::: tip 可使用3种方式创建表单: 
+::: tip There are 3 ways to create a form:
 
-   组件模式, Vue 原型方法, Window 全局方法
+ Component mode, Vue prototype method, Window global method
 
 ::: 
 
-### 组件模式
+### Component mode
 
-使用  `<form-create></form-create>` 标签创建表单
+Create a form with the `<form-create></form-create>` tag
 
 ```html
 <div id="app1">
@@ -103,9 +103,9 @@ new Vue({
 });
 ```
 
-### Vue 原型方法
+###  Vue prototype method
 
-使用 vue 原型方法`$formCreate(rule,option)` 创建表单
+Create a form using the vue prototype method `$formCreate(rule,option)`
 
 ```html
 <div id="app2">
@@ -161,9 +161,9 @@ new Vue({
 })
 ```
 
-### 全局方法
+### Window global method
 
-使用 window 全局方法`formCreate.create(rule,option)`创建表单
+Create a form using the window global method `formCreate.create(rule,option)`
 
 ```html
 <div id="app3">

@@ -73,15 +73,15 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
 
 ##### 规则 rule
 
-| 字段名   | 说明                                                         | 字段类型      | 是否必填 | 默认值 |
-| :------- | :----------------------------------------------------------- | :------------ | :------- | :----- |
-| type     | 元素类型                                                     | String        | true     | -      |
-| field    | 字段名称                                                     | String        | true     | -      |
-| title    | 字段别名                                                     | String        | true     | -      |
-| value    | 滑块选定的值。普通模式下，数据格式为数字，在双滑块模式下，数据格式为长度是2的数组，且每项都为数字 | Number ,Array | false    | -      |
-| props    | 元素配置                                                     | Object        | false    | -      |
-| event    | 元素事件                                                     | Object        | false    | -      |
-| validate | 验证规则                                                     | Array         | false    | -      |
+| 字段名   | 说明     | 字段类型 | 是否必填 | 默认值 |
+| :------- | :------- | :------- | :------- | :----- |
+| type     | 元素类型 | String   | true     | -      |
+| field    | 字段名称 | String   | true     | -      |
+| title    | 字段别名 | String   | true     | -      |
+| value    | 字段的值 | String   | false    | -      |
+| props    | 元素配置 | Object   | false    | -      |
+| event    | 元素事件 | Object   | false    | -      |
+| validate | 验证规则 | Array    | false    | -      |
 
 
 
