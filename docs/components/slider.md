@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/rehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type:"slider",
@@ -17,7 +17,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.slider('滑块','slider',[0,52]).props({
         "min": 0,
@@ -27,7 +27,7 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
      type:"slider",
@@ -51,7 +51,12 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/slider#API) | [iview3.x](https://www.iviewui.com/components/slider#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -63,7 +68,7 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -78,7 +83,7 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 | tipFormat | Slider 会把当前值传给 tip-format，并在 Tooltip 中显示 tip-format 的返回值，若为 null，则隐藏 Tooltip | Function | false | - |
 | inputSize | 数字输入框的尺寸，可选值为large、small、default或者不填，仅在开启 show-input 时有效 | String | false | 'default' |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

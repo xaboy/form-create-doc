@@ -1,9 +1,7 @@
 ### Tree 树形组件
 
 #### [在线预览](https://jsrun.net/AehKp/edit)
-#### [子页面示例](https://jsrun.net/jehKp/edit)
-
-#### 举例:
+#### 示例
 ```js
 {
         type:"tree",
@@ -29,7 +27,7 @@
     }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.tree('权限','rule',[]).props({
         data:[], //数据结构参考上面
@@ -37,7 +35,7 @@ $formCreate.maker.tree('权限','rule',[]).props({
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type:"tree",
@@ -100,7 +98,12 @@ $formCreate.maker.tree('权限','rule',[]).props({
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/tree#API) | [iview3.x](https://www.iviewui.com/components/tree#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -111,7 +114,7 @@ $formCreate.maker.tree('权限','rule',[]).props({
 | props | 元素配置 | Object | true | - |
 | event | 元素事件 | Object | false | - |
 
-##### 元素配置 props:
+##### 配置 props
 
 | 属性 | 说明 | 类型 | 默认值 |
 | :--- | :--- | :--- | :--- |
@@ -124,7 +127,7 @@ $formCreate.maker.tree('权限','rule',[]).props({
 | render | 自定义渲染内容，见示例 | Function | - |
 | children-key | 定义子节点键 | String | children |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名 | 说明 | 返回值 |
 | :--- | :--- | :--- |

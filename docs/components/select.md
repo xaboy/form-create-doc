@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/FehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type: "select",
@@ -22,7 +22,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
         {"value": "104", "label": "生态蔬菜", "disabled": false},
@@ -32,7 +32,7 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type: "select",//必填!
@@ -74,7 +74,11 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+参考:[iview2.x](http://v2.iviewui.com/components/select#API) | [iview3.x](https://www.iviewui.com/components/select#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -87,7 +91,7 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 可选参数 Options:
+##### 可选参数 Options
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -96,7 +100,7 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 | disabled | 设置为禁用状态 | Boolean | false | false |
 
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -110,7 +114,7 @@ $formCreate.maker.select("产品分类","cate_id",["104","105"]).options([
 | disabled | 是否禁用 | Boolean | false | false |
 
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/CehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type:"rate",
@@ -19,7 +19,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.rate('推荐级别','rate',2)
         .props({
@@ -29,7 +29,7 @@ $formCreate.maker.rate('推荐级别','rate',2)
         .validate([{required:true,type:'number',min:3, message: '请大于3颗星',trigger:'change'}])
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type:"rate",
@@ -50,7 +50,11 @@ $formCreate.maker.rate('推荐级别','rate',2)
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+参考:[iview2.x](http://v2.iviewui.com/components/rate#API) | [iview3.x](https://www.iviewui.com/components/rate#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -62,7 +66,7 @@ $formCreate.maker.rate('推荐级别','rate',2)
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-#####  元素配置 props:
+#####  元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -72,7 +76,7 @@ $formCreate.maker.rate('推荐级别','rate',2)
 | showText | 是否显示提示文字 | Boolean | false | false |
 | clearable | 是否可以取消选择 | Boolean | false | false |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

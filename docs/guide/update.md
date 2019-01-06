@@ -2,7 +2,7 @@
 title: 更新日志
 ---
 
-### 当前版本 1.5.2
+### 当前版本 1.5.3
 
 --------
 
@@ -11,6 +11,15 @@ title: 更新日志
 建议保持在最新的版本
 
 :::
+
+#### 1.5.2 (2018-12-31) <Badge text="金猪年" type="warn"/>
+
+- 新增 upload 组件**列表样式**
+- 修改 upload 组件按钮图标
+- 修复 upload 组件上传 成功后不显示 bug
+- 新增 自定义`datePicker`,`timePicker`,`select`组件 **slot** 功能 
+- 新增 表单重载后回调函数`onReload`全局配置项,可用于更新`$f`
+- 新增 组件`className`配置项,设置组件的 class
 
 
 

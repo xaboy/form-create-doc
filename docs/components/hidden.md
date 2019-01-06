@@ -1,6 +1,6 @@
 ### Hidden 隐藏字段
 
-#### 举例:
+#### 示例
 ```js
 {
 		type:"hidden",
@@ -11,12 +11,12 @@
 
 
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
-$formCreate.maker.hidden('id','14')
+formCreate.maker.hidden('id','14')
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
   type:"hidden",//必填!
@@ -28,7 +28,7 @@ $formCreate.maker.hidden('id','14')
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

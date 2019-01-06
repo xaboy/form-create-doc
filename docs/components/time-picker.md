@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/GehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {  
         type: "TimePicker",
@@ -16,7 +16,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.time('活动时间','section_time').props({
         "type":"timerange",
@@ -24,7 +24,7 @@ $formCreate.maker.time('活动时间','section_time').props({
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type: "TimePicker",//必填!
@@ -61,7 +61,12 @@ $formCreate.maker.time('活动时间','section_time').props({
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/time-picker#API) | [iview3.x](https://www.iviewui.com/components/time-picker#API)
+
+
+
+##### 规则 rule
 
 | **字段名** | **说明** | **字段类型** | **是否必填** | **默认值** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -74,7 +79,7 @@ $formCreate.maker.time('活动时间','section_time').props({
 | validate | 验证规则 | Array | false | - |
 
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -91,7 +96,7 @@ $formCreate.maker.time('活动时间','section_time').props({
 | editable | 文本框是否可以输入 | Boolean | false | false |
 
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

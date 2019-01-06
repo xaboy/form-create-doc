@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/HehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type: "DatePicker",
@@ -17,7 +17,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).props({
         "type": "datetimerange",
@@ -25,7 +25,7 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type: "DatePicker",//必填!
@@ -61,7 +61,12 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/date-picker#API) | [iview3.x](https://www.iviewui.com/components/date-picker#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -73,7 +78,7 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -88,7 +93,7 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 | readonly | 完全只读，开启后不会弹出选择器 | Boolean | false | false |
 | editable | 文本框是否可以输入 | Boolean | false | false |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

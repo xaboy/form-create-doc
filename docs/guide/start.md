@@ -129,8 +129,8 @@ new Vue({
         this.$f = this.$formCreate(
             //表单生成规则
             [
-        		window.formCreate.maker.input('商品名称','goods_name',''),
-           		window.formCreate.maker.date('创建时间','created_at')
+        		this.formCreate.maker.input('商品名称','goods_name',''),
+           		this.formCreate.maker.date('创建时间','created_at')
         	],
             //组件参数配置
             {

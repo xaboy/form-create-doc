@@ -4,7 +4,7 @@ frame 框架打开的子页面要关闭时,需要通过调用父级页面的`$f.
 
 #### [在线预览](https://jsrun.net/mehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type:"frame",
@@ -23,7 +23,7 @@ frame 框架打开的子页面要关闭时,需要通过调用父级页面的`$f.
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"]).props({
         src:"iframe.html",
@@ -34,7 +34,7 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 ])
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type:"frame",
@@ -60,7 +60,7 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -72,7 +72,7 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -87,7 +87,7 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 | handleIcon | 操作按钮的图标 ,设置为false将不显示,设置为true为默认的预览图标,类型为file时默认为false,image类型默认为true | Boolean | false | - |
 | allowRemove | 是否可删除,设置为false是不显示删除按钮 | Boolean | false | true |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 |
 | :--- | :--- |

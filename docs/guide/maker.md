@@ -1,23 +1,89 @@
-# Maker 配置项
+---
+sidebarDepth: 2
+---
 
-::: warning 提醒
 
-规则的配置项名称与组件生成器的配置方法名称相同,配置参数也相同
+
+# 规则配置项
+
+::: warning 提示
+
+**JSON规则的配置项名称与组件生成器的配置方法名称相同,配置参数也相同**
 
 :::
 
-#### 内置**组件配置项说明**
+## **内置组件配置项**
 
-1. **props\(Object\)** 组件配置
-2. **event\(Object\)** 组件事件配置
-3. **slot\(Object\)** 部分组件填充内容配置
-4. **validate\(Array\)** 组件验证规则配置
-5. **options\(Array\)** 部分组件选择项配置
-6. **emit\(Array\)** 组件模式下配置使用emit方式触发的事件
-7. **col\(Object\)** 组件布局配置
-8. **emitPrefix** 自定义 组件`emit `事件的前缀
+### **props**
 
-#### 自定义组件额外支持以下配置项
+- ​**参数**:  `Object`
+- **说明**: 组件规则配置
+
+### **event**
+
+- **参数**:  `Object`
+- **说明**: 组件事件配置
+
+### **validate**
+
+- **参数**:  `Array`
+- **说明**: 组件验证规则配置
+
+### **options**
+
+- **参数**:  `Array`
+- **说明**: 部分组件`option`选择项配置
+
+### **emit**
+
+- **参数**:  `Array`
+- **说明**: 组件模式下配置使用`emit`方式触发的事件名
+
+### **col**
+
+- **参数**:  `Object`
+- **说明**: 组件布局配置
+- **参考**: [栅格布局规则 Col](/guide/col.html)
+
+### **emitPrefix**  <Badge text="1.5.2+"/>
+
+- **参数**:  `Object`
+- **说明**: 自定义 组件`emit `事件的前缀 
+- **默认**: 组件 `field` 字段
+
+### **className**  <Badge text="1.5.3+"/>
+
+- **参数**:  `Object | Array | string`
+- **说明**: 自定义 组件的 `class` 
+
+### **defaultSlot**  <Badge text="1.5.3+"/>
+
+- **参数**:  `String | RenderFunction`
+
+- **说明**: 自定义 部分内置组件的`slot` 
+
+- **示例**: 
+
+  ```js
+  rule.defaultSlot(function($h){
+    return $h("div", {
+      style: "color:#ff7271;"
+    }, [$h('icon', {
+      props: {
+        //iview2 与 iview3 图标名称不同
+        type: 'social-apple'
+      }
+    }), "新鲜水果"]);
+  })
+  ```
+
+
+
+## 自定义组件配置项
+
+自定义组件额外支持以下配置项
+
+
 
 1. **children\(Array\)** 组件元素生成规则
 2. **scopedSlots\(Object\)**
@@ -32,5 +98,4 @@
 
 
 
-
-**[以上配置项说明](https://cn.vuejs.org/v2/guide/render-function.html#%E6%B7%B1%E5%85%A5-data-%E5%AF%B9%E8%B1%A1l)**
+**[自定义配置项说明](https://cn.vuejs.org/v2/guide/render-function.html#%E6%B7%B1%E5%85%A5-data-%E5%AF%B9%E8%B1%A1l)**

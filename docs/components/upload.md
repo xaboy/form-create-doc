@@ -12,7 +12,7 @@
 
 #### [在线预览](https://jsrun.net/dehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type: "upload",
@@ -41,7 +41,7 @@
     }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'])
         .props({
@@ -58,7 +58,7 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
         .validate([{required:true, type: 'array', min: 3, message: '请上传3张图片', trigger: 'change'}])
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type: "Upload",//必填!
@@ -139,7 +139,12 @@ option:{
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/upload#API) | [iview3.x](https://www.iviewui.com/components/upload#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -150,7 +155,7 @@ option:{
 | props | 元素配置 | Object | true | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

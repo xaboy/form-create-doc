@@ -2,7 +2,7 @@
 
 #### [在线预览](http://jsrun.net/TnhKp/edit)
 
-#### 举例:
+#### 示例
 
 ```js
 {
@@ -23,7 +23,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 
 ```js
 $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
@@ -38,7 +38,7 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
 })
 ```
 
-#### json 生成规则
+#### json 规则
 
 ```json
 {
@@ -67,9 +67,11 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
 
 #### 参数说明
 
+参考:[iview2.x](http://v2.iviewui.com/components/auto-complete#API) | [iview3.x](https://www.iviewui.com/components/auto-complete#API)
 
 
-##### 基本规则 rule:
+
+##### 规则 rule
 
 | 字段名   | 说明                                                         | 字段类型      | 是否必填 | 默认值 |
 | :------- | :----------------------------------------------------------- | :------------ | :------- | :----- |
@@ -83,7 +85,7 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
 
 
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 属性          | 说明                                                         | 类型                | 默认值 |
 | ------------- | ------------------------------------------------------------ | ------------------- | ------ |
@@ -99,7 +101,7 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
 
 
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名    | 说明                                              | 返回值 |
 | --------- | ------------------------------------------------- | ------ |

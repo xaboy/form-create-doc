@@ -1,8 +1,8 @@
-### col 栅格布局规则
+### col 布局规则
 
 ::: tip 
 
-所有组件均支持布局配置规则,详细说明可参考 [iview栅格布局](http://v2.iviewui.com/components/grid)
+所有组件均支持布局配置规则,详细说明可参考 [iview栅格布局 Col props](http://v2.iviewui.com/components/grid#Col_props)
 
 :::
 

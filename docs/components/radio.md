@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/cehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type:"radio",
@@ -17,7 +17,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.radio('是否包邮','is_postage','0').options([
         {value:"0",label:"不包邮",disabled:false},
@@ -26,7 +26,7 @@ $formCreate.maker.radio('是否包邮','is_postage','0').options([
 ])
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 radioRule :
 {
@@ -55,7 +55,12 @@ radioRule :
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/radio#API) | [iview3.x](https://www.iviewui.com/components/radio#API)
+
+
+
+##### 规则 rule
 
 | **字段名** | **说明** | **字段类型** | **是否必填** | **默认值** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -68,7 +73,7 @@ radioRule :
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 可选参数 Options:
+##### 可选参数 Options
 
 | **字段名** | **说明** | **字段类型** | **是否必填** | **默认值** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -76,7 +81,7 @@ radioRule :
 | label | 字段别名 | String | true | - |
 | disabled | 设置为禁用状态 | Boolean | false | false |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -84,7 +89,7 @@ radioRule :
 | size | 单选框的尺寸，可选值为 large、small、default 或者不设置 | String | false | - |
 | vertical | 是否垂直排列，按钮样式下无效 | Boolean | false | false |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |

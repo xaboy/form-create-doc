@@ -2,7 +2,7 @@
 
 #### [在线预览](https://jsrun.net/dehKp/edit)
 
-#### 举例:
+#### 示例
 ```js
 {
         type:"switch",
@@ -20,7 +20,7 @@
 }
 ```
 
-#### maker快速生成:
+#### maker 快速生成
 ```js
 $formCreate.maker.switch('是否上架','is_show','1').slot({
         open:"上架",
@@ -31,7 +31,7 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
 })
 ```
 
-#### json 生成规则
+#### json 规则
 ```json
 {
         type:"switch",//必填!
@@ -62,7 +62,12 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
 ```
 
 #### 参数说明
-##### 基本规则 rule:
+
+参考:[iview2.x](http://v2.iviewui.com/components/switch#API) | [iview3.x](https://www.iviewui.com/components/switch#API)
+
+
+
+##### 规则 rule
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -75,14 +80,14 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
 | event | 元素事件 | Object | false | - |
 | validate | 验证规则 | Array | false | - |
 
-##### 自定义显示 Slot:
+##### 自定义显示 slot
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | open | 自定义显示打开时的内容 | String | false | - |
 | close | 自定义显示关闭时的内容 | String | false | - |
 
-##### 元素配置 props:
+##### 元素配置 props
 
 | 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -91,7 +96,7 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
 | size | 开关的尺寸，可选值为large、small、default或者不写。建议开关如果使用了2个汉字的文字，使用 large。 | String | false | - |
 | disabled | 禁用开关 | Boolean | false | false |
 
-##### 事件扩展 event:
+##### 事件扩展 event
 
 | 事件名 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
