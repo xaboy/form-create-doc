@@ -223,7 +223,7 @@ It is recommended to directly generate the rule `rules` and insert it into the c
 
 ## $f.append
 
-::: warning Suggest
+::: warning Suggestion
 
 It is recommended to directly generate the rule `rules` and insert it into the corresponding position of the array.
 

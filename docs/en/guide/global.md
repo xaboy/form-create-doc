@@ -6,7 +6,7 @@ sidebarDepth: 3
 
 # Global configuration
 
-When used, some properties of the global configuration component can be made
+Some properties of the global configuration component can be made when using
 
 ## Configuration
 
@@ -29,14 +29,14 @@ window.formCreate.create(rule,option)
 
 The global configuration consists of the following sections
 
-- **el**：The node into which the form is inserted, no need to set in component mode
-- **switchMaker**：Whether the Maker Builder in the automatic conversion rule is an object
+- **el**：The node which the form is inserted into, no need to set in component mode
+- **switchMaker**：Whether automatically convert the Maker Builder in the rules to an object
 - **iframeHelper**：Whether to open the iframe component subpage helper function, **cross-domain invalid**
-- **onSubmit**：**Form submission callback function**
+- **onSubmit**：**Callback function when the form is submitted **
 - **onReload**：**callback function after form overloading**<Badge text="1.5.3+"/>
 - **mounted**：**callback function after form creation success**
 - **form**：Form overall display rule configuration
-- **row**：Form component layout configuration  [iview Grid](https://www.iviewui.com/components/grid)
+- **row**：Form components layout configuration  [iview Grid](https://www.iviewui.com/components/grid)
 - **upload**：Upload component global configuration
 - **submitBtn**：Submit button style configuration
 - **resetBtn**：Reset button style configuration
@@ -46,7 +46,7 @@ The global configuration consists of the following sections
 ## el
 
 - **type**：`string | HTMLElement`
-- **description**: Provide a DOM element that already exists on the page as the mount target for the form, **need not be set in component mode**
+- **description**: Provide a DOM element that already exists on the page as the mount target for the form, **no need to set in component mode**
 
 
 
@@ -56,7 +56,7 @@ The global configuration consists of the following sections
 
 - **type**：`bool`
 - **default**： `true`
-- **description**：Whether the Maker Builder in the automatic conversion rule is an object
+- **description**：Whether automatically convert the Maker Builder in the rules to an object
 
 
 
@@ -148,7 +148,7 @@ The global configuration consists of the following sections
 
 - **description**：Form overall display rule configuration
 
-- **default值**: 
+- **default value**: 
 
   ```js
   {
@@ -159,7 +159,7 @@ The global configuration consists of the following sections
     labelPosition:'right',
     //Width of Form's labels. All Form-items in Form will inherit the value
     labelWidth:125,
-    //Show validation failing info or no
+    //Show validation failing infomation or not
     showMessage:true,
     //Native autocomplete property, which can be selected as off or on
     autocomplete:'off',
@@ -214,7 +214,7 @@ The global configuration consists of the following sections
 
   ```js
   {
-    //Hook before file starts to upload. The only parameter is the file. If the function return false, or a Promise, default upload procedure will be stopped.
+    //Hook before file starts to upload. The only parameter is the file. If the function return false, or a Promise, the upload procedure will be stopped.
     beforeUpload:()=>{},
     //Hook when file is uploading. It has three params: event, file, fileList
     onProgress:(event, file, fileList)=>{},

@@ -17,7 +17,7 @@ features:
   - title: Rapid generation
     details: Built-in component generator to quickly generate corresponding component rules through chain operations
   - title: Custom component
-    details: Support for generating any component, increasing the flexibility of the form, enabling more complex forms
+    details: Support to generating any component, increasing the flexibility of the form, it can fulfill more complex forms
 footer: MIT Licensed | Copyright © 2018-present xaboy
 ---
 <style>

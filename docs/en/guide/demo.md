@@ -7,7 +7,7 @@ The following is a demo and reference case for from-create
 ## 案例
 
 - [CRMEB客户管理+电商管理系统](https://gitee.com/ZhongBangKeJi/CRMEB) ([演示站](http://demo25.crmeb.net) 账号：demo 密码：crmeb.com)
-- [In-depth use of maker custom component case](https://github.com/HeyMrLin/fc-demo)
+- [In-depth use case of maker customize component](https://github.com/HeyMrLin/fc-demo)
 
 
 

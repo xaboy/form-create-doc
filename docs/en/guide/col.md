@@ -1,8 +1,8 @@
-### Col
+### Col Layout Rules
 
 ::: tip 
 
-All components support layout configuration rules. Detailed instructions are available [Col props](http://v2.iviewui.com/components/grid#Col_props)
+All the components support layout configuration rules. Detailed instructions are available at [Col props](http://v2.iviewui.com/components/grid#Col_props)
 
 :::
 
@@ -13,12 +13,13 @@ Maker
 >  Use maker to generate generators and set component layout rules
 
 ```js
+// Generate an input component and set the component length to 50% via col rule
 maker.input('col','text','').col({span:12,labelWidth:200,xs:24})
 ```
 
 Json
 
->  Use json
+>  Use json to set the layout rules
 
 ```js
 {
@@ -40,8 +41,9 @@ Json
 
 | Property   | Description                                                  | Type             | Default |
 | ---------- | ------------------------------------------------------------ | ---------------- | ------- |
-| span       | Column span. Value can be between 0 and 24. When 0, it equals to `display:none` | Number \| String | -       |
-| order      | Grid order when using `flex` layout.                         | Number \| String | -       |
+| span       | Column span. Value can be integer from 0 to 24. When 0, it equals to `display:none` | Number \| String | -       |
+| labelWidth | Set the `label` width of form field                          | Number           | 150     |
+| order      | Grid order when using `flex` layout mode.                    | Number \| String | -       |
 | offset     | Number of cells to the left of grid spacing. No cells can be inside the grid spacing. | Number \| String | -       |
 | push       | Number of cells to move to the right                         | Number \| String | -       |
 | pull       | Number of cells to move to the left                          | Number \| String | -       |

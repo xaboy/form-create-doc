@@ -6,7 +6,7 @@ title: Update log
 
 --------
 
-::: tip Suggest
+::: tip Suggestion
 
 Recommended to stay in the latest version
 
