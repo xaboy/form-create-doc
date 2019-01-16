@@ -2,7 +2,7 @@
 title: Update log
 ---
 
-### current version 1.5.3
+### current version 1.5.4
 
 --------
 
@@ -11,6 +11,25 @@ title: Update log
 Recommended to stay in the latest version
 
 :::
+
+
+
+#### 1.5.4 (2019-01-15)
+
+- Optimization internal structure
+- **Refactoring component addition, modification, deletion**
+- **Support Custom internal nested built-in components**
+- Optimization **Custom components can be set without `field`**
+- Optimize form overloading
+- **Add global configuration item `form.size`** to configure form element size
+- Remove custom component cache
+- Fix event repeat trigger bug
+- Optimize `$f ` questions that need to be fetched frequently...
+- Added `$f.component()` method, ** to get custom component generation rules**
+- Added `$f.changeValue(field,value)` method, which is an alias for `$f.changeField`
+- Added `$f.rule` attribute to get the form generation rules
+- Fix `select` component event does not trigger `bug`
+
 
 #### 1.5.2 (2018-12-31) <Badge text="金猪年" type="warn"/>
 

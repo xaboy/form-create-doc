@@ -2,9 +2,9 @@
 sidebarDepth: 3
 ---
 
-# Maker 使用方法
+# 组件生成器
 
-maker 组件生成器是用来生成组件规则的助手方法,通过链式操作即可快速生成对应的组件规则
+**maker 组件生成器是用来生成组件规则的助手方法,通过链式操作即可快速生成对应的组件规则**
 
 
 
@@ -572,7 +572,7 @@ maker 组件生成器是用来生成组件规则的助手方法,通过链式操�
 
   生成一个 rate 组件
 
-- **参考**：[rate 组件](http://localhost:8080/components/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[rate 组件](http://www.form-create.com/components/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -592,7 +592,7 @@ maker 组件生成器是用来生成组件规则的助手方法,通过链式操�
 
   生成一个 slider 组件,**`props.range`默认为`false`**
 
-- **参考**：[slider 组件](http://localhost:8080/components/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[slider 组件](http://www.form-create.com/components/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -626,7 +626,7 @@ maker 组件生成器是用来生成组件规则的助手方法,通过链式操�
 
   生成一个 tree 组件
 
-- **参考**：[tree 组件](http://localhost:8080/components/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[tree 组件](http://www.form-create.com/components/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 - **相关方法**：
 
@@ -653,7 +653,7 @@ maker 组件生成器是用来生成组件规则的助手方法,通过链式操�
 
   生成一个 frame 组件
 
-- **参考**：[frame 组件](http://localhost:8080/components/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data 数据结构](http://localhost:8080/components/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+- **参考**：[frame 组件](http://www.form-create.com/components/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data 数据结构](http://www.form-create.com/components/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
 - **相关方法**：
   - `maker.frameInputs`

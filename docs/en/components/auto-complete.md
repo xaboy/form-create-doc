@@ -36,7 +36,7 @@ $formCreate.maker.auto('自动完成', 'auto', 'xaboy').props({
          "placeholder": "",
          "size": undefined,
          "icon":undefined,
-         "filter-method":false,
+         "filterMethod":false,
           "placement":undefined,
           "transfer":false,
      },
@@ -58,7 +58,7 @@ reference:[iview2.x](http://v2.iviewui.com/components/auto-complete#API) | [ivie
 | placeholder   | Placeholder of input.                                        | String              | -       |
 | size          | The size of Input. Optional value: `large`, `small`, `default` or leave empty. | String              | -       |
 | icon          | Icon at the end of Input.                                    | String              | -       |
-| filter-method | Filter options by input, if function, filter options against it. The function will receive two arguments, `value` and `option`, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded. | Function \| Boolean | false   |
+| filterMethod | Filter options by input, if function, filter options against it. The function will receive two arguments, `value` and `option`, if the function returns true, the option will be included in the filtered set; Otherwise, it will be excluded. | Function \| Boolean | false   |
 | placement     | The direction of pop-ups. The value could be `bottom` or `top`, supports automatic recognition after 2.12.0 | String              | bottom  |
 | transfer      | Whether to append the layer in body. When used in Tabs or a fixed Table column, suggests adding this property, it will not be affected by the parent style, resulting in better results. | Boolean             | false   |
 

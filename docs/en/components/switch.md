@@ -44,8 +44,8 @@ reference:[iview2.x](http://v2.iviewui.com/components/switch#API) | [iview3.x](h
 | ----------- | ------------------------------------------------------------ | ----------------------- | ------- |
 | size        | Set the size to `large`, `small` or `default` to use large/small size of switch, by default the switch's size is medium. It is recommended that if you use 2 characters, set the switch size to large. | String                  | -       |
 | disabled    | Disabled state of Switch.                                    | Boolean                 | false   |
-| true-value  | Value of the switch if it's checked.                         | String, Number, Boolean | true    |
-| false-value | Value of the switch if it's not checked.                     | String, Number, Boolean | false   |
+| trueValue  | Value of the switch if it's checked.                         | String, Number, Boolean | true    |
+| falseValue | Value of the switch if it's not checked.                     | String, Number, Boolean | false   |
 
 ##### Switch slot
 

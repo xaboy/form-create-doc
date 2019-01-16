@@ -4,7 +4,7 @@ heroImage: http://file.lotkk.com/form-create.png?3
 title: a
 description: Form Builder with dynamic rendering, data collection, validation, and submission capabilities
 actionText: Get started quickly →
-actionLink: /guide/install
+actionLink: /en/guide/install
 features:
   - title: Two-way data binding
     details: Once the rules are changed, the page is updated in real time

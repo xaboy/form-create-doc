@@ -163,7 +163,8 @@ The global configuration consists of the following sections
     showMessage:true,
     //Native autocomplete property, which can be selected as off or on
     autocomplete:'off',
-      
+    //The size of all components with the size property is not set by default. See the default size value of each component for details. The options are default, small, or large.
+    size:undefined
   }
   ```
 
@@ -243,7 +244,7 @@ The global configuration consists of the following sections
   }
   ```
 
-- reference: [Upload](/components/upload.html)
+- reference: [Upload](/en/components/upload.html)
 
 
 
@@ -286,7 +287,7 @@ The global configuration consists of the following sections
 
   Submit button configuration, do not display buttons when submitBtn=false or submitBtn.show=false
 
-- reference: [Col_props](/guide/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
+- reference: [Col_props](/en/guide/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
 
 
 
@@ -322,7 +323,7 @@ The global configuration consists of the following sections
 
   Reset button default configuration, display when resetBtn=true or resetBtn.show=true
 
-- reference: [Col_props](/guide/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
+- reference: [Col_props](/en/guide/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
 
 
 

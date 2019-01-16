@@ -167,6 +167,8 @@ window.formCreate.create(rule,option)
     showMessage:true,
     //原生的 autocomplete 属性，可选值为 off 或 on
     autocomplete:'off',
+    //所有带有 size 属性的组件的尺寸，默认为不设置，详见各组件默认的 size 值。可选值为 default、small 或 large。
+    size:undefined
       
   }
   ```

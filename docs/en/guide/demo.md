@@ -4,14 +4,14 @@ The following is a demo and reference case for from-create
 
 
 
-## 案例
+## project
 
 - [CRMEB客户管理+电商管理系统](https://gitee.com/ZhongBangKeJi/CRMEB) ([演示站](http://demo25.crmeb.net) 账号：demo 密码：crmeb.com)
 - [In-depth use case of maker customize component](https://github.com/HeyMrLin/fc-demo)
 
 
 
-## 组件示例
+## Component example
 
 - [Input 输入框](http://jsrun.net/7ehKp/edit)
 - [AutoComplete 自动生成](http://jsrun.net/TnhKp/edit)
@@ -32,7 +32,7 @@ The following is a demo and reference case for from-create
 
 
 
-## 功能示例
+## Function example
 
 - [Generate a form using the json parameter](http://jsrun.net/NQhKp/edit)
 - [Generate a form using the maker generator](http://jsrun.net/LQhKp/edit)

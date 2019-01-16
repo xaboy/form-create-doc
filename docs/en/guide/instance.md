@@ -20,11 +20,11 @@ sidebarDepth: 3
   ```
 
   - $f = vm.\$refs.fc.\$f
-  - $f = vm.fApi <Badge text="1.5.2+"/>
+  - $f = vm.fApi <Badge text="1.5.2+"/><Badge type="warn" text="recommend"/>
 
 :::
 
-**Retrieve the `$f` instance object when adding or removing components by modifying `rules`**
+
 
 ## $f.fields
 
@@ -72,7 +72,7 @@ sidebarDepth: 3
   $f.changeField(field,value)
   ```
 
-  Modify the value of the specified field
+  Modify the value of the specified field,`$f.changeValue` is an alias for this method
 
 
 
@@ -99,7 +99,24 @@ sidebarDepth: 3
 
   Delete specified field
 
+## $f.component <Badge text="1.5.4+"/>
 
+- **usage**：
+
+  ```js
+  component = $f.component()
+  ```
+
+- **data structure**：
+
+  ```js
+  {
+      field1:{props,validate,options,slot,event,...[other]}
+      field2:{props,validate,options,slot,event,...[other]}
+  }
+  ```
+
+  Get custom component generation rules for two-way data binding
 
 ## $f.model
 
@@ -113,17 +130,17 @@ sidebarDepth: 3
 
   ```js
   {
-      field1:{value,rule:{props,validate,options,slot,event,...[其他配置项]}}
-      field2:{value,rule:{props,validate,options,slot,event,...[其他配置项]}}
+      field1:{value,rule:{props,validate,options,slot,event,...[other]}}
+      field2:{value,rule:{props,validate,options,slot,event,...[other]}}
   }
   ```
 
   Get form generation rules for two-way data binding
 
 
-## $f.bind 
+## $f.bind <Badge text="1.4.1+"/>
 
-- **usage**：**`>=1.4.1版本`**
+- **usage**
 
   ```js
   bind = $f.bind()
@@ -132,11 +149,11 @@ sidebarDepth: 3
   Get two-way data-bound form key-value pairs
 
 
-## $f.hidden
+## $f.hidden <Badge text="1.4.1+"/>
 
 - **parameter**：`{string} field`、`{bool} hidden`
 
-- **usage**：**`>=1.4.1版本`**
+- **usage**：
 
   ```js
   $f.hidden(field,true)
@@ -145,11 +162,11 @@ sidebarDepth: 3
   Hide or show the specified component
 
 
-## $f.visibility 
+## $f.visibility <Badge text="1.4.1+"/>
 
 - **parameter**：`{string} field`、`{bool} visibility`
 
-- **usage**：**`>=1.4.1版本`**
+- **usage**：
 
   ```js
   $f.visibility(field,true)
@@ -369,7 +386,7 @@ It is recommended to directly generate the rule `rules` and insert it into the c
 
   Update global configuration
 
-- **参考**：[global configuration](http://www.form-create.com/guide/global.html)
+- **参考**：[global configuration](/en/guide/global.html)
 
 
 

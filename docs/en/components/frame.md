@@ -1,4 +1,4 @@
-### Frame 框架
+### Frame
 
 When the sub-page opened by the frame is to be closed, it needs to be closed by calling the `$f.closeModel()` method of the parent page.
 

@@ -20,11 +20,11 @@ sidebarDepth: 3
   ```
 
   - $f = vm.\$refs.fc.\$f
-  - $f = vm.fApi <Badge text="1.5.2+"/>
+  - $f = vm.fApi <Badge text="1.5.2+"/><Badge type="warn" text="推荐"/>
 
 :::
 
-**当通过修改`rules`增加、删除组件时需要重新获取 `$f` 实例对象**
+
 
 ## $f.fields
 
@@ -72,7 +72,7 @@ sidebarDepth: 3
   $f.changeField(field,value)
   ```
 
-  修改指定字段的值
+  修改指定字段的值,`$f.changeValue`是该方法的别名
 
 
 
@@ -101,6 +101,26 @@ sidebarDepth: 3
 
 
 
+## $f.component <Badge text="1.5.4+"/>
+
+- **用法**：
+
+  ```js
+  component = $f.component()
+  ```
+
+- **数据结构**：
+
+  ```js
+  {
+      field1:{props,validate,options,slot,event,...[其他配置项]}
+      field2:{props,validate,options,slot,event,...[其他配置项]}
+  }
+  ```
+
+  获取双向数据绑定的自定义组件生成规则
+
+
 ## $f.model
 
 - **用法**：
@@ -121,9 +141,9 @@ sidebarDepth: 3
   获取双向数据绑定的表单生成规则
 
 
-## $f.bind 
+## $f.bind <Badge text="1.4.1+"/>
 
-- **用法**：**`>=1.4.1版本`**
+- **用法**：
 
   ```js
   bind = $f.bind()
@@ -132,11 +152,11 @@ sidebarDepth: 3
   获取双向数据绑定的表单键值对
 
 
-## $f.hidden
+## $f.hidden <Badge text="1.4.1+"/>
 
 - **参数**：`{string} field`、`{bool} hidden`
 
-- **用法**：**`>=1.4.1版本`**
+- **用法**：
 
   ```js
   $f.hidden(field,true)
@@ -145,11 +165,11 @@ sidebarDepth: 3
   隐藏或显示指定组件
 
 
-## $f.visibility 
+## $f.visibility <Badge text="1.4.1+"/>
 
 - **参数**：`{string} field`、`{bool} visibility`
 
-- **用法**：**`>=1.4.1版本`**
+- **用法**：
 
   ```js
   $f.visibility(field,true)

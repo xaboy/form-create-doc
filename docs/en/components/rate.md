@@ -40,9 +40,9 @@ reference:[iview2.x](http://v2.iviewui.com/components/rate#API) | [iview3.x](htt
 | Property   | Description                       | Type    | Default |
 | ---------- | --------------------------------- | ------- | ------- |
 | count      | Star count.                       | Number  | 5       |
-| allow-half | Whether to allow semi selection.  | Boolean | false   |
+| allowHalf | Whether to allow semi selection.  | Boolean | false   |
 | disabled   | Read only, unable to interact.    | Boolean | false   |
-| show-text  | Whether to display a prompt text. | Boolean | false   |
+| showText  | Whether to display a prompt text. | Boolean | false   |
 | clearable  | Whether to cancel the selection.  | Boolean |         |
 
 ##### Rate events

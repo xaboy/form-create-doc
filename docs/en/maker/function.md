@@ -2,9 +2,9 @@
 sidebarDepth: 3
 ---
 
-# Maker Instructions
+# Component generator
 
-The maker component generator is a helper method for generating component rules, which can quickly generate corresponding component rules through chain operations.
+**The maker component generator is a helper method for generating component rules, which can quickly generate corresponding component rules through chain operations.**
 
 
 
@@ -15,7 +15,7 @@ The maker component generator is a helper method for generating component rules,
 
 :::
 
-[Maker generator configuration item description](/guide/maker.html)
+[Maker generator configuration item description](/en/guide/maker.html)
 
 ## Hidden
 
@@ -31,7 +31,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a hidden component
 
-- **reference**：[hidden](http://www.form-create.com/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[hidden](/en/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -49,7 +49,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate an input component, **type defaults to text**
 
-- **reference**：[input](http://www.form-create.com/components/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[input](/en/components/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -127,7 +127,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate an inputNumber component, **`maker.number` is an alias for this method**
 
-- **reference**：[InputNumber](http://www.form-create.com/components/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[InputNumber](/en/components/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -147,7 +147,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate an autoComplete component, **`maker.auto` is an alias for this method**
 
-- **reference**：[autoComplete](http://www.form-create.com/components/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[autoComplete](/en/components/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -168,7 +168,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a radio component
 
-- **reference**：[Radio](http://www.form-create.com/components/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[Radio](/en/components/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -191,7 +191,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a checkbox component
 
-- **reference**：[checkbox](http://www.form-create.com/components/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[checkbox](/en/components/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -216,7 +216,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a select component, `props.multiple` defaults to `false`
 
-- **reference**：[select](http://www.form-create.com/components/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[select](/en/components/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -266,7 +266,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a switch component
 
-- **reference**：[switch](http://www.form-create.com/components/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[switch](/en/components/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -286,7 +286,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a cascader component
 
-- **reference**：[cascader](http://www.form-create.com/components/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[Data structure](https://github.com/xaboy/form-create/blob/master/district/province_city.js)
+- **reference**：[cascader](/en/components/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[Data structure](https://github.com/xaboy/form-create/blob/master/district/province_city.js)
 
 
 
@@ -308,7 +308,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a datePicker component, **`type` defaults to `date`**
 
-- **reference**：[datePicker](http://www.form-create.com/components/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[datePicker](/en/components/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -422,7 +422,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a timePicker component, **`type` defaults to `time`**
 
-- **reference**：[timePicker](http://www.form-create.com/components/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[timePicker](/en/components/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -470,7 +470,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a colorPicker component, **`maker.color` is an alias for this method**
 
-- **reference**：[colorPicker](http://www.form-create.com/components/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[colorPicker](/en/components/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -490,7 +490,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate an upload component, **`type` defaults to `field`**
 
-- **reference**：[upload](http://www.form-create.com/components/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[upload](/en/components/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -572,7 +572,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a rate component
 
-- **reference**：[rate](http://localhost:8080/components/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[rate](/en/components/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -592,7 +592,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a slider component, **`props.range` defaults to `false`**
 
-- **reference**：[slider](http://localhost:8080/components/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[slider](/en/components/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -626,7 +626,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a tree component
 
-- **reference**：[tree](http://localhost:8080/components/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **reference**：[tree](/en/components/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 - **Related methods**：
 
@@ -653,7 +653,7 @@ The maker component generator is a helper method for generating component rules,
 
   Generate a frame component
 
-- **reference**：[frame](http://localhost:8080/components/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data structure](http://localhost:8080/components/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+- **reference**：[frame](/en/components/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data structure](/en/components/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
 - **Related methods**：
 

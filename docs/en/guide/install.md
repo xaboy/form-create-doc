@@ -4,7 +4,7 @@
 
 #### CDN
 
-Currently you can get the latest version of the resource via [unpkg.com/form-create] (https://unpkg.com/form-create/) and introduce js on the page to get started.
+Currently you can get the latest version of the resource via [unpkg.com/form-create](https://unpkg.com/form-create/) and introduce js on the page to get started.
 
 ```html
 <!-- import Vue.js -->

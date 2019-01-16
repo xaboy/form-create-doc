@@ -51,5 +51,5 @@ reference:[iview2.x](http://v2.iviewui.com/components/color-picker#API) | [iview
 | Event Name    | Description                                     | Return Value       |
 | ------------- | ----------------------------------------------- | ------------------ |
 | change        | Triggers when input value changes.              | color value        |
-| active-change | Triggers when the current active color changes. | active color value |
-| open-change   | Emitted when dropdown show or hide.             | true / false       |
+| activeChange | Triggers when the current active color changes. | active color value |
+| openChange   | Emitted when dropdown show or hide.             | true / false       |

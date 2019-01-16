@@ -53,14 +53,14 @@ reference:[iview2.x](http://v2.iviewui.com/components/select#API) | [iview3.x](h
 | clearable      | set select to clear option where used in single mode         | Boolean                   | false            |
 | filterable     | set select to support filter                                 | Boolean                   | false            |
 | remote         | set select to support remote data                            | Boolean                   | false            |
-| remote-method  | the method of getting remote data                            | Function                  | -                |
+| remoteMethod  | the method of getting remote data                            | Function                  | -                |
 | loading        | set select to remote search data loading state.              | Boolean                   | false            |
-| loading-text   | the loading text tip for remote searching.                   | String                    | loading          |
+| loadingText   | the loading text tip for remote searching.                   | String                    | loading          |
 | label          | use for init in the remote mode, you should set it because it can't get the option label by the value. | String \| Number \| Array | empty            |
 | size           | The size of select. The value could be `large`, `small`, `default`or none. | String                    | -                |
 | placeholder    | the text for placeholder                                     | String                    | select           |
-| not-found-text | The context to show when the select is null.                 | String                    | Nothing matched. |
-| label-in-value | set select return value what include label and value, which default return value. | Boolean                   | false            |
+| notFoundText | The context to show when the select is null.                 | String                    | Nothing matched. |
+| labelInValue | set select return value what include label and value, which default return value. | Boolean                   | false            |
 | placement      | The direction of pop-ups. The value could be `bottom` or `top`, supports automatic recognition after 2.12.0 | String                    | bottom           |
 | transfer       | Whether to append the layer in body. When used in Tabs or a fixed Table column, suggests adding this property, it will not be affected by the parent style, resulting in better results. | Boolean                   | false            |
 
@@ -78,6 +78,6 @@ reference:[iview2.x](http://v2.iviewui.com/components/select#API) | [iview3.x](h
 | Event Name   | Description                                                  | Return Value               |
 | ------------ | ------------------------------------------------------------ | -------------------------- |
 | change       | Emitted when selected `Option`change.It will return value. See the label-in-value property if need return label | The current selected item. |
-| query-change | Emitted when query word is changed.                          | query                      |
+| queryChange | Emitted when query word is changed.                          | query                      |
 | clear        | Emitted when click clear button.                             | -                          |
-| open-change  | Emitted when dropdown show or hide.                          | true / false               |
+| openChange  | Emitted when dropdown show or hide.                          | true / false               |

@@ -10,7 +10,7 @@ This section describes how to use form-create in your project.
 
 ## Import form-create
 
-#### Browser:
+#### Browser
 
 ```markdown
 <!-- import Vue 2.5-->
@@ -27,7 +27,7 @@ This section describes how to use form-create in your project.
 <script src="https://cdn.jsdelivr.net/npm/form-create/dist/form-create.min.js"></script>
 ```
 
-#### NodeJs:
+#### NodeJs
 
 在 main.js 中写入以下内容：
 
@@ -64,40 +64,51 @@ Create a form with the `<form-create></form-create>` tag
 </div>
 ```
 
+#### NodeJs
+```js
+import {maker} from 'form-create'
+export default {
+    data () {
+        return {
+            fApi:{},
+            model: {},
+            //表单生成规则
+            rule:[
+                maker.input('商品名称','goods_name'),
+                maker.date('创建时间','created_at')
+            ],
+            //组件参数配置
+            option:{
+                //表单提交事件
+                onSubmit:function (formData) {
+                    alert(JSON.stringify(formData));
+                }
+            }
+        };
+    },
+    mounted:function(){
+        this.model = this.fApi.model();
+    }
+};
+```
+#### Browser
 ```js
 new Vue({
     el:'#app1',
     data:{
-        //表单生成规则
+        fApi:{},
+        model: {},
         rule:[
-        	window.formCreate.maker.input('商品名称','goods_name',''),
-            window.formCreate.maker.date('创建时间','created_at')
+            formCreate.maker.input('商品名称','goods_name'),
+            formCreate.maker.date('创建时间','created_at')
         ],
-        //组件参数配置
         option:{
-            fApi:{},
-            //显示表单重置按钮
-            resetBtn:true,
-            //表单提交事件
             onSubmit:function (formData) {
-
-                //formData为表单数据
-
-                //按钮进入提交状态
-                this.$f.btn.loading();
-                //重置按钮禁用
-                this.$f.resetBtn.disabled();
-
-                //重置按钮恢复正常
-                //this.$f.resetBtn.disabled();
-                //按钮进入可点击状态
-                //this.$f.btn.loading(false);
+                alert(JSON.stringify(formData));
             }
-        },
-        model: {}
+        }
     },
     mounted:function () {
-        //获取双向数据绑定的数据规则
         this.model = this.fApi.model();
     }
 });

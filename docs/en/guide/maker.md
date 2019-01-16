@@ -43,7 +43,7 @@ sidebarDepth: 2
 
 - **parameter**:  `Object`
 - **description**: Component layout configuration
-- **reference**: [Col_props](/guide/col.html)
+- **reference**: [Col_props](/en/guide/col.html)
 
 ### **emitPrefix**  <Badge text="1.5.2+"/>
 

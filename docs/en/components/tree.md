@@ -81,19 +81,19 @@ reference:[iview2.x](http://v2.iviewui.com/components/tree#API) | [iview3.x](htt
 | ------------- | ------------------------------------------------------------ | -------- | -------- |
 | data          | An array of nestable node properties that generates tree data. | Array    | []       |
 | multiple      | Allows selecting multiple treeNodes.                         | Boolean  | false    |
-| show-checkbox | Adds a Checkbox before the treeNodes.                        | Boolean  | false    |
-| empty-text    | A tip without data.                                          | String   | No Data  |
-| load-data     | Methods to load data lazily, see examples.                   | Function | -        |
+| showCheckbox | Adds a Checkbox before the treeNodes.                        | Boolean  | false    |
+| emptyText    | A tip without data.                                          | String   | No Data  |
+| loadData     | Methods to load data lazily, see examples.                   | Function | -        |
 | render        | Custom node content, see examples.                           | Function | -        |
-| children-key  | Define child node key                                        | String   | children |
+| childrenKey  | Define child node key                                        | String   | children |
 
 ##### Tree events
 
 | Event Name    | Description                                        | Return Value                            |
 | ------------- | -------------------------------------------------- | --------------------------------------- |
-| select-change | Emitted when the tree node is clicked.             | The currently selected node array.      |
-| check-change  | Emitted when the checkbox is clicked.              | An array of nodes is currently checked. |
-| toggle-expand | Emitted when when the list is expanded or dropped. | Current nodes.                          |
+| selectChange | Emitted when the tree node is clicked.             | The currently selected node array.      |
+| checkChange  | Emitted when the checkbox is clicked.              | An array of nodes is currently checked. |
+| toggleExpand | Emitted when when the list is expanded or dropped. | Current nodes.                          |
 
 ##### childrenchildren
 

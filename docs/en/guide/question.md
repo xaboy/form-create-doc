@@ -135,9 +135,9 @@ request('api').then(rule=>{
 
 ## 隐藏默认提交按钮
 
-设置全局配置`options.submitBtn = false`即可隐藏 [提交按钮配置参考](/guide/instance.html#f-submitstatus)
+设置全局配置`options.submitBtn = false`即可隐藏 [提交按钮配置参考](/en/guide/instance.html#f-submitstatus)
 
 ## 显示默认重置按钮
 
-设置全局配置`options. resetBtn = true`即可显示 [重置按钮配置参考](/guide/instance.html#f-resetstatus)
+设置全局配置`options. resetBtn = true`即可显示 [重置按钮配置参考](/en/guide/instance.html#f-resetstatus)
 

@@ -48,11 +48,11 @@ reference:[iview2.x](http://v2.iviewui.com/components/slider#API) | [iview3.x](h
 | step       | The granularity the slider can step through values. Must greater than 0, and be divided by (max - min) . | Number   | 1       |
 | disabled   | If true, the slider will not be interactable.                | Boolean  | false   |
 | range      | Whether to use the dual thumb mode.                          | Boolean  | false   |
-| show-input | Whether to synchronize with InptNumber component, works when range is false. | Boolean  | false   |
-| show-stops | Whether to display breakpoints.                              | Boolean  | false   |
-| show-tip   | Tooltip display control, Optional value: `hover`（Hover, default）,`always`（Always visible）,`never`（Invisible）. | String   | hover   |
-| tip-format | Slider will pass the current value to tip-format and display the returned value in Tooltip. If null, the Tooltip will be hidden. | Function | value   |
-| input-size | The size of InputNumber. The value could be `large`, `small`, `default`or none. Only works when show-input is open. | String   | default |
+| showInput | Whether to synchronize with InptNumber component, works when range is false. | Boolean  | false   |
+| showStops | Whether to display breakpoints.                              | Boolean  | false   |
+| showTip   | Tooltip display control, Optional value: `hover`（Hover, default）,`always`（Always visible）,`never`（Invisible）. | String   | hover   |
+| tipFormat | Slider will pass the current value to tip-format and display the returned value in Tooltip. If null, the Tooltip will be hidden. | Function | value   |
+| inputSize | The size of InputNumber. The value could be `large`, `small`, `default`or none. Only works when show-input is open. | String   | default |
 
 ##### Slider events
 
