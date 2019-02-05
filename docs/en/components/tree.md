@@ -91,9 +91,9 @@ reference:[iview2.x](http://v2.iviewui.com/components/tree#API) | [iview3.x](htt
 
 | Event Name    | Description                                        | Return Value                            |
 | ------------- | -------------------------------------------------- | --------------------------------------- |
-| selectChange | Emitted when the tree node is clicked.             | The currently selected node array.      |
-| checkChange  | Emitted when the checkbox is clicked.              | An array of nodes is currently checked. |
-| toggleExpand | Emitted when when the list is expanded or dropped. | Current nodes.                          |
+| select-change | Emitted when the tree node is clicked.             | The currently selected node array.      |
+| check-change  | Emitted when the checkbox is clicked.              | An array of nodes is currently checked. |
+| toggle-expand | Emitted when when the list is expanded or dropped. | Current nodes.                          |
 
 ##### childrenchildren
 

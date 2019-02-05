@@ -2,23 +2,6 @@
 
 #### [在线预览](https://jsrun.net/7ehKp/edit)
 
-#### 示例
-```js
-{
-        type:"input",
-        title:"商品名称",
-        field:"goods_name",
-        value:"iphone 7",
-        props: {
-            "type": "text", 
-            "placeholder": "请输入商品名称", 
-        },
-        validate:[
-            { required: true, message: '请输入goods_name', trigger: 'blur' },
-        ],
-}
-```
-
 #### maker 快速生成
 ```js
 $formCreate.maker.input('商品名称','goods_name').props({
@@ -32,43 +15,16 @@ $formCreate.maker.input('商品名称','goods_name').props({
 #### json 规则
 ```json
 {
-        type:"input",//必填!
-        //label名称
-        title:"商品名称",//必填!
-        //字段名称
-        field:"goods_name",//必填!
-        //input值
+        type:"input",
+        title:"商品名称",
+        field:"goods_name",
         value:"iphone 7",
-        //设置布局规则
         col:{
         	span:12,
         	labelWidth:150
         },
         props: {
-            //输入框类型，可选值为 text、password、textarea、url、email、date
-            "type": "text", //必填!
-            //是否显示清空按钮
-            "clearable":false,
-            //设置输入框为禁用状态
-            "disabled": false,
-            //设置输入框为只读
-            "readonly": false,
-            //文本域默认行数，仅在 textarea 类型下有效
-            "rows": 4,
-            //自适应内容高度，仅在 textarea 类型下有效，可传入对象，如 { minRows: 2, maxRows: 6 }
-            "autosize": false,
-            //将用户的输入转换为 Number 类型
-            "number": false,
-            //自动获取焦点
-            "autofocus": false,
-            //原生的自动完成功能，可选值为 off 和 on
-            "autocomplete": "off",
-            //占位文本
-            "placeholder": "请输入商品名称",
-            //输入框尺寸，可选值为large、small、default或者不设置
-            "size": "default",
-            //原生的 spellcheck 属性
-            "spellcheck": false,
+            "type": "text",
         },
         validate:[
             { required: true, message: '请输入goods_name', trigger: 'blur' },
@@ -84,15 +40,15 @@ $formCreate.maker.input('商品名称','goods_name').props({
 
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值 | String,Number | false | - |
-| props | 元素配置 | Object | true | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值 | String,Number | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 元素配置 props
 

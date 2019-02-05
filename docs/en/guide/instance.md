@@ -116,7 +116,7 @@ sidebarDepth: 3
   }
   ```
 
-  Get custom component generation rules for two-way data binding
+  Get custom component generation rules for two-way data binding,**Custom components must be defined by the `field` attribute.**
 
 ## $f.model
 

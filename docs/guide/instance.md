@@ -62,6 +62,25 @@ sidebarDepth: 3
 
 
 
+## $f.setValue<Badge text="1.5.5+"/>
+
+- **参数**：`{string|object} field`、`value`
+
+- **用法**：
+
+  ```js
+  $f.setValue(field,value)
+  $f.setValue({
+    field1:value1,
+    field2:value2,
+    field3:value3
+  });
+  ```
+
+   批量设置字段的值
+
+
+
 ## $f.changeField
 
 - **参数**：`{string} field`、`value`
@@ -118,7 +137,7 @@ sidebarDepth: 3
   }
   ```
 
-  获取双向数据绑定的自定义组件生成规则
+  获取双向数据绑定的自定义组件生成规则,**自定义组件必须定义`field`属性才可以获取到**
 
 
 ## $f.model
@@ -160,6 +179,7 @@ sidebarDepth: 3
 
   ```js
   $f.hidden(field,true)
+  $f.hidden([field1,field2,field3],false)
   ```
 
   隐藏或显示指定组件
@@ -173,9 +193,25 @@ sidebarDepth: 3
 
   ```js
   $f.visibility(field,true)
+  $f.visibility([field1,field2,field3],false)
   ```
 
   隐藏或显示指定组件
+
+
+
+## $f.disabled <Badge text="1.5.5+"/>
+
+- **参数**：`{string|array} field`、`{bool} visibility`
+
+- **用法**：
+
+  ```js
+  $f.disabled(field,true)
+  $f.disabled([field1,field2,field3],false)
+  ```
+
+  禁用或取消指定组件
 
 
 ## $f.validate

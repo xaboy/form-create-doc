@@ -2,24 +2,6 @@
 
 #### [在线预览](https://jsrun.net/JehKp/edit)
 
-#### 示例
-```js
-{
-        type:"checkbox",
-        title:"标签",
-        field:"label",
-        value:[
-            "1","2","3"
-        ],
-        options:[
-            {value:"1",label:"好用",disabled:true},
-            {value:"2",label:"方便",disabled:false},
-            {value:"3",label:"实用",disabled:false},
-            {value:"4",label:"有效",disabled:false},
-        ],
-}
-```
-
 #### maker 快速生成
 ```js
 $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
@@ -33,27 +15,17 @@ $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
 #### json 规则
 ```json
 {
-        type:"checkbox",//必填!
-        //label名称
-        title:"标签",//必填!
-        //字段名称
-        field:"label",//必填!
-        //input值
-        value:[
+        type:"checkbox",
+        title:"标签",
+        field:"label",
             "1","2","3"
         ],
-        //可选参数
         options:[
             {value:"1",label:"好用",disabled:true},
             {value:"2",label:"方便",disabled:false},
             {value:"3",label:"实用",disabled:false},
             {value:"4",label:"有效",disabled:false},
-        ],//必填!
-        props: {
-        	//多选框组的尺寸，可选值为 large、small、default 或者不设置
-            "size":"default",
-        },
-        validate:[],
+        ]
 }
 ```
 
@@ -65,16 +37,16 @@ $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
 
 ##### 规则 rule
 
-| **字段名** | **说明** | **字段类型** | **是否必填** | **默认值** |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值 | Array | false | - |
-| options | 可选参数 | Array | true | - |
-| props | 元素配置 | Object | false | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| **字段名** | **说明** | **字段类型** | **默认值** |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值 | Array | - |
+| options | 可选参数 | Array | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 可选参数 Options
 

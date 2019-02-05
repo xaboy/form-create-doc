@@ -64,7 +64,7 @@ reference:[iview2.x](http://v2.iviewui.com/components/time-picker#API) | [iview3
 | Event Name  | Description                           | Return Value                        |
 | ----------- | ------------------------------------- | ----------------------------------- |
 | change      | Emitted when selected time changes.   | Formatted time string like 09:41:00 |
-| openChange | Emitted when picker is open or close. | true \| false                       |
+| open-change | Emitted when picker is open or close. | true \| false                       |
 | ok          | Emitted when OK button is clicked.    | -                                   |
 | clear       | Emitted when date is cleared.         | -                                   |
 

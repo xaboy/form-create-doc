@@ -9,37 +9,7 @@
 :::
 
 
-
 #### [在线预览](https://jsrun.net/dehKp/edit)
-
-#### 示例
-```js
-{
-        type: "upload",
-        field: "pic",
-        title: "轮播图",
-        value: [
-            'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg',
-            'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'
-            ],
-        props: {
-            "type":"select",
-            "uploadType":"image",
-            "action": "/upload.php",
-            "name":"pic", 
-            "multiple": true,
-            "accept":"image\/*",
-            "format":["jpg","jpeg","png","gif"], 
-            "maxSize":2048, 
-            "maxLength":5,
-            "onSuccess":function (res) {
-                return res.data.filePath;
-            },
-            handleIcon:'ionic',
-            onHandle:(src)=>{alert(src);},
-        },
-    }
-```
 
 #### maker 快速生成
 ```js
@@ -61,45 +31,26 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
 #### json 规则
 ```json
 {
-        type: "Upload",//必填!
-        field: "pic",//必填!
-        title: "轮播图",//必填!
-        //input值,当maxLength等与1时值为字符串,大于1时值为数组
-        value: ['http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'], //input值
+        type: "upload",
+        field: "pic",
+        title: "轮播图",
+        value: [
+            'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg',
+            'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'
+            ],
         props: {
-            //上传控件的类型，可选值为 select（点击选择），drag（支持拖拽）
-            "type":"select", //必填!
-            //上传文件类型，可选值为 image（图片上传），file（文件上传）
-            "uploadType":"image", //必填!
-            //上传的地址
-            "action": "", //必填!
-            //上传的文件字段名
-            "name":"",
-            //上传时附带的额外参数
-            "data":{},
-            //设置上传的请求头部
-            "headers": {},
-            //是否支持多选文件
+            "type":"select",
+            "uploadType":"image",
+            "action": "/upload.php",
+            "name":"pic", 
             "multiple": true,
-            //支持发送 cookie 凭证信息
-            "withCredentials":false,
-
-            //不支持
-            // "showUploadList":false, //是否显示已上传文件列表
-            // "defaultFileList":[], // 默认已上传的文件列表
-
-            //接受上传的文件类型
-            "accept":"",
-            //支持的文件类型，与 accept 不同的是，format 是识别文件的后缀名，accept 为 input 标签原生的 accept 属性，会在选择文件时过滤，可以两者结合使用
-            "format":[],
-            //文件大小限制，单位 kb
-            "maxSize":undefined,
-            //可上传文件数量
-            "maxLength":1,
-            //辅助操作按钮的图标 ,设置为false将不显示
-            "handleIcon":'ionic',
-            //是否可删除,设置为false是不显示删除按钮
-            "allowRemove":true,
+            "accept":"image\/*",
+            "format":["jpg","jpeg","png","gif"], 
+            "maxSize":2048, 
+            "maxLength":5,
+            "onSuccess":function (res) {
+                return res.data.filePath;
+            }
         },
 }
 ```
@@ -146,14 +97,14 @@ option:{
 
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值,当props.maxLength等与1时值为字符串,大于1时值为数组 | String,Array | false | - |
-| props | 元素配置 | Object | true | - |
-| validate | 验证规则 | Array | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值,当props.maxLength等与1时值为字符串,大于1时值为数组 | String,Array | - |
+| props | 元素配置 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 元素配置 props
 

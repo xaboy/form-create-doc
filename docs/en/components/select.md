@@ -78,6 +78,6 @@ reference:[iview2.x](http://v2.iviewui.com/components/select#API) | [iview3.x](h
 | Event Name   | Description                                                  | Return Value               |
 | ------------ | ------------------------------------------------------------ | -------------------------- |
 | change       | Emitted when selected `Option`change.It will return value. See the label-in-value property if need return label | The current selected item. |
-| queryChange | Emitted when query word is changed.                          | query                      |
+| query-change | Emitted when query word is changed.                          | query                      |
 | clear        | Emitted when click clear button.                             | -                          |
-| openChange  | Emitted when dropdown show or hide.                          | true / false               |
+| open-change  | Emitted when dropdown show or hide.                          | true / false               |

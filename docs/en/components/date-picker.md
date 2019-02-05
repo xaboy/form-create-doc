@@ -67,7 +67,7 @@ reference:[iview2.x](http://v2.iviewui.com/components/date-picker#API) | [iview3
 | Event Name  | Description                                                  | Return Value                                                 |
 | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | change      | Emit when date is changed.                                   | Return two values, formatted date like 2016-01-01, and the current date type, such as date. |
-| openChange | Emit when open / close the calendar.                         | true \| false                                                |
+| open-change | Emit when open / close the calendar.                         | true \| false                                                |
 | ok          | Works on confirm mode. Emit when clicking ok button.         | -                                                            |
 | clear       | Works on confirm mode or clearable = true mode. Emit when date is cleared. | -                                                            |
 

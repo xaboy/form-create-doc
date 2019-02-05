@@ -2,8 +2,16 @@
 
 #### [在线预览](https://jsrun.net/HehKp/edit)
 
-#### 示例
+#### maker 快速生成
 ```js
+$formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).props({
+        "type": "datetimerange",
+        "placeholder":"请选择活动日期"
+})
+```
+
+#### json 规则
+```json
 {
         type: "DatePicker",
         field: "section_day",
@@ -17,49 +25,6 @@
 }
 ```
 
-#### maker 快速生成
-```js
-$formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).props({
-        "type": "datetimerange",
-        "placeholder":"请选择活动日期"
-})
-```
-
-#### json 规则
-```json
-{
-        type: "DatePicker",//必填!
-        field: "section_day",//必填!
-        title: "活动日期",//必填!
-        //input值, type为daterange,datetimerange value为数组 [start_value,end_value]
-        value: ['2018-02-20', new Date()],
-        props: {
-
-            //显示类型，可选值为 date、daterange、datetime、datetimerange、year、month
-            "type": "datetimerange",//必填!
-            //展示的日期格式
-            "format": "yyyy-MM-dd HH:mm:ss",
-            //日期选择器出现的位置，可选值为toptop-starttop-endbottombottom-startbottom-endleftleft-startleft-endrightright-startright-end
-            "placement": "bottom-start",
-            //占位文本
-            "placeholder":"请选择获得时间",
-            //是否显示底部控制栏，开启后，选择完日期，选择器不会主动关闭，需用户确认后才可关闭
-            "confirm":false,
-            //尺寸，可选值为large、small、default或者不设置
-            "size":"default",
-            //是否禁用选择器
-            "disabled":false,
-            //是否显示清除按钮
-            "clearable":true,
-            //完全只读，开启后不会弹出选择器
-            "readonly":false,
-            //文本框是否可以输入
-            "editable":false,
-        },
-        validate:[],
-}
-```
-
 #### 参数说明
 
 参考:[iview2.x](http://v2.iviewui.com/components/date-picker#API) | [iview3.x](https://www.iviewui.com/components/date-picker#API)
@@ -68,15 +33,15 @@ $formCreate.maker.date('活动日期','section_day',['2018-02-20', new Date()]).
 
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值,当props.type设置为daterange,datetimerange时value为数组 \[开始日期,结束日期\] | String,Number,Date,Array | false | - |
-| props | 元素配置 | Object | true | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值,当props.type设置为daterange,datetimerange时value为数组 \[开始日期,结束日期\] | String,Number,Date,Array | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 元素配置 props
 

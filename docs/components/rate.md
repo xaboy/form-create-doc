@@ -2,23 +2,6 @@
 
 #### [在线预览](https://jsrun.net/CehKp/edit)
 
-#### 示例
-```js
-{
-        type:"rate",
-        field:"rate",
-        title:"推荐级别",
-        value:3.5,
-        props:{
-            "count": 10,
-            "allowHalf": false,
-        },
-        validate:[
-            {required:true,type:'number',min:3, message: '请大于3颗星',trigger:'change'}
-        ]
-}
-```
-
 #### maker 快速生成
 ```js
 $formCreate.maker.rate('推荐级别','rate',2)
@@ -37,11 +20,8 @@ $formCreate.maker.rate('推荐级别','rate',2)
         title:"推荐级别",
         value:3.5,
         props:{
-            "count": 10, //star 总数
-            "allowHalf": true, //是否允许半选
-            "disabled": false, //是否只读，无法进行交互
-            "showText": true, //是否显示提示文字
-            "clearable": true, //是否可以取消选择
+            "count": 10,
+            "allowHalf": false,
         },
         validate:[
             {required:true,type:'number',min:3, message: '请大于3颗星',trigger:'change'}
@@ -56,15 +36,15 @@ $formCreate.maker.rate('推荐级别','rate',2)
 
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值 | Number | false | 0 |
-| props | 元素配置 | Object | false | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值 | Number | 0 |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 #####  元素配置 props
 

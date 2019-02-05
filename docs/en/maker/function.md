@@ -10,8 +10,13 @@ sidebarDepth: 3
 
 ::: tip Get maker generator
 
-- window.formCreate.maker
-- import { maker } from 'form-create'
+Browser
+
+`window.formCreate.maker`
+
+NodeJs
+
+`import { maker } from 'form-create'`
 
 :::
 
@@ -663,48 +668,4 @@ sidebarDepth: 3
   - `maker.frameFileOne`
   - `maker.frameImages`
   - `maker.frameImageOne`
-
-
-
-
-
-## Custom component
-
-#### maker.create
-
-```js
-$formCreate.maker.create(componentName) //component为生成组件的名称
-
-maker.create('i-button').props({
-        type:"primary",
-        size:"large",
-    }).on({
-        "click":()=>{console.log(1);},
-    }).col({span:8,labelWidth:1}).children([
-        maker.create('span').domProps({
-            innerHTML:'测试按钮'
-        })
-    ]),
-```
-
-#### maker.createTmp
-
-```js
-$formCreate.maker.createTmp(template,vm)
-
-maker.createTmp('<i-button @click="onClick" long>字符串测试{{test}}-{{num}}</i-button>',new Vue({
-    data:{
-        test:'createTmp渲染',
-        num:0
-    },
-    methods:{
-        onClick:function(){
-            this.num++;
-        }
-    }
-})).col({labelWidth:1})
-
-```
-
-**`maker.template` is an alias for this method**
 

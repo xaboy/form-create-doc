@@ -2,8 +2,17 @@
 
 #### [在线预览](https://jsrun.net/cehKp/edit)
 
-#### 示例
+#### maker 快速生成
 ```js
+$formCreate.maker.radio('是否包邮','is_postage','0').options([
+        {value:"0",label:"不包邮",disabled:false},
+        {value:"1",label:"包邮",disabled:false},
+        {value:"2",label:"未知",disabled:true},
+])
+```
+
+#### json 规则
+```json
 {
         type:"radio",
         title:"是否包邮",
@@ -17,43 +26,6 @@
 }
 ```
 
-#### maker 快速生成
-```js
-$formCreate.maker.radio('是否包邮','is_postage','0').options([
-        {value:"0",label:"不包邮",disabled:false},
-        {value:"1",label:"包邮",disabled:false},
-        {value:"2",label:"未知",disabled:true},
-])
-```
-
-#### json 规则
-```json
-radioRule :
-{
-        type:"radio",//必填!
-        //label名称
-        title:"是否包邮",//必填!
-        //字段名称
-        field:"is_postage",//必填!
-        //input值
-        value:"0",
-        //可选参数
-        options:[
-            {value:"0",label:"不包邮",disabled:false},
-            {value:"1",label:"包邮",disabled:true},
-        ],//必填!
-        props: {
-        	//可选值为 button 或不填，为 button 时使用按钮样式
-            "type":undefined,
-            //单选框的尺寸，可选值为 large、small、default 或者不设置
-            "size":"default",
-            //是否垂直排列，按钮样式下无效
-            "vertical":false,
-        },
-        validate:[],
-}
-```
-
 #### 参数说明
 
 参考:[iview2.x](http://v2.iviewui.com/components/radio#API) | [iview3.x](https://www.iviewui.com/components/radio#API)
@@ -62,16 +34,16 @@ radioRule :
 
 ##### 规则 rule
 
-| **字段名** | **说明** | **字段类型** | **是否必填** | **默认值** |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | 字段值 | String,Number | false | - |
-| options | 可选参数 | Array | true | - |
-| props | 元素配置 | Object | false | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| **字段名** | **说明** | **字段类型** | **默认值** |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | 字段值 | String,Number | - |
+| options | 可选参数 | Array | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 可选参数 Options
 

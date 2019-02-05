@@ -1,36 +1,11 @@
 ### Tree 树形组件
 
 #### [在线预览](https://jsrun.net/AehKp/edit)
-#### 示例
-```js
-{
-        type:"tree",
-        title:"权限",
-        field:"rule",
-        value:[],
-        props:{
-            data:[],//可嵌套的节点属性的数组，生成 tree 的数据
-            type:'checked',//类型 支持checked和selected
-            multiple:false, //是否支持多选
-            //,当`type=selected`并且`multiple=false`,值为String或Number类型，
-            //其他情况为Array类型
-
-
-            showCheckbox:true, //是否显示多选框
-            emptyText:'暂无数据' //没有数据时的提示
-        },
-        event:{
-            'select-change':()=>{console.log('select-change')}, //点击树节点时触发
-            'check-change':()=>{console.log('check-change')}, //点击复选框时触发
-            'toggle-expand':()=>{console.log('toggle-expand')}, //展开和收起子列表时触发
-        }
-    }
-```
 
 #### maker 快速生成
 ```js
 $formCreate.maker.tree('权限','rule',[]).props({
-        data:[], //数据结构参考上面
+        data:[], //数据结构参考下面
         type:'checked'
 })
 ```
@@ -43,12 +18,12 @@ $formCreate.maker.tree('权限','rule',[]).props({
         field:"rule",
         value:[],
         props:{
-            data:[],//可嵌套的节点属性的数组，生成 tree 的数据
-            type:'checked',//类型 支持checked和selected
-            multiple:false, //是否支持多选,当`type=selected`并且`multiple=false`,值为String或Number类型，其他情况为Array类型
-            showCheckbox:true, //是否显示多选框
-            emptyText:'暂无数据' //没有数据时的提示
-        },
+            data:[],
+            type:'checked',
+            multiple:false,
+            showCheckbox:true,
+            emptyText:'暂无数据'
+    }
 }
 ```
 
@@ -105,14 +80,14 @@ $formCreate.maker.tree('权限','rule',[]).props({
 
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | value | String,Array | false | - |
-| props | 元素配置 | Object | true | - |
-| event | 元素事件 | Object | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | value | String,Array | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
 
 ##### 配置 props
 

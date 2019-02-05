@@ -4,25 +4,6 @@ frame 框架打开的子页面要关闭时,需要通过调用父级页面的`$f.
 
 #### [在线预览](https://jsrun.net/mehKp/edit)
 
-#### 示例
-```js
-{
-        type:"frame",
-        title:"素材",
-        field:"fodder",
-        value:["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"],
-        props:{
-            type:"image",
-            src:"iframe.html",
-            maxLength:2,
-
-        },
-        validate:[
-            {required:true, type: 'array', min: 2, message: '请选择2张图片', trigger: 'change'}
-        ],
-}
-```
-
 #### maker 快速生成
 ```js
 $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"]).props({
@@ -42,19 +23,13 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
         field:"fodder",
         value:["http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg"],
         props:{
-            type:"image", //frame类型,有input,file,image
-            src:"iframe.html", //iframe地址
-            maxLength:2, //value的最大数量
-            icon:'folder', //打开弹出框的按钮图标
-            height:"220px", //弹出框高度
-            width:"350px", //弹出框宽度
-            spin:false, //是否显示加载动画
-            title:"请选择", //弹出框标题
-            handleIcon: true, //操作按钮的图标 ,设置为false将不显示,设置为true为默认的预览图标,类型为file时默认为false,image类型默认为true
-            allowRemove:true, //是否可删除,设置为false是不显示删除按钮
+            type:"image",
+            src:"iframe.html",
+            maxLength:2,
+
         },
         validate:[
-            {required:true, type: 'array', min: 5, message: '请选择5张图片', trigger: 'change'}
+            {required:true, type: 'array', min: 2, message: '请选择2张图片', trigger: 'change'}
         ],
 }
 ```
@@ -62,15 +37,15 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 #### 参数说明
 ##### 规则 rule
 
-| 字段名 | 说明 | 字段类型 | 是否必填 | 默认值 |
-| :--- | :--- | :--- | :--- | :--- |
-| type | 元素类型 | String | true | - |
-| field | 字段名称 | String | true | - |
-| title | 字段别名 | String | true | - |
-| value | value,当maxLength等与1时为字符串,其他时为数组 | String,Array | false | - |
-| props | 元素配置 | Object | true | - |
-| event | 元素事件 | Object | false | - |
-| validate | 验证规则 | Array | false | - |
+| 字段名 | 说明 | 字段类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| type | 元素类型 | String | - |
+| field | 字段名称 | String | - |
+| title | 字段别名 | String | - |
+| value | value,当maxLength等与1时为字符串,其他时为数组 | String,Array | - |
+| props | 元素配置 | Object | - |
+| event | 元素事件 | Object | - |
+| validate | 验证规则 | Array | - |
 
 ##### 元素配置 props
 
