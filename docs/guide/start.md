@@ -35,9 +35,16 @@ sidebarDepth: 3
 import Vue from 'vue';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-import formCreat from 'form-create'
+
+//iviewUI
+import formCreate from 'form-create'
 //获取生成器
 import { maker } from 'form-create'
+
+//ElementUI
+//import formCreate from 'form-create/elm'
+//获取生成器
+//import { maker } from 'form-create/elm'
 
 //三级联动数据,不用可以不引入
 import 'form-create/district/province_city_area.js'

@@ -18,8 +18,7 @@ $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
         type:"checkbox",
         title:"标签",
         field:"label",
-            "1","2","3"
-        ],
+        value:["1","2","3"],
         options:[
             {value:"1",label:"好用",disabled:true},
             {value:"2",label:"方便",disabled:false},

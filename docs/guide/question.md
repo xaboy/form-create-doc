@@ -11,8 +11,15 @@
 1. `$f.bind().field = '修改后的值' `
 2. `$f.model().field.value = '修改后的值'`
 3. `rule[2].value = '修改后的值'   //rule[2]是field字段的生成规则`
+4. `$f.changeValue(field,value)`
 
 **说明**: 如果修改的值为数组必须直接赋值或使用`push`,`splice`等方法修改
+
+## 批量赋值
+
+```javascript
+$f.setValue({field1:value1,field2:value2})
+```
 
 ## 动态修改表单规则
 
@@ -76,6 +83,22 @@
            ],
     })
     ```
+## 删除表单字段
+
+1. 删除指定字段
+
+   ```javascript
+   $f.removeField(field);
+   ```
+
+2. 删除最后一个字段
+
+   ```javascript
+   _vm.rule.pop()
+   ```
+
+   
+
 ## 文件上传成功后修改字段值
 
 1. 通过返回值自动修改字段值
@@ -92,7 +115,7 @@
     //定义文件上传成功后回调函数
     props.onSuccess = (response)=>{
         var filePath = response.data.data.url;
-         $f.bind().field.push(filePaht);
+         $f.bind().field.push(filePath);
     }
     ```
 
@@ -107,9 +130,8 @@
 
     ```javascript
     //定义文件上传成功后回调函数
-
     event.click = ()=>{
-
+    
     }
     ```
 2. 标签模式下监听组件事件
@@ -128,7 +150,6 @@ request('api').then(rule=>{
             $f.btn.loading(true);
             //TODO 提交表单
         }
-
     })
 })
 ```

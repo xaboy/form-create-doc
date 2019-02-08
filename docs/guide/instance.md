@@ -248,12 +248,6 @@ sidebarDepth: 3
 
 ## $f.prepend
 
-::: warning 建议
-
-建议直接操作生成规则`rules`，插入到数组对应的位置即可
-
-:::
-
 - **参数**：`{object} rule`、`{stirng} field`
 
 - **用法**：
@@ -278,12 +272,6 @@ sidebarDepth: 3
 
 
 ## $f.append
-
-::: warning 建议
-
-建议直接操作生成规则`rules`，插入到数组对应的位置即可
-
-:::
 
 - **参数**：`{object} rule`、`{stirng} field`
 
@@ -492,10 +480,12 @@ sidebarDepth: 3
 
 ## $f.closeModal
 
+- **参数**：`{string} field` <Badge text="1.6.0+"/>
+
 - **用法**：
 
   ```js
-  $f.closeModal()
+  $f.closeModal(field)
   ```
 
   关闭frame组件的弹出框

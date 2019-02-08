@@ -37,7 +37,39 @@ sidebarDepth: 2
 ### **emit**
 
 - **参数**:  `Array`
-- **说明**: 组件模式下配置使用`emit`方式触发的事件名
+- **说明**: 组件模式下配置使用`emit`方式触发的事件名,可与`emitPrefix`参数配合
+
+```js
+rules = [{
+    field:'goods_name',
+    //...
+    emit:['change']
+}]
+```
+
+```html
+<div id="app">
+	<form-create :rule="rules" @goods-name-change="change"></form-create>
+</div>
+```
+
+```js
+new Vue({
+   el:'#app',
+    data: {
+        rules:rules
+    },
+    methods:{
+        change:function(){
+            //TODO
+        }
+    }
+})
+```
+
+
+
+
 
 ### **col**
 
@@ -85,7 +117,7 @@ sidebarDepth: 2
 
 
 
-1. **children\(Array\)** 子组件元素生成规则
+1. **children\(Array\)**  子组件元素生成规则
 2. **scopedSlots\(Object\)**
 3. **nativeOn\(Object\)**
 4. **on\(Object\)**
