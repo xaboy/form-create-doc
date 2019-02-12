@@ -2,7 +2,7 @@
  title: 更新日志
 ---
 
-### 当前版本 1.6.0
+### 当前版本 1.6.0-bata.2
 
 --------
 
@@ -16,14 +16,37 @@
 
 
 
-#### 1.6.0 (2019-02-06)
+#### 1.6.0-bata.2 (2019-02-12)
 
 - 修复 动态添加组件后value无法修改 bug
 - 优化 内部结构
 - **支持 ElementUi 2.5.2+**
 - 重构 `frame`,`upload ` 组件弹出框
-- 新增 `maker.parse(json)`方法，将`json`规则转换为`maker`生成器
+- 新增 `maker.parse(json)`方法，将`json`规则转换为生成规则
+- 增加 自定义组件事件`fc:input`, 通过 formData,getValue 获取自定义组件 field 时触发
+    ```js
+    this.$on('fc:input',function(cb,$f) {
+      //异步调用无效
+      cb(newValue);
+    })
+    ```
+- 增加 自定义组件事件`fc:set-value`, 通过 setValue,changeValue 设置 自定义组件 field 值时触发
+    ```js
+    this.$on('fc:set-value',function(newValue,$f) {
+      //TODO
+    })
+    ```
 
+**以下改动不向下兼容**
+- **修改 model()方法返回的数据结构**
+  ```js
+  {
+      field1:{value,props,validate,options,slot,event,...[其他配置项]},
+      field2:{value,props,validate,options,slot,event,...[其他配置项]}
+  }
+  ```
+- **修改 closeModal(field)方法,现在需要传入 field 字段**
+- **修改 自定义组件事件名称,增加`fc:`前缀**
 
 
 #### 1.5.5 (2019-01-25)

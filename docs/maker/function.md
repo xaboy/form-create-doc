@@ -15,12 +15,35 @@ sidebarDepth: 3
 `window.formCreate.maker`
 
 NodeJs
+- iview
 
-`import { maker } from 'form-create'`
+    `import { maker } from 'form-create'`
+- element <Badge text="1.6.0+"/>
+
+    `import { maker } from 'form-create/element'`
 
 :::
 
 [Maker 配置项说明](/guide/maker.html)
+
+## Maker.parse
+
+
+- **参数**：`{string} Json`、`{bool} toMaker=false`
+
+- **用法**：
+
+  ```js
+  let rules = maker.parse(json);
+  let rule = rules.find(field);
+  rule.value = 'value';
+  ```
+将 json 转换为生成规则,**转换后可使用 find()方法快速查找指定`field`**
+
+- **参考**：[hidden组件](http://www.form-create.com/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+
+
+
 
 ## Hidden 组件
 

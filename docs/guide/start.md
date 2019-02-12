@@ -42,9 +42,9 @@ import formCreate from 'form-create'
 import { maker } from 'form-create'
 
 //ElementUI
-//import formCreate from 'form-create/elm'
+//import formCreate from 'form-create/element'
 //获取生成器
-//import { maker } from 'form-create/elm'
+//import { maker } from 'form-create/element'
 
 //三级联动数据,不用可以不引入
 import 'form-create/district/province_city_area.js'

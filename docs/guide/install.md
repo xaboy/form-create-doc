@@ -58,7 +58,7 @@ import formCreate from 'form-create'
 elementUI
 
 ```js
-import formCreate from 'form-create/elm'
+import formCreate from 'form-create/element'
 ```
 
 

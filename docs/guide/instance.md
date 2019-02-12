@@ -140,6 +140,21 @@ sidebarDepth: 3
   获取双向数据绑定的自定义组件生成规则,**自定义组件必须定义`field`属性才可以获取到**
 
 
+## $f.claerValidateState <Badge text="1.5.5+"/>
+
+- **用法**：
+
+  ```js
+  $f.claerValidateState();
+
+  $f.claerValidateState(field);
+
+  $f.claerValidateState([field1,field2]);
+  ```
+
+  清除组件的验证信息
+
+
 ## $f.model
 
 - **用法**：
@@ -147,12 +162,23 @@ sidebarDepth: 3
   ```js
   model = $f.model()
   ```
-
-- **数据结构**：
+  
+  
+- **数据结构<Badge text="1.6.0+"/>**：
 
   ```js
   {
-      field1:{value,rule:{props,validate,options,slot,event,...[其他配置项]}}
+      field1:{value,props,validate,options,slot,event,...[其他配置项]},
+      field2:{value,props,validate,options,slot,event,...[其他配置项]}
+  }
+  ```
+  
+
+- **数据结构<Badge text="<1.6.0"/>**：
+
+  ```js
+  {
+      field1:{value,rule:{props,validate,options,slot,event,...[其他配置项]}},
       field2:{value,rule:{props,validate,options,slot,event,...[其他配置项]}}
   }
   ```
