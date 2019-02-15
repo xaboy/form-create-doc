@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 3	
+sidebarDepth: 3
 ---
 
 
@@ -73,14 +73,14 @@ window.formCreate.create(rule,option)
   ```js
   //在iframe 子页面中,field 为字段名
   //field 只能为生成iframe 组件的 field,其他无效
-  
+
   //修改表单 field 字段的值
   window[`${field}_change`](value);
   window.form_create_helper.set(field,value);
-  
+
   //获取 field 字段的值
   window.form_create_helper.get(field)
-  
+
   //关闭 iframe
   window.form_create_helper.close(field)
   ```
@@ -92,12 +92,12 @@ window.formCreate.create(rule,option)
 
 - **说明**：表单提交回调函数
 
-- **示例**: 
+- **示例**:
 
   ```js
   {
     onSubmit(formData){
-      	//TODO 
+      	//TODO
       	//ajajx提交表单
     }
   }
@@ -111,18 +111,18 @@ window.formCreate.create(rule,option)
 - **类型**：`Function`
 - **说明**：表单重载后回调函数
 
-- **示例**: 
+- **示例**:
 
   ```js
   {
     onReload($f){
-      //TODO 
+      //TODO
       //更新$f
     }
   }
   ```
 
-  表单重载后回调函数`onReload`全局配置项,可用于更新`$f` 
+  表单重载后回调函数`onReload`全局配置项,可用于更新`$f`
 
 
 
@@ -131,12 +131,12 @@ window.formCreate.create(rule,option)
 - **类型**：`Function`
 - **说明**：表单创建成功后回调函数
 
-- **示例**: 
+- **示例**:
 
   ```js
   {
     mounted($f){
-      //TODO 
+      //TODO
       // 表单创建成功,可在此操作表单
     }
   }
@@ -152,11 +152,11 @@ window.formCreate.create(rule,option)
 
 - **说明**：表单整体显示规则配置
 
-- **默认值**: 
+- **默认值**:
 
   ```js
   {
-  
+
     //是否开启行内表单模式
     inline:false,
     //表单域标签的位置，可选值为 left、right、top
@@ -169,7 +169,7 @@ window.formCreate.create(rule,option)
     autocomplete:'off',
     //所有带有 size 属性的组件的尺寸，默认为不设置，详见各组件默认的 size 值。可选值为 default、small 或 large。
     size:undefined
-      
+
   }
   ```
 
@@ -185,11 +185,11 @@ window.formCreate.create(rule,option)
 
 - **说明**：表单组件布局配置
 
-- **默认值**: 
+- **默认值**:
 
   ```js
   {
-  
+
     //栅格间距，单位 px，左右平分
     gutter:0,
     //布局模式，可选值为flex或不选，在现代浏览器下有效
@@ -200,7 +200,7 @@ window.formCreate.create(rule,option)
     justify:undefined,
     //自定义的class名称
     className:undefined
-  
+
   }
   ```
 
@@ -216,7 +216,7 @@ window.formCreate.create(rule,option)
 
 - **说明**：upload组件全局配置
 
-- **默认值**: 
+- **默认值**:
 
   ```js
   {
@@ -231,7 +231,7 @@ window.formCreate.create(rule,option)
    	},
     //文件上传失败时的钩子，返回字段为 error, file, fileList
     onError:(error, file, fileList)=>{},
-    //点击已上传的文件链接时的钩子，返回字段为 file， 
+    //点击已上传的文件链接时的钩子，返回字段为 file，
     //可以通过 file.response 拿到服务端返回数据
     onPreview:(file)=>{},
     //文件列表移除文件时的钩子，返回字段为 file, fileList
@@ -241,16 +241,16 @@ window.formCreate.create(rule,option)
     //文件超出指定大小限制时的钩子，返回字段为 file, fileList
     onExceededSize:(file, fileList)=>{},
     //辅助操作按钮的图标 ,设置为false将不显示
-    handleIcon:'ios-eye-outline',
+    handleIcon:true,
     //点击辅助操作按钮事件
     onHandle:(src)=>{},
     //是否可删除,设置为false不显示删除按钮
     allowRemove:true,
-    
+
   }
   ```
 
-- 参考: [Upload](/components/upload.html)
+- 参考: [Upload](/components/iview/upload.html)
 
 
 
@@ -262,7 +262,7 @@ window.formCreate.create(rule,option)
 
 - **说明**：提交按钮样式和布局配置
 
-- **默认值**: 
+- **默认值**:
 
   ```js
   {
@@ -305,11 +305,11 @@ window.formCreate.create(rule,option)
 
 - **说明**：重置按钮样式和布局配置
 
-- **默认值**: 
+- **默认值**:
 
   ```js
   {
-          
+
     //配置说明同上
     type:"ghost",
     size:"large",
@@ -343,10 +343,10 @@ window.formCreate.create(rule,option)
 {
     //插入节点,默认document.body
     el:null,
-        
+
 	//是否自动转换规则中的 maker 生成器为对象
     switchMaker:true,
-        
+
     //是否开启iframe组件子页面助手函数
     //`${field}_change(value)`
     //只能设置当前字段的 value
@@ -355,7 +355,7 @@ window.formCreate.create(rule,option)
     //form_create_helper.set(field,value)
     //快速修改该组件的value. 跨域无效!!
     iframeHelper:false,
-        
+
     //form配置
     form:{
 
@@ -402,7 +402,7 @@ window.formCreate.create(rule,option)
         },
         //文件上传失败时的钩子，返回字段为 error, file, fileList
         onError:(error, file, fileList)=>{},
-        //点击已上传的文件链接时的钩子，返回字段为 file， 
+        //点击已上传的文件链接时的钩子，返回字段为 file，
         //可以通过 file.response 拿到服务端返回数据
         onPreview:(file)=>{},
         //文件列表移除文件时的钩子，返回字段为 file, fileList
@@ -419,14 +419,14 @@ window.formCreate.create(rule,option)
         allowRemove:true,
 
     },
-        
+
 	//表单创建成功后回调函数
     mounted:($f)=>{},
     //表单提交事件
     onSubmit:(formData)=>{},
-    //表单重载后回调函数`onReload`全局配置项,可用于更新`$f` 
+    //表单重载后回调函数`onReload`全局配置项,可用于更新`$f`
     //>=1.5.3版本
-    onReload:($f)=>{}
+    onReload:($f)=>{},
 
     //提交按钮配置,设置submitBtn=false或submitBtn.show=false时不显示按钮
     submitBtn:{
@@ -457,7 +457,7 @@ window.formCreate.create(rule,option)
 
     //重置按钮默认配置,设置resetBtn=true或resetBtn.show=true时显示
     resetBtn:{
-        
+
         //配置说明同上
         type:"ghost",
         size:"large",

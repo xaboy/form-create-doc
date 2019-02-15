@@ -40,8 +40,6 @@ NodeJs
   ```
 将 json 转换为生成规则,**转换后可使用 find()方法快速查找指定`field`**
 
-- **参考**：[hidden组件](http://www.form-create.com/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
-
 
 
 
@@ -59,7 +57,7 @@ NodeJs
 
   生成一个 hidden 组件
 
-- **参考**：[hidden组件](http://www.form-create.com/components/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[hidden组件](http://www.form-create.com/components/iview/hidden.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -77,7 +75,7 @@ NodeJs
 
   生成一个 input 组件,**type 默认为 text**
 
-- **参考**：[input组件](http://www.form-create.com/components/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[input组件](http://www.form-create.com/components/iview/input.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -155,7 +153,7 @@ NodeJs
 
   生成一个 inputNumber 组件,**`maker.number`是该方法的别名**
 
-- **参考**：[InputNumber 组件](http://www.form-create.com/components/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[InputNumber 组件](http://www.form-create.com/components/iview/input-number.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -175,7 +173,7 @@ NodeJs
 
   生成一个 autoComplete 组件,**`maker.auto`是该方法的别名**
 
-- **参考**：[autoComplete 组件](http://www.form-create.com/components/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[autoComplete 组件](http://www.form-create.com/components/iview/auto-complete.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -196,7 +194,7 @@ NodeJs
 
   生成一个 radio 组件
 
-- **参考**：[Radio 组件](http://www.form-create.com/components/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[Radio 组件](http://www.form-create.com/components/iview/radio.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -219,7 +217,7 @@ NodeJs
 
   生成一个 checkbox 组件
 
-- **参考**：[checkbox 组件](http://www.form-create.com/components/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[checkbox 组件](http://www.form-create.com/components/iview/checkbox.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -244,7 +242,7 @@ NodeJs
 
   生成一个 select 组件,`props.multiple` 默认为 `false`
 
-- **参考**：[select 组件](http://www.form-create.com/components/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[select 组件](http://www.form-create.com/components/iview/select.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -294,7 +292,7 @@ NodeJs
 
   生成一个 switch 组件
 
-- **参考**：[switch 组件](http://www.form-create.com/components/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[switch 组件](http://www.form-create.com/components/iview/switch.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -314,7 +312,7 @@ NodeJs
 
   生成一个 cascader 组件
 
-- **参考**：[cascader 组件](http://www.form-create.com/components/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[data 数据结构](https://github.com/xaboy/form-create/blob/master/district/province_city.js)、[省市区二、三级联动数据](https://github.com/xaboy/form-create/tree/master/district)
+- **参考**：[cascader 组件](http://www.form-create.com/components/iview/cascader.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)、[data 数据结构](https://github.com/xaboy/form-create/blob/master/district/province_city.js)、[省市区二、三级联动数据](https://github.com/xaboy/form-create/tree/master/district)
 
 
 
@@ -336,7 +334,7 @@ NodeJs
 
   生成一个 datePicker 组件,**`type` 默认为 `date`**
 
-- **参考**：[datePicker 组件](http://www.form-create.com/components/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[datePicker 组件](http://www.form-create.com/components/iview/date-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -450,7 +448,7 @@ NodeJs
 
   生成一个 timePicker 组件,**`type` 默认为 `time`**
 
-- **参考**：[timePicker 组件](http://www.form-create.com/components/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[timePicker 组件](http://www.form-create.com/components/iview/time-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -498,7 +496,7 @@ NodeJs
 
   生成一个 colorPicker 组件,**`maker.color`是该方法的别名**
 
-- **参考**：[colorPicker 组件](http://www.form-create.com/components/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[colorPicker 组件](http://www.form-create.com/components/iview/color-picker.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -518,7 +516,7 @@ NodeJs
 
   生成一个 upload 组件,**`type` 默认为 `field`**
 
-- **参考**：[upload 组件](http://www.form-create.com/components/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[upload 组件](http://www.form-create.com/components/iview/upload.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -600,7 +598,7 @@ NodeJs
 
   生成一个 rate 组件
 
-- **参考**：[rate 组件](http://www.form-create.com/components/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[rate 组件](http://www.form-create.com/components/iview/rate.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -620,7 +618,7 @@ NodeJs
 
   生成一个 slider 组件,**`props.range`默认为`false`**
 
-- **参考**：[slider 组件](http://www.form-create.com/components/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[slider 组件](http://www.form-create.com/components/iview/slider.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 
 
@@ -654,7 +652,7 @@ NodeJs
 
   生成一个 tree 组件
 
-- **参考**：[tree 组件](http://www.form-create.com/components/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- **参考**：[tree 组件](http://www.form-create.com/components/iview/tree.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
 
 - **相关方法**：
 
@@ -681,7 +679,7 @@ NodeJs
 
   生成一个 frame 组件
 
-- **参考**：[frame 组件](http://www.form-create.com/components/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data 数据结构](http://www.form-create.com/components/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+- **参考**：[frame 组件](http://www.form-create.com/components/iview/frame.html#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E) 、[data 数据结构](http://www.form-create.com/components/iview/tree.html#data%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 
 - **相关方法**：
   - `maker.frameInputs`

@@ -17,7 +17,7 @@ $formCreate.maker.color('颜色','color','#ff7271').props({
     type: "ColorPicker",
     field: "color",
     title: "颜色",
-    value: '#ff7271', 
+    value: '#ff7271',
 }
 ```
 
@@ -57,6 +57,6 @@ $formCreate.maker.color('颜色','color','#ff7271').props({
 | 事件名称 | 说明 | 字段类型 | 是否必填 | 默认值 |
 | :--- | :--- | :--- | :--- | :--- |
 | change | 当绑定值变化时触发，返回当前值 | Function | false | - |
-| activeChange | 聚焦时触发 面板中当前显示的颜色发生改变时触发 | Function | false | - |
+| active-change | 聚焦时触发 面板中当前显示的颜色发生改变时触发 | Function | false | - |
 
 

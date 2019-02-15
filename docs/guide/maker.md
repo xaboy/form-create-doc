@@ -44,12 +44,17 @@ rules = [{
     field:'goods_name',
     //...
     emit:['change']
+},{
+    field:'goods_info',
+    //...
+    emit:['change'],
+    emitPrefix:'gi'
 }]
 ```
 
 ```html
 <div id="app">
-	<form-create :rule="rules" @goods-name-change="change"></form-create>
+	<form-create :rule="rules" @goods-name-change="change" @gi-change="change"></form-create>
 </div>
 ```
 
@@ -80,21 +85,21 @@ new Vue({
 ### **emitPrefix**  <Badge text="1.5.2+"/>
 
 - **参数**:  `Object`
-- **说明**: 自定义 组件`emit `事件的前缀 
+- **说明**: 自定义 组件`emit `事件的前缀
 - **默认**: 组件 `field` 字段
 
 ### **className**  <Badge text="1.5.3+"/>
 
 - **参数**:  `Object | Array | string`
-- **说明**: 自定义 组件的 `class` 
+- **说明**: 自定义 组件的 `class`
 
 ### **defaultSlot**  <Badge text="1.5.3+"/>
 
 - **参数**:  `String | RenderFunction`
 
-- **说明**: 自定义 部分内置组件的`slot` 
+- **说明**: 自定义 部分内置组件的`slot`
 
-- **示例**: 
+- **示例**:
 
   ```js
   rule.defaultSlot(function($h){
