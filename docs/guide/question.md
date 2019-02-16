@@ -23,7 +23,7 @@ $f.setValue({field1:value1,field2:value2})
 
 ## 动态修改表单规则
 
-1. `$f.model().field.rule.props.disabled = false`
+1. `$f.model().field.props.disabled = false`
 2. `rule[2].props.disabled = false   //rule[2]是 field字段的生成规则`
 
 **说明**: 如果修改后没有生效,需要提前在生成规则里定义该规则
@@ -97,7 +97,7 @@ $f.setValue({field1:value1,field2:value2})
    _vm.rule.pop()
    ```
 
-   
+
 
 ## 文件上传成功后修改字段值
 
@@ -122,7 +122,7 @@ $f.setValue({field1:value1,field2:value2})
 ## 隐藏指定字段
 
 1. `$f.hidden(field)`
-2. `$f.model().field.rule.props.hidden = true`
+2. `$f.model().field.props.hidden = true`
 
 ## 监听组件事件
 
@@ -131,7 +131,7 @@ $f.setValue({field1:value1,field2:value2})
     ```javascript
     //定义文件上传成功后回调函数
     event.click = ()=>{
-    
+
     }
     ```
 2. 标签模式下监听组件事件

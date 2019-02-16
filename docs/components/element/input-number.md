@@ -13,7 +13,7 @@ $formCreate.maker.number('排序','sort',0)
         title: "价格",
         value: 1,
         props: {
-            precision:2 
+            precision:2
         },
 }
 ```
@@ -47,7 +47,7 @@ $formCreate.maker.number('排序','sort',0)
 | size              | 计数器尺寸             | string  | large, small | —         |
 | disabled          | 是否禁用计数器         | boolean | —            | false     |
 | controls          | 是否使用控制按钮       | boolean | —            | true      |
-| controls-position | 控制按钮位置           | string  | right        | -         |
+| controlsPosition | 控制按钮位置           | string  | right        | -         |
 | name              | 原生属性               | string  | —            | —         |
 | label             | 输入框关联的label文字  | string  | —            | —         |
 | placeholder       | 输入框默认 placeholder | string  | -            | -         |

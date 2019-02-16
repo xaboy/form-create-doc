@@ -11,7 +11,7 @@ $formCreate.maker.color('颜色','color','#ff7271')
     type: "ColorPicker",
     field: "color",
     title: "颜色",
-    value: '#ff7271', 
+    value: '#ff7271',
 }
 ```
 
@@ -39,9 +39,9 @@ $formCreate.maker.color('颜色','color','#ff7271')
 | ------------ | ------------------------- | ------- | --------------------- | ----------------------------------------------------- |
 | disabled     | 是否禁用                  | boolean | —                     | false                                                 |
 | size         | 尺寸                      | string  | —                     | medium / small / mini                                 |
-| show-alpha   | 是否支持透明度选择        | boolean | —                     | false                                                 |
-| color-format | 写入 v-model 的颜色的格式 | string  | hsl / hsv / hex / rgb | hex（show-alpha 为 false）/ rgb（show-alpha 为 true） |
-| popper-class | ColorPicker 下拉框的类名  | string  | —                     | —                                                     |
+| showAlpha   | 是否支持透明度选择        | boolean | —                     | false                                                 |
+| colorFormat | 写入 v-model 的颜色的格式 | string  | hsl / hsv / hex / rgb | hex（show-alpha 为 false）/ rgb（show-alpha 为 true） |
+| popperClass | ColorPicker 下拉框的类名  | string  | —                     | —                                                     |
 | predefine    | 预定义颜色                | array   | —                     | —                                                     |
 
 ##### 事件扩展 event

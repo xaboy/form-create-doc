@@ -49,17 +49,17 @@ $formCreate.maker.cascader('所在区域','address',['陕西省','西安市','�
 | options          | 可选项数据源，键名可通过 `props` 属性配置                    | array           | —                     | —       |
 | props            | 配置选项，具体见下表                                         | object          | —                     | —       |
 | separator        | 选项分隔符                                                   | string          | —                     | 斜杠'/' |
-| popper-class     | 自定义浮层类名                                               | string          | —                     | —       |
+| popperClass     | 自定义浮层类名                                               | string          | —                     | —       |
 | placeholder      | 输入框占位文本                                               | string          | —                     | 请选择  |
 | disabled         | 是否禁用                                                     | boolean         | —                     | false   |
 | clearable        | 是否支持清空选项                                             | boolean         | —                     | false   |
-| expand-trigger   | 次级菜单的展开方式                                           | string          | click / hover         | click   |
-| show-all-levels  | 输入框中是否显示选中值的完整路径                             | boolean         | —                     | true    |
+| expandTrigger   | 次级菜单的展开方式                                           | string          | click / hover         | click   |
+| showAllLevels  | 输入框中是否显示选中值的完整路径                             | boolean         | —                     | true    |
 | filterable       | 是否可搜索选项                                               | boolean         | —                     | —       |
 | debounce         | 搜索关键词输入的去抖延迟，毫秒                               | number          | —                     | 300     |
-| change-on-select | 是否允许选择任意一级的选项                                   | boolean         | —                     | false   |
+| changeOnSelect | 是否允许选择任意一级的选项                                   | boolean         | —                     | false   |
 | size             | 尺寸                                                         | string          | medium / small / mini | —       |
-| before-filter    | 筛选之前的钩子，参数为输入的值，若返回 false 或者返回 Promise 且被 reject，则停止筛选 | function(value) | —                     | —       |
+| beforeFilter    | 筛选之前的钩子，参数为输入的值，若返回 false 或者返回 Promise 且被 reject，则停止筛选 | function(value) | —                     | —       |
 
 ##### props.props
 

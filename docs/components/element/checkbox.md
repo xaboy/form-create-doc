@@ -75,8 +75,8 @@ $formCreate.maker.checkbox('标签','label',["1","2","3"]).options([
 | 参数        | 说明                                                         | 类型                      | 可选值 | 默认值 |
 | ----------- | ------------------------------------------------------------ | ------------------------- | ------ | ------ |
 | label       | 选中状态的值（只有在`checkbox-group`或者绑定对象类型为`array`时有效） | string / number / boolean | —      | —      |
-| true-label  | 选中时的值                                                   | string / number           | —      | —      |
-| false-label | 没有选中时的值                                               | string / number           | —      | —      |
+| trueLabel  | 选中时的值                                                   | string / number           | —      | —      |
+| falseLabel | 没有选中时的值                                               | string / number           | —      | —      |
 | disabled    | 是否禁用                                                     | boolean                   | —      | false  |
 | name        | 原生 name 属性                                               | string                    | —      | —      |
 | checked     | 当前是否勾选                                                 | boolean                   | —      | false  |

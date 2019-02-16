@@ -59,12 +59,12 @@ $formCreate.maker.input('商品名称','goods_name').props({
 | clearable      | 是否可清空                                                   | boolean          | —                                                            | false  |
 | disabled       | 禁用                                                         | boolean          | —                                                            | false  |
 | size           | 输入框尺寸，只在 `type!="textarea"` 时有效                   | string           | medium / small / mini                                        | —      |
-| prefix-icon    | 输入框头部图标                                               | string           | —                                                            | —      |
-| suffix-icon    | 输入框尾部图标                                               | string           | —                                                            | —      |
+| prefixIcon    | 输入框头部图标                                               | string           | —                                                            | —      |
+| suffixIcon    | 输入框尾部图标                                               | string           | —                                                            | —      |
 | rows           | 输入框行数，只对 `type="textarea"` 有效                      | number           | —                                                            | 2      |
 | autosize       | 自适应内容高度，只对 `type="textarea"` 有效，可传入对象，如，{ minRows: 2, maxRows: 6 } | boolean / object | —                                                            | false  |
 | autocomplete   | 原生属性，自动补全                                           | string           | on, off                                                      | off    |
-| auto-complete  | 下个主版本弃用                                               | string           | on, off                                                      | off    |
+| autoComplete  | 下个主版本弃用                                               | string           | on, off                                                      | off    |
 | name           | 原生属性                                                     | string           | —                                                            | —      |
 | readonly       | 原生属性，是否只读                                           | boolean          | —                                                            | false  |
 | max            | 原生属性，设置最大值                                         | —                | —                                                            | —      |
@@ -75,7 +75,7 @@ $formCreate.maker.input('商品名称','goods_name').props({
 | form           | 原生属性                                                     | string           | —                                                            | —      |
 | label          | 输入框关联的label文字                                        | string           | —                                                            | —      |
 | tabindex       | 输入框的tabindex                                             | string           | -                                                            | -      |
-| validate-event | 输入时是否触发表单的校验                                     | boolean          | -                                                            | true   |
+| validateEvent | 输入时是否触发表单的校验                                     | boolean          | -                                                            | true   |
 
 
 

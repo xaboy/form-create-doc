@@ -24,12 +24,12 @@ NodeJs
 
 :::
 
-[Maker 配置项说明](/guide/maker.html)
+[Maker 配置项说明](/guide/maker.html) | [自定义组件](/guide/custom-component.md)
 
-## Maker.parse
+## Maker.parse <Badge text="1.6.0+"/>
 
 
-- **参数**：`{string} Json`、`{bool} toMaker=false`
+- **参数**：`{string|array} Json`、`{bool} toMaker=false`
 
 - **用法**：
 
@@ -37,9 +37,11 @@ NodeJs
   let rules = maker.parse(json);
   let rule = rules.find(field);
   rule.value = 'value';
+  rule.event.click = function(){
+    //TODO
+  }
   ```
-将 json 转换为生成规则,**转换后可使用 find()方法快速查找指定`field`**
-
+将 json 转换为生成规则,**转换后可使用 find()方法快速查找指定`field`字段**
 
 
 

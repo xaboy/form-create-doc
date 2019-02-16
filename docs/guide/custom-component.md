@@ -129,7 +129,7 @@ let rule = [
 
 
 
-**Object**
+**Json**
 
 ```js
 let rule = [
@@ -167,3 +167,45 @@ $f.component().btn.vm.text = '加载完毕';
 $f.component().btn.vm.loading = false;
 ```
 
+
+
+## 自定义组件事件 <Badge text="1.5.5+"/>
+
+通过表单回调事件,修改组件内部状态
+
+### `fc:input` <Badge text="1.6.0+"/>
+通过`formData`,`getValue`方法获取自定义组件`field`时触发.可通过自定义组件向`formData`中添加`value`
+```js
+this.$on('fc:input',function(cb,$f) {
+  //TODO 返回自定义组件 value
+  //异步触发调用无效
+  cb(this.value);
+})
+```
+
+### `fc:set-value` <Badge text="1.6.0+"/>
+通过`setValue`,`changeValue`,`changeField`方法设置自定义组件`field`值时触发
+```js
+this.$on('fc:set-value',function(newValue,$f) {
+  //TODO 更新自定义组件内部 value
+  this.value = newValue;
+})
+```
+
+### `fc:disabled`
+通过`disable`方法禁用自定义组件时触发
+```js
+this.$on('fc:disable',function(disabled,$f) {
+  //TODO 自定义组件更新禁用状态
+  this.disabled = disabled;
+})
+```
+
+### `fc:reset-field`
+通过`resetFields`方法重置表单时触发
+```js
+this.$on('fc:reset-field',function($f) {
+  //TODO 还原自定义组件内部 value
+  this.value = this.oldValue;
+})
+```
