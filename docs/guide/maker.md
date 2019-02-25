@@ -40,16 +40,26 @@ sidebarDepth: 2
 - **说明**: 组件模式下配置使用`emit`方式触发的事件名,可与`emitPrefix`参数配合
 
 ```js
-rules = [{
+//以下三种方式效果相同
+
+rules = [{//emit 方式触发 change 事件
     field:'goods_name',
     //...
     emit:['change']
-},{
+},{// 自定义 emit 事件前缀,默认为 field 字段
     field:'goods_info',
     //...
     emit:['change'],
     emitPrefix:'gi'
-}]
+},{// 直接在规则写回调方法
+     field:'goods_tag',
+     //...
+     event:{
+         change:function() {
+           //TODO
+         }
+     }
+ }]
 ```
 
 ```html
