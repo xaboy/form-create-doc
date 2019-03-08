@@ -12,8 +12,8 @@
 ```js
 $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'])
         .props({
-            "action": "",
-            "maxLength": 4,
+            "action": "/upload.php",
+            "limit": 4,
             "multiple": true,
             "type": "select",
             "uploadType": "image",
@@ -43,8 +43,7 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
             "multiple": true,
             "accept":"image\/*",
             "format":["jpg","jpeg","png","gif"],
-            "maxSize":2048,
-            "maxLength":5,
+            "limit": 2,
             "onSuccess":function (res) {
                 return res.data.filePath;
             }
@@ -97,7 +96,7 @@ option:{
 | type | 元素类型 | String | - |
 | field | 字段名称 | String | - |
 | title | 字段别名 | String | - |
-| value | 字段值,当props.maxLength等与1时值为字符串,大于1时值为数组 | String,Array | - |
+| value | 字段值,当props.limit等与1时值为字符串,大于1时值为数组 | String,Array | - |
 | props | 元素配置 | Object | - |
 | validate | 验证规则 | Array | - |
 
