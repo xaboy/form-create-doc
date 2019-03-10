@@ -42,11 +42,11 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
             "type":"select",
             "uploadType":"image",
             "action": "/upload.php",
-            "name":"pic", 
+            "name":"pic",
             "multiple": true,
             "accept":"image\/*",
-            "format":["jpg","jpeg","png","gif"], 
-            "maxSize":2048, 
+            "format":["jpg","jpeg","png","gif"],
+            "maxSize":2048,
             "maxLength":5,
             "onSuccess":function (res) {
                 return res.data.filePath;
@@ -133,5 +133,6 @@ option:{
 | handleIcon | 辅助操作按钮的图标 ,设置为false将不显示 | String | false | - |
 | onHandle | 点击辅助操作按钮事件,返回src | Function | false | - |
 | allowRemove | 是否可删除,设置为false是不显示删除按钮 | Boolean | false | true |
+| modalTitle | 图片预览弹出框标题文字 |  String | false | 预览 |
 
 

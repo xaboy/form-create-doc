@@ -13,6 +13,19 @@ form-create 支持的在表单内部生成任何 vue 组件
 
 通过建立一个**虚拟 DOM**的方式生成自定义组件
 
+### 使用
+
+- **参数**：
+    - `{string} tab`
+    - `{string} field = undefined`
+    - `{string} title = undefined` <Badge text="1.6.1+"/>
+
+- **用法**：
+
+  ```js
+  maker.create('i-button','btn','自定义按钮')
+  ```
+
 ### 生成
 
 **Maker**
@@ -109,6 +122,19 @@ let rule = [
 通过**模板**的方式生成自定义组件,`maker.createTmp`方法是该方法的别名
 
 
+### 使用
+
+- **参数**：
+    - `{string} template`
+    - `{Vue} vm`
+    - `{string} field = undefined`
+    - `{string} title = undefined` <Badge text="1.6.1+"/>
+
+- **用法**：
+
+  ```js
+  maker.template('<i-button></i-button>',new Vue,'btn','自定义按钮')
+  ```
 
 ### 生成
 
@@ -116,7 +142,7 @@ let rule = [
 
 ```js
 let rule = [
-  formCreate.maker.template('<i-button :loading="loading">{{text}}<i-button>',new Vue({
+  formCreate.maker.template('<i-button :loading="loading">{{text}}</i-button>',new Vue({
     data:{
       loading:true,
       text:'正在加载中...'

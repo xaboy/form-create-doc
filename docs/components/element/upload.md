@@ -129,4 +129,4 @@ option:{
 | disabled         | 是否禁用                                                     | boolean                            | —                         | false  |
 | limit            | 最大允许上传个数                                             | number                             | —                         | —      |
 | onExceed        | 文件超出个数限制时的钩子                                     | function(files, fileList)          | —                         | -      |
-
+| modalTitle | 图片预览弹出框标题文字 |  String  | 预览 |

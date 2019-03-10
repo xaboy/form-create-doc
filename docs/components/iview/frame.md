@@ -61,6 +61,10 @@ $formCreate.maker.frame('素材','fodder',["http://img1.touxiang.cn/uploads/2013
 | title | 弹出框标题 | String | false | - |
 | handleIcon | 操作按钮的图标 ,设置为false将不显示,设置为true为默认的预览图标,类型为file时默认为false,image类型默认为true | Boolean | false | - |
 | allowRemove | 是否可删除,设置为false是不显示删除按钮 | Boolean | false | true |
+| okBtnText | 弹出框确定按钮文字 |  String | false | 确定 |
+| closeBtnText | 弹出框关闭按钮文字 |  String | false | 关闭 |
+| modalTitle | 图片预览弹出框标题文字 |  String | false | 预览 |
+| loadingText | 弹出框内容加载时提示文字 |  String | false | 加载中... |
 
 ##### 事件扩展 event
 

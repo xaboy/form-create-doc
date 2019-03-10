@@ -2,7 +2,7 @@
  title: 更新日志
 ---
 
-### 当前版本 1.6.0
+### 当前版本 1.6.1
 
 --------
 
@@ -11,6 +11,21 @@
 建议保持在最新的版本
 
 :::
+
+
+#### 1.6.1 (2019-03-10)
+- **支持 typescript**
+- 修复 element.upload 组件类型为 file 时默认显示预览按钮 bug
+- **修复 单独导入 {maker} 报错问题**
+- 优化 **内部所有提示文字,按钮文字可通过配置参数自定义** [#48](https://github.com/xaboy/form-create/issues/48)
+    - `okBtnText`,`closeBtnText`: 自定义 `frame` 组件的弹出框按钮文字,默认为`确定`,`关闭`
+    - `modalTitle`: 自定义 `frame`,`upload` 组件在预览时的标题文字,默认为`预览`
+    - `loadingText`: 自定义 `iview.frame`组件的弹出框页面加载时提示文字,默认为`加载中...`
+
+
+- 优化 **自定义组件支持设置`title`**,不设置`title`时,label宽度默认为0
+- 优化 `tree`,`frame`组件
+- 优化 `formData`,`getValue`方法返回的值为深拷贝后的值
 
 #### 1.6.0 (2019-02-18)
 - 优化 `ElementUI`.`tree`组件默认展开
