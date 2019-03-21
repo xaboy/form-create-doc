@@ -19,7 +19,7 @@ sidebarDepth: 3
   <form-create ref="fc" v-model="fApi" :rule="rules"></form-create>
   ```
 
-  - $f = vm.\$refs.fc.\$f
+  - vm.\$refs.fc.\$f <Badge type="error" text="not recommend"/>
   - $f = vm.fApi <Badge text="1.5.2+"/><Badge type="warn" text="recommend"/>
 
 :::
