@@ -133,6 +133,31 @@ new Vue({
 
 
 1. **children\(Array\)**  子组件元素生成规则
+  
+  - 示例1
+  ```js
+    formCreate.maker.create('button').children([
+       '按钮内容' 
+    ]);
+  ```
+  
+  - 示例2
+  ```js
+    formCreate.maker.create('i-row').children([
+       formCreate.maker.create('i-col').props('span',12),
+       formCreate.maker.create('i-col').props('span',12),
+    ]);
+  ```
+  
+  - 示例3
+  ```js
+    formCreate.maker.create('i-row').children([
+       formCreate.maker.create('i-col').props('span',12).children([
+           formCreate.template('<span>自定义组件</span>',new Vue)
+       ]),
+    ]);
+  ```
+  
 2. **scopedSlots\(Object\)**
 3. **nativeOn\(Object\)**
 4. **on\(Object\)**

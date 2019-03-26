@@ -1,8 +1,8 @@
 ---
- title: 更新日志
+ title: 更新日志 (1.6.2)
 ---
 
-### 当前版本 1.6.1
+### 当前版本 1.6.2
 
 --------
 
@@ -12,7 +12,50 @@
 
 :::
 
+#### 1.6.2 (2019-03-26)
 
+- **修复 `children`配置项中包含字符串时报错问题**
+- **修复 element-ui 部分等组件配置项无效问题**
+- **新增 使用 emit 方式设置`mounted`,`reload`回调事件**
+
+    - 组件模式:
+
+    ```html
+    <form-create @mounted="fcMounted" @reload="fcReload">
+    ```
+    
+    
+    ```js
+    methods:{
+      fcMounted:function($f) {
+          //TODO 表单创建后回调事件
+      },
+      fcReload:function($f) {
+          //TODO 表单重载后回调事件
+      }
+    }
+    ```
+    
+    - Vue 原型方法:
+
+
+    ```js
+    new Vue({
+        mounted:function(){
+            //创建表单
+            //this.$formCreate([...规则])
+        
+            this.$on('fc:mounted',function($f){
+                //TODO 表单创建后回调事件
+            })
+            this.$on('fc:reload',function($f){
+                //TODO 表单重载后回调事件
+            })
+        }
+    
+    })
+    ```
+  
 #### 1.6.1 (2019-03-10)
 - **支持 typescript**
 - 修复 element.upload 组件类型为 file 时默认显示预览按钮 bug
@@ -26,6 +69,7 @@
 - 优化 **自定义组件支持设置`title`**,不设置`title`时,label宽度默认为0
 - 优化 `tree`,`frame`组件
 - 优化 `formData`,`getValue`方法返回的值为深拷贝后的值
+
 
 #### 1.6.0 (2019-02-18)
 - 优化 `ElementUI`.`tree`组件默认展开

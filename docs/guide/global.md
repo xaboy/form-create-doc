@@ -162,6 +162,7 @@ window.formCreate.create(rule,option)
     //表单域标签的位置，可选值为 left、right、top
     labelPosition:'right',
     //表单域标签的宽度，所有的 FormItem 都会继承 Form 组件的 label-width 的值
+    // labelPosition为"top"时,需要手动设置 labelWidth 为 undefined
     labelWidth:125,
     //是否显示校验错误信息
     showMessage:true,
@@ -364,6 +365,7 @@ window.formCreate.create(rule,option)
         //表单域标签的位置，可选值为 left、right、top
         labelPosition:'right',
         //表单域标签的宽度，所有的 FormItem 都会继承 Form 组件的 label-width 的值
+        //labelPosition为"top"时,需要手动设置 labelWidth 为 undefined
         labelWidth:125,
         //是否显示校验错误信息
         showMessage:true,
