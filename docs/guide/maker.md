@@ -103,28 +103,6 @@ new Vue({
 - **参数**:  `Object | Array | string`
 - **说明**: 自定义 组件的 `class`
 
-### **defaultSlot**  <Badge text="1.5.3+"/>
-
-- **参数**:  `String | RenderFunction`
-
-- **说明**: 自定义 部分内置组件的`slot`
-
-- **示例**:
-
-  ```js
-  rule.defaultSlot(function($h){
-    return $h("div", {
-      style: "color:#ff7271;"
-    }, [$h('icon', {
-      props: {
-        //iview2 与 iview3 图标名称不同
-        type: 'social-apple'
-      }
-    }), "新鲜水果"]);
-  })
-  ```
-
-
 
 ## 自定义组件配置项
 

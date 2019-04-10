@@ -19,7 +19,6 @@ sidebarDepth: 3
   <form-create ref="fc" v-model="fApi" :rule="rules"></form-create>
   ```
 
-  - vm.\$refs.fc.\$f <Badge type="error" text="不推荐"/>
   - $f = vm.fApi <Badge text="1.5.2+"/><Badge type="warn" text="推荐"/>
 
 :::

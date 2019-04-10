@@ -160,5 +160,12 @@ request('api').then(rule=>{
 
 ## 显示默认重置按钮
 
-设置全局配置`options. resetBtn = true`即可显示 [重置按钮配置参考](/guide/instance.html#f-resetstatus)
+设置全局配置`options.resetBtn = true`即可显示 [重置按钮配置参考](/guide/instance.html#f-resetstatus)
 
+## Vue 版本不支持 compile
+
+![vue-version](/img/vue-version.jpg)
+
+
+## 获取 $f
+[参考](/guide/instance.html)
