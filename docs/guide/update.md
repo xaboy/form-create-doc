@@ -115,7 +115,7 @@
 - 新增 `disabled` 方法,可禁用组件
 - 新增 `setValue`方法,可批量修改组件值
 - 新增 `show` 方法,可显示/隐藏表单
-- 新增 `claerValidateState`方法,可手动情况表单错误信息
+- 新增 `clearValidateState`方法,可手动情况表单错误信息
 - 支持 自定义组件监听`disabled`事件,组件禁用时触发
 - 支持 自定义组件监听`reset-field`事件,组件重置时触发
 - 移除 部分错误提示

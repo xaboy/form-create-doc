@@ -242,8 +242,8 @@ model = $f.model();
 ```js
 //JSON 规则
 var rule = [
-  {"type":"input","field":"goods_name","title":"商品名称","value":"aaa"},
-  {"type":"inputNumber","field":"goods_name","title":"商品名称","value":"aaa"}
+  {"type":"input","field":"goods_name","title":"商品名称","value":"mi"},
+  {"type":"inputNumber","field":"goods_price","title":"商品价格","value":12}
 ]
 ```
 

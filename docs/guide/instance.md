@@ -140,16 +140,16 @@ sidebarDepth: 3
   获取双向数据绑定的自定义组件生成规则,**自定义组件必须定义`field`属性才可以获取到**
 
 
-## $f.claerValidateState <Badge text="1.5.5+"/>
+## $f.clearValidateState <Badge text="1.5.5+"/>
 
 - **用法**：
 
   ```js
-  $f.claerValidateState();
+  $f.clearValidateState();
 
-  $f.claerValidateState(field);
+  $f.clearValidateState(field);
 
-  $f.claerValidateState([field1,field2]);
+  $f.clearValidateState([field1,field2]);
   ```
 
   清除组件的验证信息

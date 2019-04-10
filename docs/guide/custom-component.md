@@ -200,7 +200,7 @@ $f.component().btn.vm.loading = false;
 通过表单回调事件,修改组件内部状态
 
 ### `fc:input` <Badge text="1.6.0+"/>
-通过`formData`,`getValue`方法获取自定义组件`field`时触发.可通过自定义组件向`formData`中添加`value`
+通过 [formData](/guide/instance.html#f-formdata) , [getValue](/guide/instance.html#f-getvalue) 方法获取自定义组件`field`时触发.可通过自定义组件向`formData`中添加`value`
 ```js
 this.$on('fc:input',function(cb,$f) {
   //TODO 返回自定义组件 value
@@ -210,7 +210,7 @@ this.$on('fc:input',function(cb,$f) {
 ```
 
 ### `fc:set-value` <Badge text="1.6.0+"/>
-通过`setValue`,`changeValue`,`changeField`方法设置自定义组件`field`值时触发
+通过 [setValue](/guide/instance.html#f-setvalue) , [changeValue](/guide/instance.html#f-changefield) , [changeField](/guide/instance.html#f-changefield) 方法设置自定义组件`field`值时触发
 ```js
 this.$on('fc:set-value',function(newValue,$f) {
   //TODO 更新自定义组件内部 value
@@ -219,7 +219,7 @@ this.$on('fc:set-value',function(newValue,$f) {
 ```
 
 ### `fc:disabled`
-通过`disable`方法禁用自定义组件时触发
+通过 [disabled](/guide/instance.html#f-disabled) 方法禁用自定义组件时触发
 ```js
 this.$on('fc:disable',function(disabled,$f) {
   //TODO 自定义组件更新禁用状态
@@ -228,10 +228,96 @@ this.$on('fc:disable',function(disabled,$f) {
 ```
 
 ### `fc:reset-field`
-通过`resetFields`方法重置表单时触发
+通过 [resetFields](/guide/instance.html#f-resetfields) 方法重置表单时触发
 ```js
 this.$on('fc:reset-field',function($f) {
   //TODO 还原自定义组件内部 value
   this.value = this.oldValue;
 })
 ```
+
+
+
+## 完整示例
+
+### 示例一
+
+自定义按钮组件,获取按钮禁用状态
+```js
+maker.create('i-button', 'btn').props({
+    type: "primary",
+    size: "large",
+    shape: undefined,
+    long: true,
+    htmlType: "button",
+    disabled: false,
+    icon: "ios-upload",
+    loading: false,
+    show: true
+}).on({
+    "fc:disabled": function (disabled, $f) {
+        $f.component().btn.props.disabled = disabled;
+    },
+    "fc:input": function (cb, $f) {
+        cb($f.component().btn.props.disabled);
+    },
+    "fc:set-value": function (val, $f) {
+        $f.component().btn.props.disabled = val;
+    }
+}).col({span: 12}).children(['测试自定义按钮'])
+```
+设置自定义组件禁用状态,触发`fc:set-value` 事件
+```js
+$f.setValue('btn',false);
+```
+获取自定义组件禁用状态,触发`fc:input` 事件
+```js
+$f.getValue('btn');
+```
+禁用按钮组件,触发`fc:disabled` 事件
+```js
+$f.disabled('btn')
+```
+
+
+### 示例二
+
+自定义计数器按钮组件,获取按钮点击数
+
+**`template`方式生成的自定义组件没有`fc:`前缀**
+```js
+maker.template('<i-button @click="onClick" long :disabled="disabled">{{num}}</i-button>', new Vue({
+    data: {
+        num: 0,
+        disabled: false
+    },
+    methods: {
+        onClick: function () {
+            this.num++;
+        },
+        //表单禁用事件
+        onDisabled: function (disabled) {
+            this.disabled = disabled;
+        },
+        //表单重置事件
+        onResetField: function () {
+            this.num = 0;
+        },
+        //表单提交事件
+        onInput: function (cb, $f) {
+            cb(this.num);
+        },
+        //通过setValue,changeField,changeValue方法设置表单值时事件
+        onSetValue: function (val, $f) {
+            this.num = val;
+        }
+    },
+    created: function () {
+        this.$on('fc:disabled', this.onDisabled);
+        this.$on('fc:reset-field', this.onResetField);
+        this.$on('fc:input', this.onInput);
+        this.$on('fc:set-value', this.onSetValue);
+    }
+}), 'tmp', '自定义 title');
+```
+操作方式和示例一相同
