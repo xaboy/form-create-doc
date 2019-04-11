@@ -56,28 +56,6 @@ sidebarDepth: 2
 - **parameter**:  `Object | Array | string`
 - **description**: Custom component `class`
 
-### **defaultSlot**  <Badge text="1.5.3+"/>
-
-- **parameter**:  `String | RenderFunction`
-
-- **description**: Customize some of the built-in components of `slot`
-
-- **demo**: 
-
-  ```js
-  rule.defaultSlot(function($h){
-    return $h("div", {
-      style: "color:#ff7271;"
-    }, [$h('icon', {
-      props: {
-        //iview2 与 iview3 图标名称不同
-        type: 'social-apple'
-      }
-    }), "新鲜水果"]);
-  })
-  ```
-
-
 
 ## Custom component configuration item
 
