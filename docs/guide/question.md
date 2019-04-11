@@ -169,3 +169,6 @@ request('api').then(rule=>{
 
 ## 获取 $f
 [参考](/guide/instance.html)
+
+## 在配置项中调用外层组件的方法
+[参考](https://github.com/xaboy/form-create/issues/51#issuecomment-473190389)
