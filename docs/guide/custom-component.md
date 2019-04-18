@@ -16,7 +16,7 @@ form-create 支持的在表单内部生成任何 vue 组件
 ### 使用
 
 - **参数**：
-    - `{string} tab`
+    - `{string} tab` 组件名/标签名
     - `{string} field = undefined`
     - `{string} title = undefined` <Badge text="1.6.1+"/>
 
