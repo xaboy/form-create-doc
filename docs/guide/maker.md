@@ -104,6 +104,18 @@ new Vue({
 - **说明**: 自定义 组件的 `class`
 
 
+### **children**  <Badge text="1.6.4+"/>
+- **说明**: 设置内置组件 `slot`
+
+```js
+maker.input('text','text','text').children([
+    maker.create('span').children(['append']).slot('append')
+])
+```
+生成一个 input,并设置输入框后置内容
+
+
+
 ## 自定义组件配置项
 
 自定义组件额外支持以下配置项

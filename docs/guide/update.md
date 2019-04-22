@@ -1,8 +1,8 @@
 ---
- title: 更新日志 (1.6.3)
+ title: 更新日志 (1.6.4)
 ---
 
-### 当前版本 1.6.3
+### 当前版本 1.6.4
 
 --------
 
@@ -11,6 +11,17 @@
 建议保持在最新的版本
 
 :::
+
+#### 1.6.4 (2019-04-22)
+- 修复 `element`日期组件,时间组件区间选择时值类型问题
+- 新增 支持通过`children`配置项设置内置组件`slot` [#72](https://github.com/xaboy/form-create/issues/72)
+
+```js
+maker.input('商品价格','price','100').children([
+    maker.create('span').slot('append').children(['元'])
+])
+```
+
 
 #### 1.6.3 (2019-04-12)
 - 修复 `field` 存在特殊符号时报错问题
