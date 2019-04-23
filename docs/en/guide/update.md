@@ -1,8 +1,12 @@
 ---
-title: Update log
+title: Update log (1.6.4)
 ---
 
-### current version 1.5.4
+### current document version 1.5.4
+
+### current version 1.6.4
+
+
 
 --------
 
@@ -13,6 +17,147 @@ Recommended to stay in the latest version
 :::
 
 
+---
+
+
+#### 1.6.4 (2019-04-22)
+- Fix `element` date component, time component interval selection time value type problem
+- New Support for setting built-in components `slot` via `children` configuration items [#72](https://github.com/xaboy/form-create/issues/72)
+
+```js
+maker.input('商品价格','price','100').children([
+    maker.create('span').slot('append').children(['元'])
+])
+```
+
+
+#### 1.6.3 (2019-04-12)
+- Fixed `field` error when there was a special symbol
+- Fixed an issue where the form reset value was incorrect after the form was reloaded
+- Fix automatically triggers form validation issues after modifying rules
+- Update TypeScript file
+- Optimization performance issues after multiple generation of build rules
+- Added `init` method to manually mount and remove form nodes
+
+```js
+$m = formCreate.init(rule,options);
+
+//mount form
+$m.mount();
+// Remove the form
+$m.remove();
+// Get form data
+$m.$f.formData();
+```
+
+#### 1.6.2 (2019-03-26)
+- **Fixed an error when including a string in the `children` configuration item**
+- **Fixed component configuration items such as element-ui part are invalid**
+- **New Use the emit method to set the `mounted`, `reload` callback event**
+
+    - Component mode:
+
+    ```html
+    <form-create @mounted="fcMounted" @reload="fcReload">
+    ```
+    
+    
+    ```js
+    methods:{
+      fcMounted:function($f) {
+          //TODO form callback event after creation
+      },
+      fcReload:function($f) {
+          //TODO form reload after callback event
+      }
+    }
+    ```
+    
+    - Vue prototype method:
+
+
+    ```js
+    new Vue({
+        mounted:function(){
+            //Create a form
+            //this.$formCreate([...rule])
+        
+            this.$on('fc:mounted',function($f){
+                //TODO form callback event after creation
+            })
+            this.$on('fc:reload',function($f){
+                //TODO form reload after callback event
+            })
+        }
+    
+    })
+    ```
+  
+#### 1.6.1 (2019-03-10)
+- **Support typescript**
+- Fixed preview button error when element.upload component type is file
+- **Repair Import {maker} error report**
+- Optimize **All internal prompt text, button text can be customized by configuration parameters**[#48](https://github.com/xaboy/form-create/issues/48)
+    - `okBtnText`, `closeBtnText`: Customize the pop-up button text of the `frame` component. The default is `OK`, `Close`
+    - `modalTitle`: custom `frame`, `upload` component title text when previewing, default is `preview`
+    - `loadingText`: Customize the pop-up box of the `iview.frame` component when loading the prompt text, the default is `Loading...`
+
+
+- Optimization **Custom component support setting `title`**, when `title` is not set, label width defaults to 0
+- Optimize `tree`, `frame` components
+- Optimize `formData`, the value returned by the `getValue` method is the value after deep copy
+
+
+#### 1.6.0 (2019-02-18)
+- Optimize `ElementUI`.`tree` component to expand by default
+
+#### 1.6.0-bata.2 (2019-02-12)
+
+- Fixed value cannot be modified after dynamically adding components
+- Optimization Internal structure
+- **Support ElementUi 2.5.2+**
+- Refactoring `frame`, `upload` component popup
+- Added `maker.parse(json)` method to convert `json` rules to build rules
+- Added custom component event `fc:input`, triggered when formData, getValue gets custom component field
+    ```js
+    This.$on('fc:input',function(cb,$f) {
+      // asynchronous call is invalid
+      cb(newValue);
+    })
+    ```
+- Add custom component event `fc:set-value`, set by setValue, changeValue when custom component field value is set
+    ```js
+      This.$on('fc:set-value',function(newValue,$f) {
+      //TODO
+    })
+    ```
+
+**Note: The following changes are not backward compatible**
+- **Modify the data structure returned by the model() method**
+    ```js
+    {
+        Field1:{value,props,validate,options,slot,event,...[other configuration items]},
+        Field2: {value,props,validate,options,slot,event,...[other configuration items]}
+    }
+    ```
+- **Modify the closeModal(field) method, now you need to pass in the field field**
+- **Modify custom component event name, add `fc:` prefix**
+
+
+#### 1.5.5 (2019-01-25)
+
+- Fixed component value bug after dynamically adding components
+- Fixed `append`, `prepend` method to insert location error bug
+- Added `disabled` method to disable components
+- Added `setValue` method to modify component values in batches
+- Added `show` method to show/hide forms
+- Added `clearValidateState` method, manual case form error message
+- Support for custom components to listen for `disabled` events, triggered when component is disabled
+- Support for custom component listener `reset-field` events, triggered when component resets
+- Remove some error tips
+- Optimization project packaging, **file reduction 20kb**
+- Support custom built-in reset button, submit button click event
+
 
 #### 1.5.4 (2019-01-15)
 
@@ -21,11 +166,11 @@ Recommended to stay in the latest version
 - **Support Custom internal nested built-in components**
 - Optimization **Custom components can be set without `field`**
 - Optimize form overloading
-- **Add global configuration item `form.size`** to configure form element size
+- **Add global configuration item `form.size`**to configure form element size
 - Remove custom component cache
 - Fix event repeat trigger bug
 - Optimize `$f ` questions that need to be fetched frequently...
-- Added `$f.component()` method, ** to get custom component generation rules**
+- Added `$f.component()` method, **to get custom component generation rules**
 - Added `$f.changeValue(field,value)` method, which is an alias for `$f.changeField`
 - Added `$f.rule` attribute to get the form generation rules
 - Fix `select` component event does not trigger `bug`
@@ -36,7 +181,7 @@ Recommended to stay in the latest version
 - 新增 upload 组件**列表样式**
 - 修改 upload 组件按钮图标
 - 修复 upload 组件上传 成功后不显示 bug
-- 新增 自定义`datePicker`,`timePicker`,`select`组件 **slot** 功能 
+- 新增 自定义`datePicker`,`timePicker`,`select`组件 **slot**功能 
 - 新增 表单重载后回调函数`onReload`全局配置项,可用于更新`$f`
 - 新增 组件`className`配置项,设置组件的 class
 
@@ -100,7 +245,7 @@ Recommended to stay in the latest version
 
 #### 1.4.4 (2018-11-4)
 * 优化 内部功能优化,参数优化
-* 新增 使用 **reload 更新生成规则**  `$f.reload(newRules)`
+* 新增 使用 **reload 更新生成规则** `$f.reload(newRules)`
 * 新增 **标签模式下生成规则发生变化时表单自动刷新**
 * 修复 npm run dev命令无法有时打开 Demo
 
