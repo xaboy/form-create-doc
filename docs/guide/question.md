@@ -168,7 +168,15 @@ request('api').then(rule=>{
 
 
 ## 获取 $f
+
 [参考](/guide/instance.html)
 
 ## 在配置项中调用外层组件的方法
-[参考](https://github.com/xaboy/form-create/issues/51#issuecomment-473190389)
+
+[参考 #51](https://github.com/xaboy/form-create/issues/51#issuecomment-473190389)
+
+## 规则正在其他form-create中使用
+
+一个生成规则`rule`只能**同时在一个`<form-create>`中使用**. 如果需要多次使用:
+- 在使用前自行**深拷贝**
+- 从被使用的`<form-create>`中移除
