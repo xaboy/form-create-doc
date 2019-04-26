@@ -69,7 +69,7 @@ $f.setValue({field1:value1,field2:value2})
     ```
 3. 在表单尾部追加一个 input 组件
     ```javascript
-    rule.push({
+    rules.push({
            type:"input",
            title:"商品简介",
            field:"goods_info",
@@ -94,7 +94,7 @@ $f.setValue({field1:value1,field2:value2})
 2. 删除最后一个字段
 
    ```javascript
-   _vm.rule.pop()
+   rules.pop()
    ```
 
 
@@ -143,7 +143,7 @@ $f.setValue({field1:value1,field2:value2})
 ## 根据后台返回的规则生成表单
 
 ```javascript
-request('api').then(rule=>{
+fetch('api').then(rule=>{
     $f = formCreate.create(rule,{
         onSubmit(formData){
             // 表单提交事件
@@ -180,3 +180,19 @@ request('api').then(rule=>{
 一个生成规则`rule`只能**同时在一个`<form-create>`中使用**. 如果需要多次使用:
 - 在使用前自行**深拷贝**
 - 从被使用的`<form-create>`中移除
+
+## 验证规则无效
+
+请注意 value 的数据类型.如果组件为多选或区间选择时 value 的数据类型为`Array`,需要在验证规则中设置`type:'array'`
+
+[验证规则说明](/other/validation-rules.html)
+
+## 修改组件值后页面没有更新
+
+在表单创建后到成功渲染之前修改是无效的
+
+- 在生成表单之前修改
+- 在`option.mounted`中修改
+- 在首次表单渲染后修改
+
+> [option.mounted](/components/element/global.html#mounted) 为表单渲染后回调

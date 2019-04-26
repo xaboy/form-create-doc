@@ -1,143 +1,198 @@
-### 常见问题
+### common problem
 
-::: warning 提醒
+::: warning Reminder
 
-`$f`为创建表单后返回的实例,`field` 为字段名称,`rule` 为表单生成规则
+`$f` is the instance returned after the form is created, `field` is the field name, `rule` is the rule generation for the form
 
 :::
 
-## 手动修改某个字段的值
+## Manually modify the value of a field
 
-1. `$f.bind().field = '修改后的值' `
-2. `$f.model().field.value = '修改后的值'`
-3. `rule[2].value = '修改后的值'   //rule[2]是field字段的生成规则`
+1. `$f.bind().field = 'modified value' `
+2. `$f.model().field.value = 'modified value'`
+3. `rule[2].value = 'modified value' //rule[2] is the generation rule of the field field`
+4. `$f.changeValue(field,value)`
 
-**说明**: 如果修改的值为数组必须直接赋值或使用`push`,`splice`等方法修改
+**Description**: If the modified value is an array, it must be directly assigned or modified using `push`, `splice`, etc.
 
-## 动态修改表单规则
+## Batch assignment
 
-1. `$f.model().field.rule.props.disabled = false`
-2. `rule[2].props.disabled = false   //rule[2]是 field字段的生成规则`
+```javascript
+$f.setValue({field1:value1,field2:value2})
+```
 
-**说明**: 如果修改后没有生效,需要提前在生成规则里定义该规则
+## Dynamically modify form rules
 
-## 新增表单字段
+1. `$f.model().field.props.disabled = false`
+2. `rule[2].props.disabled = false`
 
-1. 在 goods_name 字段后面增加一份图片上传组件,默认添加到尾部
+**Description**: If the modification does not take effect, you need to define the rule in the build rule in advance.
+
+## Add form field
+
+1. Add an image upload component after the goods_name field, which is added to the tail by default.
     ```javascript
     $f.append($formCreate.maker.upload(
-        '产品主图',
-        'logo',
-        'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'
-    ).props({
-              "action": "",
-              "maxLength": 1,
-              "multiple": false,
-              "type": "select",
-              "uploadType": "image",
-              "name": "file",
-              "onSuccess": function () {
-                  return 'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg';
-              }
-         })
-         .validate({required:true, type: 'array', min: 1, message: '请上传1张图片', trigger: 'change'}
-    ),'goods_name');
+       'Product master map',
+       'logo',
+       'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg'
+   ).props({
+           "action": "",
+           "maxLength": 1,
+           "multiple": false,
+           "type": "select",
+           "uploadType": "image",
+           "name": "file",
+           "onSuccess": function () {
+               return 'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg';
+           }
+       })
+       .validate({required:true, type: 'array', min: 1, message: 'Please upload 1 image', trigger: 'change'}
+    ), 'goods_name');
     ```
-2. 在 goods_name 字段之前增加一份 input 组件,默认添加到头部
+2. Add an input component before the goods_name field, which is added to the header by default.
 
     ```javascript
     $f.prepend({
            type:"input",
-           title:"商品简介",
+           title: "Product introduction",
            field:"goods_info",
            value:"",
            props: {
                "type": "text",
-               "placeholder": "请输入商品简介",
+               "placeholder": "Please enter the product description",
            },
            validate:[
-               { required: true, message: '请输入商品简介', trigger: 'blur' },
+               { required: true, message: 'Please enter the product description', trigger: 'blur' },
            ],
-    },'goods_name');
+       },'goods_name');
     ```
-3. 在表单尾部追加一个 input 组件
+3. Append an input component to the end of the form
     ```javascript
-    rule.push({
+    rules.push({
            type:"input",
-           title:"商品简介",
+           title: "Product introduction",
            field:"goods_info",
            value:"",
            props: {
                "type": "text",
-               "placeholder": "请输入商品简介",
+               "placeholder": "Please enter the product description",
            },
            validate:[
-               { required: true, message: '请输入商品简介', trigger: 'blur' },
+               { required: true, message: 'Please enter the product description', trigger: 'blur' },
            ],
-    })
+   })
     ```
-## 文件上传成功后修改字段值
+## Delete form fields
 
-1. 通过返回值自动修改字段值
-    ```javascript
-    //定义文件上传成功后回调函数
-    props.onSuccess = (response)=>{
-        var filePath = response.data.data.url;
-         return filePath;
-    }
-    ```
-2. 手动修改字段值
-
-    ```javascript
-    //定义文件上传成功后回调函数
-    props.onSuccess = (response)=>{
-        var filePath = response.data.data.url;
-         $f.bind().field.push(filePaht);
-    }
-    ```
-
-## 隐藏指定字段
-
-1. `$f.hidden(field)`
-2. `$f.model().field.rule.props.hidden = true`
-
-## 监听组件事件
-
-1. 通过配置参数监听组件事件
-
-    ```javascript
-    //定义文件上传成功后回调函数
-
-    event.click = ()=>{
-
-    }
-    ```
-2. 标签模式下监听组件事件
-
-    ```html
-    <form-create @field-click="handler" />
-    ```
-
-## 根据后台返回的规则生成表单
+1. Delete the specified field
 
 ```javascript
-request('api').then(rule=>{
-    $f = formCreate.create(rule,{
-        onSubmit(formData){
-            // 表单提交事件
-            $f.btn.loading(true);
-            //TODO 提交表单
-        }
+$f.removeField(field)
+```
 
-    })
+2. Delete the last field
+
+```javascript
+rules.pop()
+```
+
+
+
+## Modify the field value after the file upload succeeds
+
+1. Automatically modify field values ​​by return value
+```javascript
+// Define the file upload success after the callback function
+props.onSuccess = (response)=>{
+    var filePath = response.data.data.url;
+    return filePath;
+}
+```
+2. Manually modify the field value
+
+```javascript
+// Define the file upload success after the callback function
+props.onSuccess = (response)=>{
+    var filePath = response.data.data.url;
+    $f.bind().field.push(filePath);
+}
+```
+
+## Hide specified fields
+
+1. `$f.hidden(field)`
+2. `$f.model().field.props.hidden = true`
+
+## Listening component events
+
+1. Listen for component events by configuration parameters
+
+```javascript
+// Define the file upload success after the callback function
+event.click = ()=>{
+
+}
+```
+2. Listening component events in tag mode
+
+```html
+<form-create @field-click="handler" />
+```
+
+## Generate a form based on the rules returned in the background
+
+```javascript
+fetch('api').then(rule=>{
+    $f = formCreate.create(rule,{
+        onSubmit(formData){
+            // form submission event
+            $f.btn.loading(true);
+            //TODO submission form
+        }
+    })
 })
 ```
 
-## 隐藏默认提交按钮
+## Hide default submit button
 
-设置全局配置`options.submitBtn = false`即可隐藏 [提交按钮配置参考](/en/guide/instance.html#f-submitstatus)
+Set the global configuration `options.submitBtn = false` to hide the [submit button configuration reference] (/guide/instance.html#f-submitstatus)
 
-## 显示默认重置按钮
+## Show default reset button
 
-设置全局配置`options. resetBtn = true`即可显示 [重置按钮配置参考](/en/guide/instance.html#f-resetstatus)
+Set the global configuration `options.resetBtn = true` to display [Reset Button Configuration Reference] (/guide/instance.html#f-resetstatus)
 
+## Vue version does not support compile
+
+![vue-version](/img/vue-version.jpg)
+
+
+## Get $f
+
+[Reference](/guide/instance.html)
+
+## How to call the outer component in the configuration item
+
+[Reference #51](https://github.com/xaboy/form-create/issues/51#issuecomment-473190389)
+
+## Rules are being used in other form-create
+
+A build rule `rule` can only be used at the same time in a `<form-create>`. If you need to use it multiple times:
+- Self-deep copy before use
+- Removed from the used `<form-create>`
+
+## Validation rule is invalid
+
+Note the data type of value. If the component is multi-select or interval select, the data type of value is `Array`, you need to set `type:'array'` in the validation rule.
+
+[Validation Rule Description](/other/validation-rules.html)
+
+## The page is not updated after modifying the component value
+
+The modification is invalid after the form is created and before it is successfully rendered.
+
+- Modify before generating the form
+- Modify in `option.mounted`
+- Modify after the first form is rendered
+
+> [option.mounted](/components/element/global.html#mounted) Callback after rendering the form
