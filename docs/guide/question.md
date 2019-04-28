@@ -158,6 +158,27 @@ fetch('api').then(rule=>{
 
 设置全局配置`options.submitBtn = false`即可隐藏 [提交按钮配置参考](/guide/instance.html#f-submitstatus)
 
+## 定制默认提交按钮
+
+[提交按钮配置参考](/guide/instance.html#f-submitstatus)
+
+```javascript
+ option: {
+      submitBtn: {
+        type: "basic",
+        size: "mini",
+        icon: "",
+        shape: "round",
+        innerText: "submit",
+        col: {
+          span: 4,
+          offset: 10
+        }
+      }
+  }
+```
+ 
+
 ## 显示默认重置按钮
 
 设置全局配置`options.resetBtn = true`即可显示 [重置按钮配置参考](/guide/instance.html#f-resetstatus)
@@ -196,3 +217,4 @@ fetch('api').then(rule=>{
 - 在首次表单渲染后修改
 
 > [option.mounted](/components/element/global.html#mounted) 为表单渲染后回调
+[参考](https://github.com/xaboy/form-create/issues/51#issuecomment-473190389)
