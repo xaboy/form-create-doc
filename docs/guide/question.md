@@ -8,8 +8,8 @@
 
 ## 手动修改某个字段的值
 
-1. `$f.bind().field = '修改后的值' `
-2. `$f.model().field.value = '修改后的值'`
+1. `$f.bind()[field] = '修改后的值' `
+2. `$f.model()[field].value = '修改后的值'`
 3. `rule[2].value = '修改后的值'   //rule[2]是field字段的生成规则`
 4. `$f.changeValue(field,value)`
 
@@ -23,7 +23,7 @@ $f.setValue({field1:value1,field2:value2})
 
 ## 动态修改表单规则
 
-1. `$f.model().field.props.disabled = false`
+1. `$f.model()[field].props.disabled = false`
 2. `rule[2].props.disabled = false   //rule[2]是 field字段的生成规则`
 
 **说明**: 如果修改后没有生效,需要提前在生成规则里定义该规则
@@ -115,14 +115,14 @@ $f.setValue({field1:value1,field2:value2})
     //定义文件上传成功后回调函数
     props.onSuccess = (response)=>{
         var filePath = response.data.data.url;
-         $f.bind().field.push(filePath);
+         $f.bind()[field].push(filePath);
     }
     ```
 
 ## 隐藏指定字段
 
 1. `$f.hidden(field)`
-2. `$f.model().field.props.hidden = true`
+2. `$f.model()[field].props.hidden = true`
 
 ## 监听组件事件
 

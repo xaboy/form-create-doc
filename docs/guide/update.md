@@ -1,8 +1,8 @@
 ---
- title: 更新日志 (1.6.4)
+ title: 更新日志 (1.6.5)
 ---
 
-### 当前版本 1.6.4
+### 当前版本 1.6.5
 
 --------
 
@@ -11,6 +11,41 @@
 建议保持在最新的版本
 
 :::
+
+
+#### 1.6.5 (2019-05-06)
+- 修复 `element.upload`组件`before-remove`事件返回`false`时无效问题
+- 修复 在`mounted`中修改`value`无效问题
+- 新增 扩展内置组件配置项,可设置内置组件`style`等配置项
+- 新增 支持向`form-create`挂载自定义组件 [#76](https://github.com/xaboy/form-create/issues/76)
+```js
+//挂载自定义组件
+formCreate.component('test',Vue.extend({
+	template:'<span>test</span>'
+}));
+//生成自定义组件
+formCreate.maker.create('test');
+//获取自定义组件
+formCreate.component('test');
+//获取所有自定义组件
+formCreate.component();
+```
+
+- 新增 支持局部挂载`form-create` [#74](https://github.com/xaboy/form-create/issues/74)
+```js
+new Vue({
+	'el':'#app',
+	components:{
+		'FormCreate':formCreate.component('form-create')
+	},
+	template:'<form-create :rule="rule"></form-create>',
+	data:function(){
+		return {
+			rule:[]
+		}
+	}
+})
+```
 
 #### 1.6.4 (2019-04-22)
 - 修复 `element`日期组件,时间组件区间选择时值类型问题

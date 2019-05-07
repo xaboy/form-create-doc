@@ -1,10 +1,10 @@
 ---
-title: Update log (1.6.4)
+title: Update log (1.6.5)
 ---
 
 ### current document version 1.5.4
 
-### current version 1.6.4
+### current version [1.6.5](/guide/update.html)
 
 
 
@@ -18,6 +18,42 @@ Recommended to stay in the latest version
 
 
 ---
+
+
+#### 1.6.5 (2019-05-06)
+- Fixed invalid issue when `element.upload` component `before-remove` event returned `false`
+- Fixed invalidating `value` in `mounted`
+- Added extended built-in component configuration items to set configuration items such as built-in component `style`
+- Added support for mounting custom components to `form-create` [#76](https://github.com/xaboy/form-create/issues/76)
+```js
+    // Mount custom components
+    formCreate.component('test',Vue.extend({
+        template:'<span>test</span>'
+    }));
+    // Generate custom components
+    formCreate.maker.create('test');
+    // Get the custom component
+    formCreate.component('test');
+    // Get all custom components
+    formCreate.component();
+```
+
+- Added support for partial mount `form-create` [#74](https://github.com/xaboy/form-create/issues/74)
+```js
+new vue({
+    'el':'#app',
+    components:{
+        'FormCreate': formCreate.component('form-create')
+    },
+    template:'<form-create :rule="rule"></form-create>',
+    data:function(){
+        return {
+            rule:[]
+        }
+    }
+})
+```
+
 
 
 #### 1.6.4 (2019-04-22)
