@@ -49,7 +49,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.input('field','title','value',{diabled:true})
+  maker.input('field','title','value',{disabled:true})
   ```
 
   Generate an input component, **type defaults to text**
@@ -65,7 +65,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.text('field','title','value',{diabled:true})
+  maker.text('field','title','value',{disabled:true})
   ```
 
   Generate an input component, **type is text**
@@ -81,7 +81,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.url('field','title','value',{diabled:true})
+  maker.url('field','title','value',{disabled:true})
   ```
 
   Generate an input component, **type is url**
@@ -95,7 +95,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.idate('field','title','value',{diabled:true})
+  maker.idate('field','title','value',{disabled:true})
   ```
 
   Generate an input component, **type is date**
@@ -111,7 +111,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.password('field','title','value',{diabled:true})
+  maker.password('field','title','value',{disabled:true})
   ```
 
   Generate an input component, **type is password**
@@ -127,7 +127,7 @@ NodeJs
 - **usage**：
 
   ```js
-  maker.inputNumber('field','title','value',{diabled:true})
+  maker.inputNumber('field','title','value',{disabled:true})
   ```
 
   Generate an inputNumber component, **`maker.number` is an alias for this method**
@@ -168,7 +168,7 @@ NodeJs
 
   ```js
   maker.radio('field','title',1)
-      .options([{value:1,label:'好用'},{value:2,label:'不好用',diabled:true}])
+      .options([{value:1,label:'好用'},{value:2,label:'不好用',disabled:true}])
   ```
 
   Generate a radio component

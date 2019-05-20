@@ -72,7 +72,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.input('field','title','value',{diabled:true})
+  maker.input('field','title','value',{disabled:true})
   ```
 
   生成一个 input 组件,**type 默认为 text**
@@ -88,7 +88,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.text('field','title','value',{diabled:true})
+  maker.text('field','title','value',{disabled:true})
   ```
 
   生成一个 input 组件,**type 为 text**
@@ -104,7 +104,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.url('field','title','value',{diabled:true})
+  maker.url('field','title','value',{disabled:true})
   ```
 
   生成一个 input 组件,**type 为 url**
@@ -118,7 +118,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.idate('field','title','value',{diabled:true})
+  maker.idate('field','title','value',{disabled:true})
   ```
 
   生成一个 input 组件,**type 为 date**
@@ -134,7 +134,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.password('field','title','value',{diabled:true})
+  maker.password('field','title','value',{disabled:true})
   ```
 
   生成一个 input 组件,**type 为 password**
@@ -150,7 +150,7 @@ NodeJs
 - **用法**：
 
   ```js
-  maker.inputNumber('field','title','value',{diabled:true})
+  maker.inputNumber('field','title','value',{disabled:true})
   ```
 
   生成一个 inputNumber 组件,**`maker.number`是该方法的别名**
@@ -191,7 +191,7 @@ NodeJs
 
   ```js
   maker.radio('field','title',1)
-      .options([{value:1,label:'好用'},{value:2,label:'不好用',diabled:true}])
+      .options([{value:1,label:'好用'},{value:2,label:'不好用',disabled:true}])
   ```
 
   生成一个 radio 组件
