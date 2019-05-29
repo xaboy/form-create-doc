@@ -208,6 +208,21 @@ fetch('api').then(rule=>{
 
 [验证规则说明](/other/validation-rules.html)
 
+
+## switch 组件不显示
+
+将 slot 配置项配置在 props 中
+```json
+props: {
+    "trueValue":"1", 
+    "falseValue":"0",
+    "slot": {
+        open:"上架", 
+        close:"下架", 
+    }, 
+}
+```
+
 ## 修改组件值后页面没有更新
 
 在表单创建后到成功渲染之前修改是无效的

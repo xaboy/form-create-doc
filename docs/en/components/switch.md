@@ -4,12 +4,13 @@
 
 #### maker
 ```js
-$formCreate.maker.switch('是否上架','is_show','1').slot({
-        open:"上架",
-        close:"下架",
-    }).props({
+$formCreate.maker.switch('是否上架','is_show','1').props({
         "trueValue":"1",
         "falseValue":"0",
+        "slot":{
+           open:"上架",
+           close:"下架",
+       }
 })
 ```
 
@@ -25,12 +26,11 @@ $formCreate.maker.switch('是否上架','is_show','1').slot({
             "disabled":false,
             "trueValue":"1",
             "falseValue":"0",
-        },
-        slot: {
-            open:"上架",
-            close:"下架",
-        },
-        validate:[],
+            "slot": {
+                open:"上架",
+                close:"下架",
+            },
+        }
 }
 ```
 
