@@ -5,6 +5,9 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
-    "vuepress": "1.0.0-alpha.30"
+    "form-create": "^1.6.6",
+    "iview": "^3.4.2",
+    "vuepress": "^1.0.0-rc.1",
+    "vuepress-plugin-demo-code": "^0.3.5"
   }
 }
