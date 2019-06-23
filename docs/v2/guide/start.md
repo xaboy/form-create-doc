@@ -19,7 +19,7 @@
 <script src="https://cdn.jsdelivr.net/npm/form-create/district/province_city_area.js"></script>
 
 <!-- import formCreate -->
-<script src="https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.iview.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.min.js"></script>
 ```
 
 #### NodeJs

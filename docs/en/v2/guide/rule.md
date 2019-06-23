@@ -60,6 +60,10 @@ maker.create('input','test','textTitle').props({
 - **Type**: `any`
 - **Description**: Field values ​​for form components, custom components can be set without
 
+### **native**
+
+- **Type**: `Bool`
+- **Description**: Whether to generate components as they are, not nested in `FormItem`
 
 ### **className**
 

@@ -12,7 +12,7 @@
 <!-- import iView -->
 <script src="//unpkg.com/iview/dist/iview.min.js"></script>
 <!-- import form-create -->
-<script src="//unpkg.com/form-create/dist/form-create.min.js"></script>
+<script src="//unpkg.com/@form-create/iview/dist/form-create.min.js"></script>
 
 ```
 

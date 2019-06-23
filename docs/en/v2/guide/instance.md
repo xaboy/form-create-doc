@@ -255,6 +255,14 @@ Get the value of the specified field
   Hide or show the specified component
 
 
+### $f.hiddenStatus
+
+- **Parameters**：`{string} field`
+
+   Get component display status
+
+
+
 ### $f.visibility
 
 - **Parameters**:`{bool} visibility`,`{string|array} [field|name]`
@@ -272,6 +280,12 @@ Get the value of the specified field
   ```
   Hide or show the specified component
 
+
+### $f.visibilityStatus
+
+- **Parameters**：`{string} field`
+
+   Get component display status
 
 
 ### $f.disabled
@@ -502,3 +516,17 @@ Get the value of the specified field
   ```
 
   Control the overall display status of the form
+
+### $f.method
+
+- **Parameters**:`{string} field`, `{string} methodName`
+
+- **Return value**:`Function`
+
+- **Usage**:
+
+    ```js
+    $f.method('input','focus')();
+    ```
+
+    Method of calling a component

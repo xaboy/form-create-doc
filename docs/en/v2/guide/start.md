@@ -16,7 +16,7 @@ This section will use **iview version** as an example to show how to use form-cr
 <script src="https://cdn.jsdelivr.net/npm/iview@2.14.3/dist/iview.min.js"></script>
 
 <!-- import formCreate -->
-<script src="https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.iview.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.min.js"></script>
 ```
 
 #### NodeJs

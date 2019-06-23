@@ -68,6 +68,11 @@ maker.create('input','test','textTitle').props({
 - **说明**:  设置组件的`class`
 
 
+### **native**
+
+- ​**类型**:  `Bool`
+- **说明**: 是否原样生成组件,不嵌套的`FormItem`中
+
 ## **扩展规则**
 
 

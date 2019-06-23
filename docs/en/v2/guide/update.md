@@ -18,6 +18,10 @@ Easier to expand
 - Custom components can be converted to form components with features for validation and built-in components
 - Increase the global configuration of components
 - Added `name` configuration item, custom component configurable
+- Added method to determine if the form is modified `changeStatus`
+- Increase Get component hidden state method `hiddenStatus`
+- Added `rule.native` configuration item
+- Added `$f.method` method to call component method
 
 **modify**
 - Move the `switch` component `slot` configuration to `props.slot`

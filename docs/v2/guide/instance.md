@@ -259,6 +259,13 @@ sidebarDepth: 3
   隐藏或显示指定组件
 
 
+### $f.hiddenStatus
+
+- **参数**：`{string} field`
+
+   获取组件显示状态
+
+
 ### $f.visibility
 
 - **参数**：`{bool} visibility`、`{string|array} [field|name]`
@@ -277,6 +284,11 @@ sidebarDepth: 3
   隐藏或显示指定组件
 
 
+### $f.visibilityStatus
+
+- **参数**：`{string} field`
+
+   获取组件显示状态
 
 ### $f.disabled
 
@@ -506,5 +518,22 @@ sidebarDepth: 3
   ```
 
   控制表单整体显示状态
+
+
+
+
+### $f.method
+
+- **参数**：`{string} field`、`{string} methodName`
+
+- **返回值**：`Function`
+
+- **用法**：
+
+  ```js
+  $f.method('input','focus')();
+  ```
+
+   调用组件的方法
 
 
