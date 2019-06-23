@@ -50,7 +50,7 @@ import { maker } from 'form-create'
 import 'form-create/district/province_city_area.js'
 
 Vue.use(iView);
-Vue.use(formCreat)
+Vue.use(formCreate)
 ```
 
 ## 生成表单

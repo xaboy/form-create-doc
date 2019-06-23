@@ -117,12 +117,11 @@ window.formCreate.create(rule,option)
   {
     onReload($f){
       //TODO
-      //更新$f
     }
   }
   ```
 
-  表单重载后回调函数`onReload`全局配置项,可用于更新`$f`
+  表单重载后回调函数`onReload`
 
 
 
