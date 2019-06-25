@@ -56,7 +56,6 @@ Create a form with the `<form-create></form-create>` tag
 
 #### NodeJs
 ```js
-import {maker} from 'form-create'
 export default {
   data () {
     return {

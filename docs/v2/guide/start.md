@@ -59,7 +59,6 @@ Vue.use(formCreate)
 
 #### NodeJs
 ```js
-import {maker} from 'form-create'
 export default {
   data () {
     return {

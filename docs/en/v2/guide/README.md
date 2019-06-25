@@ -78,7 +78,7 @@ Form-create is a form generator that can generate dynamic rendering, data collec
 
 - More powerful global configuration
 
-- Customization is easier to expand
+- Custom components are easier to extend
 
 - Easier support for third-party UI libraries
 
