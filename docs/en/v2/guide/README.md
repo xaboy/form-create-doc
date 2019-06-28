@@ -22,11 +22,11 @@ Form-create is a form generator that can generate dynamic rendering, data collec
 
 ## Install
 
-1.x
+**1.x**
 
 `npm i form-create`
 
-V2
+**V2**
 
 `npm i @form-create/element-ui`
 
