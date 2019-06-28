@@ -2,8 +2,9 @@
 
 This section will use **iview version** as an example to show how to use form-create in a project.
 
+[ElementUI](/en/v2/element-ui/)
 
-## Introducing form-create
+## Introducing form-create V2
 
 #### Browser
 

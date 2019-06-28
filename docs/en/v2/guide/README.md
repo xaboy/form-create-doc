@@ -6,18 +6,31 @@
   <a href="https://github.com/xaboy">
     <img src="https://img.shields.io/badge/Author-xaboy-blue.svg" />
   </a>
-  <a href="https://www.npmjs.com/package/form-create">
-    <img src="https://badge.fury.io/js/form-create.svg" alt="version" />
-  </a>
-  <a href="https://www.npmjs.com/package/form-create">
-    <img src="https://img.shields.io/npm/dt/form-create.svg" alt="npm" />
-  </a>
-  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/gh/xaboy/form-create/dist/form-create.min.js?compression=gzip&amp;label=gzip %20size&amp;style=flat-square" alt="JS gzip size">
+  <a href="https://www.npmjs.com/package/@form-create/element-ui">
+    <img src="https://badge.fury.io/js/@form-create%2Fcore.svg" alt="version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@form-create/element-ui">
+    <img src="https://img.shields.io/npm/dt/form-create.svg" alt="npm" />
+  </a>
+  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.min.js?compression=gzip&amp;label=iview%20gzip%20size&amp;style=flat-square" alt="JS gzip size">
+  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/@form-create/element-ui/dist/form-create.min.js?compression=gzip&amp;label=elementUI%20gzip%20size&amp;style=flat-square" alt="JS gzip size">
 
 > Easily get form forms so you don't worry about forms
 
 Form-create is a form generator that can generate dynamic rendering, data collection, validation, and submission via JSON. And support for generating any Vue components. Combined with the built-in 17 common form components and custom components, complex forms can be easily handled.
 
+
+## Install
+
+1.x
+
+`npm i form-create`
+
+V2
+
+`npm i @form-create/element-ui`
+
+`npm i @form-create/iview`
 
 ## Features
 

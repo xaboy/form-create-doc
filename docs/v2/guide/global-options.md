@@ -186,3 +186,4 @@ window.formCreate.create(rule,option)
 ## UI 配置
 
 - [Iview](/v2/iview/global.html)
+- [ElementUI](/v2/element-ui/global.html)

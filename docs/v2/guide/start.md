@@ -2,8 +2,9 @@
 
 本节将以**iview版本**为例介绍如何在项目中使用 form-create
 
+[ElementUI](/v2/element-ui/)
 
-## 引入 form-create
+## 引入 form-create V2
 
 #### 浏览器
 
@@ -16,7 +17,7 @@
 <script src="https://cdn.jsdelivr.net/npm/iview@2.14.3/dist/iview.min.js"></script>
 
 <!-- 省市区三级联动json数据,不使用三级联动不需要引入 -->
-<script src="https://cdn.jsdelivr.net/npm/form-create/district/province_city_area.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@form-create/data/dist/province_city_area.js"></script>
 
 <!-- import formCreate -->
 <script src="https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.min.js"></script>

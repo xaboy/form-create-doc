@@ -185,3 +185,4 @@ The global configuration consists of the following sections.
 ## UI Configuration
 
 - [Iview](/en/v2/iview/global.html)
+- [ElementUI](/en/v2/element-ui/global.html)

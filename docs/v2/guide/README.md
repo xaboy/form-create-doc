@@ -7,18 +7,30 @@
   <a href="https://github.com/xaboy">
     <img src="https://img.shields.io/badge/Author-xaboy-blue.svg" />
   </a>
-  <a href="https://www.npmjs.com/package/form-create">
-    <img src="https://badge.fury.io/js/form-create.svg" alt="version" />
+  <a href="https://www.npmjs.com/package/@form-create/element-ui">
+    <img src="https://badge.fury.io/js/@form-create%2Fcore.svg" alt="version" />
   </a>
-  <a href="https://www.npmjs.com/package/form-create">
+  <a href="https://www.npmjs.com/package/@form-create/element-ui">
     <img src="https://img.shields.io/npm/dt/form-create.svg" alt="npm" />
   </a>
-  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/gh/xaboy/form-create/dist/form-create.min.js?compression=gzip&amp;label=gzip%20size&amp;style=flat-square" alt="JS gzip size">
+  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/@form-create/iview/dist/form-create.min.js?compression=gzip&amp;label=iview%20gzip%20size&amp;style=flat-square" alt="JS gzip size">
+  <img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/@form-create/element-ui/dist/form-create.min.js?compression=gzip&amp;label=elementUI%20gzip%20size&amp;style=flat-square" alt="JS gzip size">
 
 > 轻松搞定 form 表单,让你不在为表单而烦恼
 
 form-create 是一个可以通过 JSON 生成具有动态渲染、数据收集、验证和提交功能的表单生成器。并且支持生成任何 Vue 组件。结合内置17种常用表单组件和自定义组件，再复杂的表单都可以轻松搞定。
 
+## 安装
+
+1.x
+
+`npm i form-create`
+
+V2
+
+`npm i @form-create/element-ui`
+
+`npm i @form-create/iview`
 
 ## 功能
 
