@@ -1,11 +1,22 @@
 ---
- Title: update log (0.0.3)
+ Title: update log (0.0.4)
 ---
 
-### Current version 0.0.3
+### Current version 0.0.4
 
 --------
 
+
+#### 0.0.4 (2019-06-30)
+
+- Added `$f.toJson` and `formCreate.parseJson` methods to convert build rules to json and reverse
+- Added `info` configuration item to configure component prompts
+- Added `option.info` configuration item to set the configuration information of the prompt information.
+- Remove the time component, the date component is worth reprocessing
+- Added an error when the `$f.method` method does not exist
+- Add the `modal` configuration item of the `frame` component to set the property of `modal`
+- Fixed `element-ui` partial component `placeholder` attribute invalid
+- Update `element-ui` time component, date component `maker` generator
 
 #### 0.0.3
 

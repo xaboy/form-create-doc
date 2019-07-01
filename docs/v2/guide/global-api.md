@@ -146,6 +146,19 @@
 
   ```
 
+## parseJson <Badge type="warn" text="0.0.4+"/>
+
+- **类型**：`Function`
+
+- **说明**：将json转换为生成规则
+
+- **用法**：
+
+  ```js
+   const json = $f.toJson();
+   const rule = formCreate.parseJson(json);
+  ```
+
 ## vm.$formCreate
 
 - **类型**：`Function`
@@ -162,6 +175,7 @@
   - `Function` createParser
   - `Function` setParser
   - `Function` $form
+  - `Function` parseJson
   - `Object` maker
 
 - **说明**：生成表单

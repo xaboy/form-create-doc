@@ -12,6 +12,7 @@
 - **row**：表单组件布局配置  [参考iview栅格布局](https://www.iviewui.com/components/grid)
 - **submitBtn**：提交按钮样式配置
 - **resetBtn**：重置按钮样式配置
+- **info**：组件提示消息配置
 
 
 
@@ -152,3 +153,23 @@
 
 - 参考: [布局规则](/v2/iview/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
 
+
+
+## info <Badge type="warn" text="0.0.4+"/>
+
+- **类型**：`Object`
+
+- **说明**：组件提示消息配置
+
+- **默认值**:
+
+  ```js
+  {
+    //提示消息类型,poptip,tooltip
+    type:"poptip"
+  }
+  ```
+
+  可以在`info`配置项中设置提示组件的属性
+
+- 提示组件: [Poptop_props](https://iviewui.com/components/poptip#Poptip_props) | [Tooltip_props](https://iviewui.com/components/tooltip#Tooltip_props)

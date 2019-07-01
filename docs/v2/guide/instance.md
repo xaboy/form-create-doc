@@ -537,3 +537,16 @@ sidebarDepth: 3
    调用组件的方法
 
 
+
+### $f.toJson <Badge type="warn" text="0.0.4+"/>
+
+
+- **返回值**：`json`
+
+- **用法**：
+
+  ```js
+  const json = $f.toJson();
+  ```
+
+   将当前的生成规则转换为 json

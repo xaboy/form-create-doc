@@ -65,6 +65,12 @@ maker.create('input','test','textTitle').props({
 - **Type**: `Bool`
 - **Description**: Whether to generate components as they are, not nested in `FormItem`
 
+### **info** <Badge type="warn" text="0.0.4+"/>
+
+- **Type**: `Object`
+- **Description**: Set the prompt information for the component
+- **Configuration Description**: [iview](/v2/iview/global) | [element-ui](/v2/element-ui/global)
+
 ### **className**
 
 - **Type**: `String`

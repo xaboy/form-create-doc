@@ -530,3 +530,16 @@ Get the value of the specified field
     ```
 
     Method of calling a component
+
+### $f.toJson <Badge type="warn" text="0.0.4+"/>
+
+
+- **Return value**: `json`
+
+- **Usage**:
+
+    ```js
+    const json = $f.toJson();
+    ```
+
+    Convert the current build rule to json

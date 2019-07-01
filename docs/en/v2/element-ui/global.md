@@ -12,6 +12,7 @@
 - **row**：表单组件布局配置
 - **submitBtn**：提交按钮样式配置
 - **resetBtn**：重置按钮样式配置
+- **info**：组件提示消息配置
 
 
 
@@ -162,3 +163,21 @@
 
 - 参考: [布局规则](/v2/element-ui/col.html) | [Button_props](http://element.eleme.io/#/zh-CN/component/button)
 
+## info <Badge type="warn" text="0.0.4+"/>
+
+- **类型**：`Object`
+
+- **说明**：组件提示消息配置
+
+- **默认值**:
+
+  ```js
+  {
+    //提示消息类型,popover,tooltip
+    type:"popover"
+  }
+  ```
+
+  可以在`info`配置项中设置提示组件的属性
+
+- 提示组件: [Popover_props](https://element.eleme.io/#/zh-CN/component/popover) | [Tooltip_props](https://element.eleme.io/#/zh-CN/component/tooltip)
