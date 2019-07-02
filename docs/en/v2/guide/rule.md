@@ -67,9 +67,9 @@ maker.create('input','test','textTitle').props({
 
 ### **info** <Badge type="warn" text="0.0.4+"/>
 
-- **Type**: `Object`
+- **Type**: `String`
 - **Description**: Set the prompt information for the component
-- **Configuration Description**: [iview](/v2/iview/global) | [element-ui](/v2/element-ui/global)
+- Global Configuration Description: [iview](/v2/iview/global.html) | [element-ui](/v2/element-ui/global.html)
 
 ### **className**
 

@@ -69,9 +69,9 @@ maker.create('input','test','textTitle').props({
 
 ### **info** <Badge type="warn" text="0.0.4+"/>
 
-- ​**类型**:  `Object`
+- ​**类型**:  `String`
 - **说明**: 设置组件的提示信息
-- **配置说明**: [iview](/v2/iview/global) | [element-ui](/v2/element-ui/global)
+- 全局配置说明: [iview](/v2/iview/global) | [element-ui](/v2/element-ui/global)
 
 ### **native**
 
