@@ -1,10 +1,54 @@
 ---
- title: 更新日志 (0.0.4)
+ title: 更新日志 (0.0.5)
 ---
 
-### 当前版本 0.0.4
+### 当前版本 0.0.5
 
 --------
+
+#### 0.0.5 (2019-07-07)
+
+- 优化 `$f.toJson` 方法,不支持转换 `template` 组件
+- 新增 `$f.updateRule`,`$f.updateRules` 方法
+```js
+//更新 goods_name
+$f.updateRule('goods_name',{
+    props:{
+        disabled:true
+    }
+})
+//批量更新
+$f.updateRules({
+    'goods_name':{
+        props:{
+            disabled:true
+        }
+    }
+})
+```
+- 新增 `injectEvent` 全局配置项,设置是否开启事件注入,注入$f,rule等参数.开启后事件的第一个参数为注入的参数
+```js
+//注入参数的数据结构
+{
+    $f:Object,//api
+    rule:Array,//生成规则
+    option:Object,//全局配置
+    inject:Any,//自定义注入的参数
+}
+
+```
+```js
+//全局开启
+{
+    injectEvent:true
+}
+//指定事件开启
+rule:{
+    //inject为事件额外的自定义注入参数
+    emit:[{name:'click',inject:true}]
+}
+```
+- 修复 移除组件的同时又新增`field`与移除组件相同的组件时组件收到值`undefined`问题
 
 #### 0.0.4 (2019-06-30)
 
