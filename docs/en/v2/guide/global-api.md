@@ -110,7 +110,7 @@
 
 - **type**: `Object`
 
-- **Description**: [Component Builder] (/v2/guide/maker-function.html)
+- **Description**: [Component Builder](/en/v2/guide/maker-function.html)
 
 - **Usage**:
   

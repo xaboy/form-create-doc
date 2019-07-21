@@ -19,6 +19,7 @@ sidebarDepth: 3
   <form-create ref="fc" v-model="fApi" :rule="rules"></form-create>
   ```
   - $f = vm.fApi
+  - $f = vm.fc.$f
 
 
 
@@ -106,7 +107,56 @@ sidebarDepth: 3
   ```
 
   删除指定字段
-  
+
+
+### $f.updateRule <Badge type="warn" text="0.0.5+"/>
+
+- **参数**：`{string} [field|name]`,`{object} rule`
+
+- **用法**：
+
+  ```js
+  $f.updateRule(field,{
+    props:{
+      disabled: true
+    }
+  })
+  ```
+
+  更新指定组件
+
+
+
+### $f.updateRules <Badge type="warn" text="0.0.5+"/>
+
+- **参数**：`{object} rules`
+
+- **用法**：
+
+  ```js
+  $f.updateRule({
+    field:{
+      props:{
+        disabled: true
+      }
+    }
+  })
+  ```
+
+  批量更新组件
+
+
+### $f.getRule <Badge type="warn" text="0.0.6+"/>
+
+- **参数**：`{string} [field|name]`
+
+- **用法**：
+
+  ```js
+  $f.getRule(field)
+  ```
+
+   获取指定组件生成规则
 
 ### $f.validate
 

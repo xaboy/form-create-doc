@@ -22,10 +22,6 @@ form-create 是一个可以通过 JSON 生成具有动态渲染、数据收集�
 
 ## 安装
 
-**1.x**
-
-`npm i form-create`
-
 **V2**
 
 `npm i @form-create/element-ui`

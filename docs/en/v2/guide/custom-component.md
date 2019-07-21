@@ -263,7 +263,7 @@ formCreate.maker.template('<i-button @click="onClick" long :disabled="disabled">
   methods: {
     onClick: function () {
         this.num++;
-        / / Update the value inside the component
+        // Update the value inside the component
         this.$emit('input',this.num);
     },
   },

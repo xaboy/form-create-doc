@@ -30,6 +30,7 @@ window.formCreate.create(rule,option)
 - onReload：表单重载后回调函数
 - mounted：表单创建成功后回调函数
 - global：组件全局配置
+- injectEvent：开启事件中注入自定义参数
 
 **UI 框架配置**
 
@@ -131,6 +132,30 @@ window.formCreate.create(rule,option)
   <form-create @mounted="onMounted"></form-create>
   ```
 
+
+### injectEvent <Badge type="warn" text="0.0.5+"/>
+
+- **类型**：`Boolean`
+
+- **说明**：开启事件中注入自定义参数
+
+- **示例**：
+
+  ```js
+  {
+    injectEvent:  true
+  }
+  ```
+
+  注入参数的数据结构
+  ```js
+  {
+      $f:Object,//api
+      rule:Array,//生成规则
+      option:Object,//全局配置
+      inject:Any,//自定义注入的参数
+  }
+  ```
 
 
 ### global

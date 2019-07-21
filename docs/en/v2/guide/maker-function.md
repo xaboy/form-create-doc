@@ -1,7 +1,6 @@
-# 组件生成器
+# Maker
 
-**maker 组件生成器是用来生成组件规则的助手方法,通过链式操作即可快速生成对应的组件规则**
-
+**The maker component generator is a helper method for generating component rules, which can quickly generate corresponding component rules through chain operations.**
 
 
 ## 获取 maker 生成器
@@ -39,3 +38,4 @@
 
 
 - [Iview](/en/v2/iview/maker.html)
+- [ElementUI](/en/v2/element-ui/maker.html)

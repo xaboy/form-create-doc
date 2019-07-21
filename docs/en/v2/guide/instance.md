@@ -103,6 +103,55 @@ Get the value of the specified field
 
   Delete specified field
   
+### $f.updateRule <Badge type="warn" text="0.0.5+"/>
+
+- **Parameter**:`{string} [field|name]`,`{object} rule`
+
+- **Usage**:
+
+```js
+$f.updateRule(field,{
+  props:{
+    disabled: true
+  }
+})
+```
+
+   Update specified component
+
+
+
+### $f.updateRules <Badge type="warn" text="0.0.5+"/>
+
+- **parameters**:`{object} rules`
+
+- **Usage**:
+
+```js
+$f.updateRule({
+  field:{
+    props:{
+      disabled: true
+    }
+  }
+})
+```
+
+   Batch update component
+
+
+### $f.getRule <Badge type="warn" text="0.0.6+"/>
+
+- **Parameter**:`{string} [field|name]`
+
+- **Usage**:
+
+```js
+$f.getRule(field)
+```
+
+    Get the specified component generation rule
+
 
 ### $f.validate
 

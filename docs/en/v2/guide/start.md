@@ -77,7 +77,7 @@ export default {
      ],
      // Component parameter configuration
      option:{
-       / / form submission event
+       // form submission event
        onSubmit:function (formData) {
          Alert(JSON.stringify(formData));
        }

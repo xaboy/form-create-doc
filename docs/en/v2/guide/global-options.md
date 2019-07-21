@@ -29,6 +29,7 @@ The global configuration consists of the following sections.
 - onReload: callback function after form overloading
 - mounted: callback function after the form is created successfully
 - global: component global configuration
+- injectEvent: inject custom parameters in the open event
 
 **UI framework configuration**
 
@@ -130,7 +131,29 @@ The global configuration consists of the following sections.
   <form-create @mounted="onMounted"></form-create>
   ```
 
+### injectEvent <Badge type="warn" text="0.0.5+"/>
 
+- **Type**: `Boolean`
+
+- **Description**: Inject custom parameters in the open event
+
+- **Example**:
+
+   ```js
+   {
+     injectEvent: true
+   }
+   ```
+
+   Data structure of the injected parameters
+   ```js
+   {
+       $f:Object,//api
+       rule:Array, // generation rules
+       option:Object, // global configuration
+       inject:Any, // custom injection parameters
+   }
+   ```
 
 ### global
 

@@ -1,10 +1,63 @@
 ---
- Title: update log (0.0.4)
+ Title: update log (1.0.0)
 ---
 
-### Current version 0.0.4
+### Current version 1.0.0
 
 --------
+
+
+#### 1.0.0 (2019-07-21)
+
+- Fixed timePicker component not selecting problem
+- Fixed stack overflow issue when type is template
+- Added automatic injection of `$f` in the custom component props, which can be received with `props.formCreate`
+- Added `$f.getRule` method to get the generation rule for specifying `field`
+
+
+#### 0.0.5 (2019-07-07)
+
+- Optimize the `$f.toJson` method, does not support converting `template` components
+- Added `$f.updateRule`, `$f.updateRules` method
+```js
+//Update goods_name
+$f.updateRule('goods_name',{
+     props:{
+         disabled: true
+     }
+})
+// Batch update
+$f.updateRules({
+     'goods_name':{
+         props:{
+             disabled: true
+         }
+     }
+})
+```
+- Added `injectEvent` global configuration item, set whether to enable event injection, inject $f, rule and other parameters. The first parameter of the event after opening is the injected parameter.
+```js
+// Inject the data structure of the parameters
+{
+   $f:Object,//api
+   rule:Array, // generation rules
+   option:Object, // global configuration
+   inject:Any, // custom injection parameters
+}
+
+```
+```js
+//Open globally
+{
+     injectEvent:true
+}
+// specify the event to open
+rule:{
+     //inject extra custom injection parameters for the event
+     emit:[{name:'click',inject:true}]
+}
+```
+- Fixes remove the component and add `field` to the same component as the removed component. The component receives the value `undefined`.
 
 
 #### 0.0.4 (2019-06-30)
