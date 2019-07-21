@@ -10,7 +10,7 @@
 #### 1.0.0 (2019-07-21)
 
 - Fixed timePicker component not selecting problem
-- Fixed stack overflow issue when type is template
+- Fixed stack overflow issue when type is template [#110](https://github.com/xaboy/form-create/issues/110)
 - Added automatic injection of `$f` in the custom component props, which can be received with `props.formCreate`
 - Added `$f.getRule` method to get the generation rule for specifying `field`
 

@@ -9,7 +9,7 @@
 #### 1.0.0 (2019-07-21)
 
 - 修复 timePicker 组件无法选择问题
-- 修复 type为template时会引发栈溢出问题
+- 修复 type为template时会引发栈溢出问题 [#110](https://github.com/xaboy/form-create/issues/110)
 - 新增 自定义组件props中自动注入`$f`,可以用`props.formCreate`接收
 - 新增 `$f.getRule`方法,获取指定`field`的生成规则
 
