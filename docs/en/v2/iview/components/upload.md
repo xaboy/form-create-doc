@@ -14,7 +14,7 @@ maker.upload('轮播图','pic',['/uploads/20131030/30-075657_191.jpg'])
         "uploadType": "image",
         "name": "file",
         "onSuccess": function (res,file) {
-            file.url = '/uploads/20131030/30-075657_191.jpg';
+            file.url = res.data.filePath;
         },
     })
     .validate([{required:true, type: 'array', min: 3, message: '请上传3张图片', trigger: 'change'}])
@@ -40,8 +40,8 @@ maker.upload('轮播图','pic',['/uploads/20131030/30-075657_191.jpg'])
         "format":["jpg","jpeg","png","gif"],
         "maxSize":2048,
         "maxLength":5,
-        "onSuccess":function (res) {
-            return res.data.filePath;
+        "onSuccess":function (res, file) {
+            file.url = res.data.filePath;
         }
     },
 }

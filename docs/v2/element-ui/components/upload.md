@@ -18,8 +18,8 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
         "type": "select",
         "uploadType": "image",
         "name": "file",
-        "onSuccess": function () {
-            return 'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg';
+        "onSuccess": function (res, file) {
+            file.url = res.data.filePath;
         },
     })
     .validate([{required:true, type: 'array', min: 3, message: '请上传3张图片', trigger: 'change'}])
@@ -44,8 +44,8 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
         "accept":"image\/*",
         "format":["jpg","jpeg","png","gif"],
         "limit": 2,
-        "onSuccess":function (res) {
-            return res.data.filePath;
+        "onSuccess":function (res, file) {
+            file.url = res.data.filePath;
         }
     },
 }
