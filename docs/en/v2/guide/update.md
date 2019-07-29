@@ -1,10 +1,17 @@
 ---
- Title: update log (1.0.0)
+title: Update log (1.0.1)
 ---
 
-### Current version 1.0.0
+### Current version 1.0.1
 
 --------
+
+#### 1.0.1 (2019-07-29)
+
+- Add `$f.updateValidate`, `$f.updateValidates` method [#116](https://github.com/xaboy/form-create/issues/116)
+- Fixed input box setting maximum and minimum characters invalid [#115](https://github.com/xaboy/form-create/issues/115)
+- Fixed upload component uploading multiple images at the same time
+- Fixed ElementUI.upload component loading animation does not display problem
 
 
 #### 1.0.0 (2019-07-21)

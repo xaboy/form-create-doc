@@ -1,10 +1,17 @@
 ---
- title: 更新日志 (1.0.0)
+ title: 更新日志 (1.0.1)
 ---
 
-### 当前版本 1.0.0
+### 当前版本 1.0.1
 
 --------
+
+#### 1.0.1 (2019-07-29)
+
+- 增加 `$f.updateValidate`,`$f.updateValidates` 方法 [#116](https://github.com/xaboy/form-create/issues/116)
+- 修复 输入框设置最大最小字符无效 [#115](https://github.com/xaboy/form-create/issues/115)
+- 修复 upload组件同时上传多张图片报错问题
+- 修复 ElementUI.upload组件加载动画不显示问题
 
 #### 1.0.0 (2019-07-21)
 
