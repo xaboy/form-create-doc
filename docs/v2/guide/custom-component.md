@@ -167,7 +167,10 @@ $f.component().btn.vm.loading = false;
 > 如果修改后组件没有更新,请通过`$.sync`或`$f.refresh`方法强制刷新
 
 
-## 转换为表单组件
+## 表单组件
+
+> **实现`v-model`的组件都可以称为表单组件**
+
 
 转换为表单组件后,可通过`$f.formData`,`$f.getValue`,`$f.setValue`,`$f.disabled`等方法修改组件状态
 

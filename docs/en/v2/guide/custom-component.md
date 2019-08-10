@@ -167,7 +167,9 @@ $f.component().btn.vm.loading = false;
 > If the modified component is not updated, force a refresh via `$.sync` or `$f.refresh`
 
 
-## Convert to form component
+## Form component
+
+> ** Components that implement `v-model` can be called form components**
 
 After converting to a form component, you can modify the component state by `$f.formData`,`$f.getValue`,`$f.setValue`,`$f.disabled`, etc.
 
