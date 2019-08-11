@@ -10,8 +10,8 @@
 
 - 修复 样式被覆盖问题 [#121](https://github.com/xaboy/form-create/issues/121#issuecomment-519348579)
 - 修复 datePicker,timePicker 组件验证问题,取值问题 [#118](https://github.com/xaboy/form-create/issues/118)
-- 增强 生成规则定义`name`后,可通过`component`方法获取
 - 修复 `append`,`prepend` 方法报错
+- 增强 生成规则定义`name`后,可通过`component`方法获取
 - 增加 `on`,`off`,`once` 方法绑定 emit 事件
 
 #### 1.0.1 (2019-07-29)
