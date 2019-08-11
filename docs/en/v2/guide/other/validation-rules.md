@@ -1,18 +1,39 @@
-### 校验规则
+# Verification
 
-| 参数       | 说明                                                         | 类型                                    | 默认值   |
-| ---------- | ------------------------------------------------------------ | --------------------------------------- | -------- |
-| enum       | 枚举类型                                                     | string                                  | -        |
-| len        | 字段长度                                                     | number                                  | -        |
-| max        | 最大长度                                                     | number                                  | -        |
-| message    | 校验文案                                                     | string                                  | -        |
-| min        | 最小长度                                                     | number                                  | -        |
-| pattern    | 正则表达式校验                                               | RegExp                                  | -        |
-| required   | 是否必选                                                     | boolean                                 | `false`  |
-| transform  | 校验前转换字段值                                             | function(value) => transformedValue:any | -        |
-| type       | 内建校验类型，[可选项](https://github.com/yiminghe/async-validator#type) | string                                  | 'string' |
-| validator  | 自定义校验 | function(rule, value, callback)         | -        |
-| whitespace | 必选时，空格是否会被视为错误                                 | boolean                                 | `false`  |
+The validation rules for components can be set via the validate configuration item, and custom form components also support validation.
 
-更多高级用法可研究 [async-validator](https://github.com/yiminghe/async-validator)。
+[Online example](http://jsrun.pro/LchKp/edit)
 
+:::tip
+Type needs to be defined according to the component's value type
+:::
+
+### Example
+
+Verify that the input component is required
+```js
+{
+    type: 'input',
+    //...
+    validate: [{type: 'string', required: true}]
+}
+```
+
+Verify date component is required
+```js
+{
+    type: 'datePicker',
+    //...
+    validate: [{type: 'date', required: true}]
+}
+```
+
+Verify the checkbox component Select at least three
+```js
+{
+    type: 'input',
+    //...
+    validate: [{type: 'array', required: true, min:3}]
+}
+```
+More advanced usage can be studied [async-validator](https://github.com/yiminghe/async-validator).

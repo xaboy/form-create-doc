@@ -1,4 +1,44 @@
-### 校验规则
+# 校验规则
+
+可以通过 validate 配置项设置组件的验证规则,自定义的表单组件也支持校验
+
+[在线示例](http://jsrun.pro/LchKp/edit)
+
+:::tip
+type 需要根据组件的 value 类型定义
+:::
+
+### 示例
+
+验证 input 组件必填
+```js
+{
+    type:'input',
+    //...
+    validate: [{type: 'string', required: true}]
+}
+```
+
+验证 date 组件必填
+```js
+{
+    type:'datePicker',
+    //...
+    validate: [{type: 'date', required: true}]
+}
+```
+
+验证 checkbox 组件 最少选择三个
+```js
+{
+    type:'input',
+    //...
+    validate: [{type: 'array', required: true, min:3}]
+}
+```
+
+
+### 参数说明
 
 | 参数       | 说明                                                         | 类型                                    | 默认值   |
 | ---------- | ------------------------------------------------------------ | --------------------------------------- | -------- |
