@@ -1,10 +1,17 @@
 ---
-title: Update log (1.0.1)
+title: Update log (1.0.2)
 ---
 
-### Current version 1.0.1
+### Current version 1.0.2
 
 --------
+#### 1.0.2 (2019-08-11)
+
+- Fixed style overridden issue [#121](https://github.com/xaboy/form-create/issues/121#issuecomment-519348579)
+- Fixed datePicker, timePicker component validation issue, value issue [#118](https://github.com/xaboy/form-create/issues/118)
+- Enhanced After the rule definition `name` is generated, it can be obtained by the `component` method.
+- Fixed `append`, `prepend` method error
+- Added `on`, `off`, `once` method binding emit event
 
 #### 1.0.1 (2019-07-29)
 

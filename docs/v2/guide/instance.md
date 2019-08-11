@@ -241,7 +241,7 @@ sidebarDepth: 3
          validate:[
              { required: true, message: '请输入商品简介', trigger: 'blur' },
          ],
-  });
+  }, 'goods-name', false);
   ```
 
   在`field`的字段之前插入指定表单元素,不传入`field`默认在第一个.如果`isChild`为 `true`,将会添加到`field`的子级
@@ -266,7 +266,7 @@ sidebarDepth: 3
          validate:[
              { required: true, message: '请输入商品简介', trigger: 'blur' },
          ],
-  });
+  }, 'goods-name', false);
   ```
 
   在`field`的字段之后插入指定表单元素,不传入`field`默认在最后一个.如果`isChild`为 `true`,将会添加到`field`的子级
@@ -483,7 +483,7 @@ sidebarDepth: 3
 
 ### $f.reload
 
-- **参数**：`{array} rules`
+- **参数**：`{Array} [rules]`
 
 - **用法**：
 
@@ -515,7 +515,7 @@ sidebarDepth: 3
 
 ### $f.onSubmit
 
-- **参数**：`{function} onSubmit`
+- **参数**：`{Function} [onSubmit]`
 
 - **用法**：
 
@@ -530,7 +530,7 @@ sidebarDepth: 3
 
 ### $f.sync
 
-- **参数**：`{string} [field|name]`
+- **参数**：`{string} field/name`
 
 - **用法**：
 
@@ -544,7 +544,7 @@ sidebarDepth: 3
 
 ### $f.refresh
 
-- **参数**：`{bool} clear`
+- **参数**：`{bool} [clear]`
 
 - **用法**：
 
@@ -559,7 +559,7 @@ sidebarDepth: 3
 
 ### $f.hideForm
 
-- **参数**：`{bool} isShow`
+- **参数**：`{bool} [isShow]`
 
 - **用法**：
 
@@ -574,7 +574,9 @@ sidebarDepth: 3
 
 ### $f.method
 
-- **参数**：`{string} field`、`{string} methodName`
+- **参数**：
+    - **`{string} field/name`**
+    - **`{string} methodName`** 组件方法名称
 
 - **返回值**：`Function`
 
@@ -600,3 +602,73 @@ sidebarDepth: 3
   ```
 
    将当前的生成规则转换为 json
+
+### $f.on <Badge type="warn" text="1.0.2+"/>
+
+
+- **参数**：
+    - **`{string} emitName`**  生成规则`emit`事件名称
+    - **`{Function} callback`** 回调方法
+
+- **用法**：
+
+  ```js
+  /*
+  rule:{
+    field:'goods-name'
+    //...
+    emit:['on-change']
+  }
+  */
+
+  $f.on('goods-name-on-change',() => {
+    //TODO
+  });
+  ```
+
+   监听当前实例上的自定义事件
+
+
+
+### $f.once <Badge type="warn" text="1.0.2+"/>
+
+
+- **参数**：
+    - **`{string} emitName`**  生成规则`emit`事件名称
+    - **`{Function} callback`** 回调方法
+
+- **用法**：
+
+  ```js
+  /*
+    rule:{
+      field:'goods-name'
+      //...
+      emit:['on-change']
+    }
+    */
+  $f.once('goods-name-on-change',() => {
+    //TODO
+  });
+  ```
+
+   监听一个自定义事件，但是只触发一次，在第一次触发之后移除监听器
+
+
+
+### $f.off <Badge type="warn" text="1.0.2+"/>
+
+
+- **参数**：
+    - **`{string | Array} emitName`**  生成规则`emit`事件名称
+    - **`{Function} [callback]`** 回调方法
+
+- **用法**：
+
+   移除自定义事件监听器。
+
+   - 如果没有提供参数，则移除所有的事件监听器；
+
+   - 如果只提供了事件，则移除该事件所有的监听器；
+
+   - 如果同时提供了事件与回调，则只移除这个回调的监听器。

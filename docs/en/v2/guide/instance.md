@@ -592,3 +592,74 @@ $f.getRule(field)
     ```
 
     Convert the current build rule to json
+
+
+### $f.on <Badge type="warn" text="1.0.2+"/>
+
+
+- **Parameters**：
+    - **`{string} emitName`**
+    - **`{Function} callback`**
+
+- **Usage**：
+
+  ```js
+  /*
+  rule:{
+    field:'goods-name'
+    //...
+    emit:['on-change']
+  }
+  */
+
+  $f.on('goods-name-on-change',() => {
+    //TODO
+  });
+  ```
+
+   Listen for custom events on the current instance
+
+
+
+### $f.once <Badge type="warn" text="1.0.2+"/>
+
+
+- **Parameters**：
+    - **`{string} emitName`**
+    - **`{Function} callback`**
+
+- **Usage**：
+
+  ```js
+  /*
+    rule:{
+      field:'goods-name'
+      //...
+      emit:['on-change']
+    }
+    */
+  $f.once('goods-name-on-change',() => {
+    //TODO
+  });
+  ```
+
+   Listen for a custom event, but only fire once, remove the listener after the first trigger
+
+
+
+### $f.off <Badge type="warn" text="1.0.2+"/>
+
+
+- **Parameters**：
+    - **`{string | Array} emitName`**
+    - **`{Function} [callback]`**
+
+- **Usage**：
+
+    Remove the custom event listener.
+
+    - remove all event listeners if no arguments are supplied;
+
+    - If only an event is provided, remove all listeners for that event;
+
+    - If both events and callbacks are provided, only the listeners for this callback are removed.
