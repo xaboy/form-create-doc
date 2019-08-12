@@ -31,7 +31,7 @@ Verify date component is required
 Verify the checkbox component Select at least three
 ```js
 {
-    type: 'input',
+    type: 'checkbox',
     //...
     validate: [{type: 'array', required: true, min:3}]
 }

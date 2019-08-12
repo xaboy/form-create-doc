@@ -55,6 +55,27 @@
 <form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
 ```
 
+### 通过 on 方法绑定事件 <Badge type="warn" text="1.0.2+"/>
+
+```js
+//rule
+[{
+     type:'input',
+     field: 'test',
+     title: 'test',
+     value: '',
+     emit: ['on-change'],
+     emitPrefix: 'xaboy',
+ }]
+```
+
+```js
+$f.on('xaboy-on-change',function(){
+    //TODO
+})
+
+```
+
 ### 向事件中注入`$f`和自定义参数
 
 ```js

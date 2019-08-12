@@ -55,6 +55,28 @@ The event name is `${emitPrefix}-${eventName}`
 <form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
 ```
 
+
+### Bind events using the `on` method <Badge type="warn" text="1.0.2+"/>
+
+```js
+//rule
+[{
+     type:'input',
+     field: 'test',
+     title: 'test',
+     value: '',
+     emit: ['on-change'],
+     emitPrefix: 'xaboy',
+ }]
+```
+
+```js
+$f.on('xaboy-on-change',function(){
+    //TODO
+})
+
+```
+
 ### Inject `$f` and custom parameters into the event
 
 ```js

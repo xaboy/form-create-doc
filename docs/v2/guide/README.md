@@ -22,11 +22,21 @@ form-create 是一个可以通过 JSON 生成具有动态渲染、数据收集�
 
 ## 安装
 
-**V2**
+ElementUI
 
 `npm i @form-create/element-ui`
 
+Iview
+
 `npm i @form-create/iview`
+
+## 导航
+
+- [ElementUI](/v2/element-ui/)
+- [Iview](/v2/iview/)
+- [实例方法](/v2/guide/instance.html)
+- [自定义组件](/v2/guide/custom-component.html)
+- [第三方组件](/v2/guide/component/)
 
 ## 功能
 

@@ -31,7 +31,7 @@ type 需要根据组件的 value 类型定义
 验证 checkbox 组件 最少选择三个
 ```js
 {
-    type:'input',
+    type:'checkbox',
     //...
     validate: [{type: 'array', required: true, min:3}]
 }
