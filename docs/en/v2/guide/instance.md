@@ -600,6 +600,35 @@ $f.getRule(field)
 
     Convert the current build rule to json
 
+### $f.trigger <Badge type="warn" text="1.0.3+"/>
+
+- **Parameter**:
+    - **`{string} field/name`**
+    - **`{string} eventName`** component method name
+    - **`... args`** event parameters
+
+- **Usage**:
+
+    ```js
+    $f.toJson('input','on-change','new value');
+    ```
+
+    Manually trigger component events
+
+### $f.el <Badge type="warn" text="1.0.3+"/>
+
+- **Parameter**:
+    - **`{string} field/name`**
+
+- **Return value**:`vm|Element`
+
+- **Usage**:
+
+    ```js
+    $f.el('input');
+    ```
+
+    Get the `vm` or `dom` element of the component
 
 ### $f.on <Badge type="warn" text="1.0.2+"/>
 

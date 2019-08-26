@@ -610,6 +610,36 @@ sidebarDepth: 3
 
    将当前的生成规则转换为 json
 
+### $f.trigger <Badge type="warn" text="1.0.3+"/>
+
+- **参数**：
+    - **`{string} field/name`**
+    - **`{string} eventName`** 组件方法名称
+    - **`... args`** 事件参数
+
+- **用法**：
+
+  ```js
+  $f.toJson('input','on-change','new value');
+  ```
+
+   手动触发组件的事件
+
+### $f.el <Badge type="warn" text="1.0.3+"/>
+
+- **参数**：
+    - **`{string} field/name`**
+
+- **返回值**：`vm|Element`
+
+- **用法**：
+
+  ```js
+  $f.el('input');
+  ```
+
+   获取组件的的`vm`或者`dom`元素
+
 ### $f.on <Badge type="warn" text="1.0.2+"/>
 
 
