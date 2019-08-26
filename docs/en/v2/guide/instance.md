@@ -95,6 +95,8 @@ Get the value of the specified field
 
 - **Parameter**:`{string} [field|name]`
 
+- **Return value**: `{object} rule`
+
 - **Usage**:
 
   ```js
@@ -105,7 +107,12 @@ Get the value of the specified field
   
 ### $f.updateRule <Badge type="warn" text="0.0.5+"/>
 
-- **Parameter**:`{string} [field|name]`,`{object} rule`
+- **Parameter**:
+    - `{string} [field|name]`
+    - `{object} rule`
+    - `{bool} cover` The default is deep copy, which is equal to true when it is directly overwritten
+
+- **Return value**: `{object} rule`
 
 - **Usage**:
 

@@ -100,6 +100,8 @@ sidebarDepth: 3
 
 - **参数**：`{string} [field|name]`
 
+- **返回值**：`{object} rule`
+
 - **用法**：
 
   ```js
@@ -111,7 +113,12 @@ sidebarDepth: 3
 
 ### $f.updateRule <Badge type="warn" text="0.0.5+"/>
 
-- **参数**：`{string} [field|name]`,`{object} rule`
+- **参数**：
+    - `{string} [field|name]`
+    - `{object} rule`
+    - `{bool} cover` 默认为深拷贝,等于 true 时为直接覆盖
+
+- **返回值**：`{object} rule`
 
 - **用法**：
 
