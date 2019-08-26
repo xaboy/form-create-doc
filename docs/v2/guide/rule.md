@@ -91,6 +91,11 @@ maker.create('input','test','textTitle').props({
 - **类型**:  `Array`
 - **说明**: 设置`radio`,`select`,`checkbox`等组件`option`选择项
 
+### **inject**
+
+- **类型**:  `any`
+- **说明**: 设置事件注入是的自定义数据
+
 
 ### **col**
 

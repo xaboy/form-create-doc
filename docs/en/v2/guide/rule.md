@@ -90,6 +90,11 @@ maker.create('input','test','textTitle').props({
 - **Type**: `Array`
 - **Description**: Set `radio`, `select`, `checkbox` and other components `option` options
 
+### **inject**
+
+- **Type**:  `any`
+- **Description**: Set event injection is custom data
+
 
 ### **col**
 

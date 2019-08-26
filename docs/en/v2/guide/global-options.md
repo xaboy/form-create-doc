@@ -150,6 +150,7 @@ The global configuration consists of the following sections.
    {
        $f:Object,//api
        rule:Array, // generation rules
+       self:Object, // current generation rule
        option:Object, // global configuration
        inject:Any, // custom injection parameters
    }

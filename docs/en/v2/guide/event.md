@@ -119,6 +119,7 @@ Data structure of the inject parameter
 {
     $f:Object,//api
     rule:Array, // ​​generation rules
+    self:Object, // current generation rule
     option:Object, // ​​global configuration
     inject:Any, // ​​custom injection parameters
 }

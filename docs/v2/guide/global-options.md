@@ -152,6 +152,7 @@ window.formCreate.create(rule,option)
   {
       $f:Object,//api
       rule:Array,//生成规则
+      self:Object,//当前生成规则
       option:Object,//全局配置
       inject:Any,//自定义注入的参数
   }
