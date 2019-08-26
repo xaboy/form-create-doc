@@ -1,10 +1,29 @@
 ---
-title: Update log (1.0.2)
+title: Update log (1.0.3)
 ---
 
-### Current version 1.0.2
+### Current version 1.0.3
 
 --------
+#### 1.0.3 (2019-08-26)
+
+- Fixed event invalidation of control bindings in the form after multiple v-ifs [#125](https://github.com/xaboy/form-create/issues/125)
+- Fix toJson method function to json
+- Fixed removing the extra layout when the built-in button is not displayed
+- Added manual trigger event method `$f.trigger`
+- Added Get component `vm` method `$f.el`
+- Enhanced functions in `props` to support event injection
+- Enhanced `removeField`, `updateRule` returns the current rule
+- Enhanced `self` current rule in event injection parameters
+- Enhanced vm parameter support set to `Function`
+```js
+{
+    vm:function(){
+        return new Vue;
+    }
+}
+```
+
 #### 1.0.2 (2019-08-11)
 
 - Fixed style overridden issue [#121](https://github.com/xaboy/form-create/issues/121#issuecomment-519348579)

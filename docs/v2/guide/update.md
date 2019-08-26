@@ -1,10 +1,30 @@
 ---
- title: 更新日志 (1.0.2)
+ title: 更新日志 (1.0.3)
 ---
 
-### 当前版本 1.0.2
+### 当前版本 1.0.3
 
 --------
+
+#### 1.0.3 (2019-08-26)
+
+- 修复 多次v-if后表单内控件绑定的事件失效 [#125](https://github.com/xaboy/form-create/issues/125)
+- 修复 toJson方法函数转json
+- 修复 内置按钮不显示时,移除多余的布局 div
+- 新增 手动触发事件方法`$f.trigger`
+- 新增 获取组件`vm`方法`$f.el`
+- 增强 `props` 中的函数支持事件注入
+- 增强 `removeField`,`updateRule`返回当前规则
+- 增强 事件注入参数中增加`self`当前规则
+- 增强 vm 参数支持设置为`Function`
+```js
+{
+    vm:function(){
+        return new Vue;
+    }
+}
+```
+
 
 #### 1.0.2 (2019-08-11)
 
