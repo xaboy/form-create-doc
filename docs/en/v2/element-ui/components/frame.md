@@ -52,6 +52,7 @@ maker.frame('素材','fodder',["/uploads/20131030/30-075657_191.jpg"]).props({
 | modalTitle | 图片预览弹出框标题文字 |  String | '预览' |
 | handleIcon | 操作按钮的图标 ,设置为false将不显示,设置为true为默认的预览图标,类型为file时默认为false,image类型默认为true |  String \| Boolean | - |
 | title | 弹出框标题 | String | - |
+| modal | 配置弹出框 props | Object | - |
 | allowRemove | 是否可删除,设置为false是不显示删除按钮,type等于 image 或者 file 时有效 | Boolean | true |
 | onChange | value改变时触发 | Function | - |
 | onOpen | 打开弹出层回调 | Function | - |
