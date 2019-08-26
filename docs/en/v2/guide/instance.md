@@ -620,7 +620,7 @@ $f.getRule(field)
 - **Parameter**:
     - **`{string} field/name`**
 
-- **Return value**:`vm|Element`
+- **Return value**:`Vue|Element`
 
 - **Usage**:
 
@@ -628,7 +628,7 @@ $f.getRule(field)
     $f.el('input');
     ```
 
-    Get the `vm` or `dom` element of the component
+    Get the `Vue` or `dom` element of the component
 
 ### $f.on <Badge type="warn" text="1.0.2+"/>
 

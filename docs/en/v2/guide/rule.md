@@ -196,7 +196,7 @@ new vue({
 
 ### **vm**
 
-- **Type**: `Vue`
+- **Type**: `Vue|Function`
 - **Description**: Vue sample object for template component for parsing template
 
 

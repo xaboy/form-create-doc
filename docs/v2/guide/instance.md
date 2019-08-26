@@ -630,7 +630,7 @@ sidebarDepth: 3
 - **参数**：
     - **`{string} field/name`**
 
-- **返回值**：`vm|Element`
+- **返回值**：`Vue|Element`
 
 - **用法**：
 
@@ -638,7 +638,7 @@ sidebarDepth: 3
   $f.el('input');
   ```
 
-   获取组件的的`vm`或者`dom`元素
+   获取组件的的`Vue`或者`dom`元素
 
 ### $f.on <Badge type="warn" text="1.0.2+"/>
 
