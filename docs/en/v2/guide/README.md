@@ -30,6 +30,10 @@ Iview
 
 `npm i @form-create/iview`
 
+Iview 4
+
+`npm i @form-create/iview4`
+
 
 ## Navigation
 

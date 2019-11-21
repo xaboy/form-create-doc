@@ -23,14 +23,22 @@
 
 推荐使用 npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
 
+iview 3.x,^2.13版本
 ```
 npm i @form-create/iview
+```
+iview 4.x版本
+
+```
+npm i @form-create/iview4
 ```
 
 **引入**
 
 ```js
 import formCreate, {maker} from '@form-create/iview'
+//或者
+import formCreate, {maker} from '@form-create/iview4'
 ```
 
 ### 兼容
@@ -38,6 +46,8 @@ import formCreate, {maker} from '@form-create/iview'
 - iview 2.13.0
 
 - iview 3.x
+
+- iview 4.x
 
 
 ### 图例

@@ -29,6 +29,7 @@ window.formCreate.create(rule,option)
 - onSubmit：表单提交回调函数
 - onReload：表单重载后回调函数
 - mounted：表单创建成功后回调函数
+- formData：表单初始值
 - global：组件全局配置
 - injectEvent：开启事件中注入自定义参数
 
@@ -158,6 +159,22 @@ window.formCreate.create(rule,option)
   }
   ```
 
+
+### formData <Badge type="warn" text="1.0.4+"/>
+
+- **类型**：`Object`
+
+- **说明**：设置表单初始值
+
+- **示例**：
+
+  ```js
+  {
+     field1:  'value1'
+     field2:  'value2'
+     field3:  'value3'
+  }
+  ```
 
 ### global
 

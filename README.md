@@ -29,6 +29,7 @@
 
 - iViewUI **2.13.0+**
 - iViewUI **3.x**
+- iViewUI **4.x**
 - ElementUI **2.5.2+**
 
 ![form-create 图例](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)

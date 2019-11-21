@@ -28,6 +28,7 @@ The global configuration consists of the following sections.
 - onSubmit: form submission callback function
 - onReload: callback function after form overloading
 - mounted: callback function after the form is created successfully
+- formData: Form initial value
 - global: component global configuration
 - injectEvent: inject custom parameters in the open event
 
@@ -155,6 +156,23 @@ The global configuration consists of the following sections.
        inject:Any, // custom injection parameters
    }
    ```
+
+
+### formData <Badge type="warn" text="1.0.4+"/>
+
+- **类型**：`Object`
+
+- **说明**：Set the form initial value
+
+- **示例**：
+
+  ```js
+  {
+     field1:  'value1'
+     field2:  'value2'
+     field3:  'value3'
+  }
+  ```
 
 ### global
 

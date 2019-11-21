@@ -1,10 +1,19 @@
 ---
-title: Update log (1.0.3)
+title: Update log (1.0.4)
 ---
 
-### Current version 1.0.3
+### Current version 1.0.4
 
 --------
+#### 1.0.4 (2019-11-21)
+- Added `formData` configuration item to set the initial value of the form
+- Fixed an infinite loop problem when `type` is undefined
+- Fixed a problem with component not recognized in `type` uppercase
+- Support for the `iview v4` version
+```
+npm i @form-create/iview4
+```
+
 #### 1.0.3 (2019-08-26)
 
 - Fixed event invalidation of control bindings in the form after multiple v-ifs [#125](https://github.com/xaboy/form-create/issues/125)
