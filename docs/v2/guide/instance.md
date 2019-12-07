@@ -355,7 +355,6 @@ sidebarDepth: 3
 
   ```js
   $f.disabled(true)
-  $f.disabled([field1, field2,field3],false)
   ```
   ```js
   $f.disabled(true, field)

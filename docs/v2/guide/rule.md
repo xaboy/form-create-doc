@@ -78,6 +78,11 @@ maker.create('input','test','textTitle').props({
 - ​**类型**:  `Bool`
 - **说明**: 是否原样生成组件,不嵌套的`FormItem`中
 
+### **hidden** <Badge type="warn" text="1.0.5+"/>
+
+- ​**类型**:  `Bool`
+- **说明**: 设置组件是否显示
+
 ## **扩展规则**
 
 

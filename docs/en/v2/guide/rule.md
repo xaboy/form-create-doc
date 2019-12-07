@@ -65,6 +65,12 @@ maker.create('input','test','textTitle').props({
 - **Type**: `Bool`
 - **Description**: Whether to generate components as they are, not nested in `FormItem`
 
+
+### **hidden** <Badge type="warn" text="1.0.5+"/>
+
+- ​**类型**:  `Bool`
+- **说明**: Set whether the component is displayed
+
 ### **info** <Badge type="warn" text="0.0.4+"/>
 
 - **Type**: `String`

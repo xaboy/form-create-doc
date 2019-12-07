@@ -1,10 +1,17 @@
 ---
-title: Update log (1.0.4)
+title: Update log (1.0.5)
 ---
 
-### Current version 1.0.4
+### Current version 1.0.5
 
 --------
+
+#### 1.0.5 (2019-12-7)
+-Refactored `hidden`,` visibility` functionality
+-Added `hidden` and` visibility` configuration items
+-Fix `value` may change unexpectedly
+-Fixed the issue that page components may not render after changing the value
+
 #### 1.0.4 (2019-11-21)
 - Added `formData` configuration item to set the initial value of the form
 - Fixed an infinite loop problem when `type` is undefined
