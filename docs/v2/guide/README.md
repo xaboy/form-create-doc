@@ -26,11 +26,11 @@ ElementUI
 
 `npm i @form-create/element-ui`
 
-Iview
+Iview 2.x|3.x
 
 `npm i @form-create/iview`
 
-Iview 4
+Iview 4.x
 
 `npm i @form-create/iview4`
 
