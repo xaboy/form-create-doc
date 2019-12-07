@@ -11,6 +11,11 @@
     - dist/form-create.js
     - dist/form-create.min.js
 
+- @form-create/iview4 `iview 4.x 版表单生成器`
+
+    - dist/form-create.js
+    - dist/form-create.min.js
+
 - @form-create/element-ui `element-ui 版表单生成器`
 
     - dist/form-create.js
