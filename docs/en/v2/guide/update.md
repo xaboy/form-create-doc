@@ -1,16 +1,20 @@
 ---
-title: Update log (1.0.5)
+title: Update log (1.0.6)
 ---
 
-### Current version 1.0.5
+### Current version 1.0.6
 
 --------
+#### 1.0.6 (2020-01-16)
+- Support `TypeScript`
+- Fixed `elm.frame` component not displaying in` input` type`icon`
+- Fixed the issue that the `iview.tree` component was not selected for the first time rendering
 
 #### 1.0.5 (2019-12-7)
--Refactored `hidden`,` visibility` functionality
--Added `hidden` and` visibility` configuration items
--Fix `value` may change unexpectedly
--Fixed the issue that page components may not render after changing the value
+- Refactored `hidden`,` visibility` functionality
+- Added `hidden` and` visibility` configuration items
+- Fix `value` may change unexpectedly
+- Fixed the issue that page components may not render after changing the value
 
 #### 1.0.4 (2019-11-21)
 - Added `formData` configuration item to set the initial value of the form

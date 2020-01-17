@@ -33,7 +33,7 @@
 
 事件名称为`${field}-${eventName}`
 ```html
-<form-create :rule="rule" test-on-change="onChange"> </form-create>
+<form-create :rule="rule" @test-on-change="onChange"> </form-create>
 ```
 
 ### 通过 `emitPrefix` 自定义事件前缀
@@ -52,7 +52,7 @@
 
 事件名称为`${emitPrefix}-${eventName}`
 ```html
-<form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
+<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
 ```
 
 ### 通过 on 方法绑定事件 <Badge type="warn" text="1.0.2+"/>
@@ -94,7 +94,7 @@ $f.on('xaboy-on-change',function(){
 ```
 
 ```html
-<form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
+<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
 ```
 向事件中注入参数后,事件会额外增加一个参数
 

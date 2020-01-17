@@ -33,7 +33,7 @@ Only supported in component mode
 
 The event name is `${field}-${eventName}`
 ```html
-<form-create :rule="rule" test-on-change="onChange"> </form-create>
+<form-create :rule="rule" @test-on-change="onChange"> </form-create>
 ```
 
 ### Custom event prefix with `emitPrefix`
@@ -52,7 +52,7 @@ The event name is `${field}-${eventName}`
 
 The event name is `${emitPrefix}-${eventName}`
 ```html
-<form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
+<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
 ```
 
 
@@ -95,7 +95,7 @@ $f.on('xaboy-on-change',function(){
 ```
 
 ```html
-<form-create :rule="rule" xaboy-on-change="onChange"> </form-create>
+<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
 ```
 After injecting parameters into the event, the event adds an additional parameter.
 
