@@ -73,6 +73,8 @@ Iview 4.x
 
 - 栅格布局
 
+- 嵌套对象，组件数组
+
 - 内置组件
     - hidden
     - input
@@ -91,6 +93,7 @@ Iview 4.x
     - upload
     - tree
     - frame
+    - group
 
 
 ## 对比 1.x
@@ -104,5 +107,7 @@ Iview 4.x
 - 自定义组件更容易扩展
 
 - 更容易支持第三方 UI 库
+
+- 支持嵌套对象，组件数组
 
 - 更少的 bug

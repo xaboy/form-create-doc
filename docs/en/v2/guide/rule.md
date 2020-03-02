@@ -133,7 +133,7 @@ maker.create('input','test','textTitle').props({
   ```js
   formCreate.maker.create('i-row').children([
     formCreate.maker.create('i-col').props('span',12).children([
-      formCreate.template('<span>custom component</span>', new Vue)
+      formCreate.maker,template('<span>custom component</span>', new Vue)
     ]),
   ]);
   ```

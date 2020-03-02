@@ -619,7 +619,7 @@ sidebarDepth: 3
 - **用法**：
 
   ```js
-  $f.toJson('input','on-change','new value');
+  $f.trigger('input','on-change','new value');
   ```
 
    手动触发组件的事件

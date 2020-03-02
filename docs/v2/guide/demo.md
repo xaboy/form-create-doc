@@ -27,6 +27,7 @@
 - [Slider 滑块](http://jsrun.net/rehKp/edit)
 - [Tree 树形组件](http://jsrun.net/AehKp/edit)
 - [Frame 框架](http://jsrun.net/mehKp/edit)
+- [数组组件/组件嵌套](http://jsrun.pro/VLfKp/edit)
 
 
 
