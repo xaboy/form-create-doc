@@ -1,5 +1,5 @@
 ---
- title: 数组组件/组件嵌套 [新]
+ title: 数组组件/组件嵌套
 ---
 
 
@@ -9,6 +9,8 @@
 
 #### 示例
 ![group](/img/group.gif)
+
+[在线示例](http://jsrun.pro/VLfKp/edit)
 
 #### Maker
 ```js

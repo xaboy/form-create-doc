@@ -387,6 +387,32 @@ sidebarDepth: 3
   清除组件的验证信息
 
 
+
+### $f.changeStatus
+
+
+- **用法**：
+
+  ```js
+  $f.changeStatus()
+  ```
+
+  获取表单的值是否发生变化状态
+
+
+
+### $f.clearChangeStatus
+
+
+- **用法**：
+
+  ```js
+  $f.clearChangeStatus()
+  ```
+
+  清除表单的值是否发生变化状态
+
+
 ### $f.model
 
 - **用法**：

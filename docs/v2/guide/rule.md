@@ -107,6 +107,13 @@ maker.create('input','test','textTitle').props({
 - **类型**:  `Object`
 - **说明**: 设置组件的布局规则
 
+### **control**
+- **类型**:  `Object`
+- **说明**:  设置组件控制其他组件显示
+
+[详细说明](/v2/guide/control.html)
+
+  
 
 ### **children**
 - **类型**:  `Array<rule|string|maker>`

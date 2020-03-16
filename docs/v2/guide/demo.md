@@ -28,7 +28,7 @@
 - [Tree 树形组件](http://jsrun.net/AehKp/edit)
 - [Frame 框架](http://jsrun.net/mehKp/edit)
 - [数组组件/组件嵌套](http://jsrun.pro/VLfKp/edit)
-
+- [control 配置项](http://jsrun.pro/C8fKp/edit)
 
 
 ## 功能示例
