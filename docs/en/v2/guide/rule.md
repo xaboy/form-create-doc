@@ -107,6 +107,12 @@ maker.create('input','test','textTitle').props({
 - **Type**: `Object`
 - **Description**: Set layout rules for components
 
+### **control**
+- **Type**:  `Object`
+- **Description**:  Controlling other component displays
+
+[description](/en/v2/guide/control.html)
+
 
 ### **children**
 - **Type**: `Array<rule|string|maker>`
@@ -133,7 +139,7 @@ maker.create('input','test','textTitle').props({
   ```js
   formCreate.maker.create('i-row').children([
     formCreate.maker.create('i-col').props('span',12).children([
-      formCreate.maker,template('<span>custom component</span>', new Vue)
+      formCreate.maker.template('<span>custom component</span>', new Vue)
     ]),
   ]);
   ```

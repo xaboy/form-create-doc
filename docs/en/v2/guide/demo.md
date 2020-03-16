@@ -26,6 +26,8 @@ The following is a demo and reference case for from-create
 - [Slider](http://jsrun.net/rehKp/edit)
 - [Tree](http://jsrun.net/AehKp/edit)
 - [Frame](http://jsrun.net/mehKp/edit)
+- [Array components/Component nesting](http://jsrun.pro/VLfKp/edit)
+- [control Configuration item](http://jsrun.pro/C8fKp/edit)
 
 
 ## Function example

@@ -109,7 +109,7 @@ maker.create('input','test','textTitle').props({
 
 ### **control**
 - **类型**:  `Object`
-- **说明**:  设置组件控制其他组件显示
+- **说明**:  控制其他组件显示
 
 [详细说明](/v2/guide/control.html)
 

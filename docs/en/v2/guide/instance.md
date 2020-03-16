@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # Instance method
 
 ## Get instance object $f
@@ -384,6 +388,34 @@ $f.getRule(field)
   Clear component verification information
 
 
+
+### $f.changeStatus
+
+
+- **Usage**：
+
+  ```js
+  $f.changeStatus()
+  ```
+
+  Gets whether the value of the form changes state
+
+
+
+### $f.clearChangeStatus
+
+
+- **Usage**：
+
+  ```js
+  $f.clearChangeStatus()
+  ```
+
+  Clear whether the value of the form has changed
+
+
+
+
 ### $f.model
 
 - **Usage**:
@@ -609,7 +641,7 @@ $f.getRule(field)
 - **Usage**:
 
     ```js
-    $f.toJson('input','on-change','new value');
+    $f.trigger('input','on-change','new value');
     ```
 
     Manually trigger component events

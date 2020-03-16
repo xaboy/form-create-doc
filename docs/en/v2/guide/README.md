@@ -74,6 +74,8 @@ Iview 4.x
 
 - Grid layout
 
+- Component array, nested object
+
 - Built-in components
 	- hidden
 	- input
@@ -92,6 +94,7 @@ Iview 4.x
 	- upload
 	- tree
 	- frame
+	- group
 
 
 ## Comparison 1.x
@@ -107,3 +110,5 @@ Iview 4.x
 - Easier support for third-party UI libraries
 
 - Less bugs
+
+- Component array, nested object

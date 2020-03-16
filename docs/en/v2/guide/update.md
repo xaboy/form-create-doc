@@ -1,10 +1,30 @@
 ---
-title: Update log (1.0.6)
+title: Update log (1.0.8)
 ---
 
-### Current version 1.0.6
+### Current version 1.0.8
 
 --------
+#### 1.0.8 (2020-03-15)
+- Fix error when merging common layout rules #181
+- Fixed an issue where the `group` component might report an error
+- Fix **Validation failure after adding components**
+- Fixed `DatePicker` component value conversion problem
+- Update `TypeScript`
+- Added optimized `method` method to get return value
+- Added `index` in event of` group` component #183
+- Add **`control` configuration item, Can be used to control other component displays**
+- Added `options.form.className` configuration item to support setting` class` of the form
+
+#### 1.0.7 (2020-03-02)
+- Fix field error when initializing global configuration #166
+- Fixed `DatePicker` component verification error
+- Update `TypeScript`
+- Fixed the problem that the `frame` component` src` is not updated in real time
+- Added **`group` component, which can implement array components and hash components**
+- Optimization Reuse of component generation rules
+- Optimize button position of component information
+
 #### 1.0.6 (2020-01-16)
 - Support `TypeScript`
 - Fixed `elm.frame` component not displaying in` input` type`icon`

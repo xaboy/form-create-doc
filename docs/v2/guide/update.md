@@ -14,7 +14,7 @@
 - 更新 `TypeScript`
 - 增加 优化`method`方法,可拿到返回值
 - 增加 在`group`组件的事件中传入`index` #183
-- 增加 **增加`control`配置项**
+- 增加 **增加`control`配置项,可用于控制其他组件显示**
 - 增加 `options.form.className` 配置项,支持设置表单的`class`
 
 #### 1.0.7 (2020-03-02)
