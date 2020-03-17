@@ -1,6 +1,6 @@
 # Slider 滑块
 
-#### [在线预览](https://jsrun.net/rehKp/edit)
+#### [在线预览](https://jsrun.pro/rehKp/edit)
 
 #### Maker
 ```js

@@ -1,6 +1,6 @@
 # Switch 开关
 
-#### [在线预览](https://jsrun.net/dehKp/edit)
+#### [在线预览](https://jsrun.pro/dehKp/edit)
 
 #### Maker
 ```js

@@ -1,6 +1,6 @@
 # TimePicker 时间选择器
 
-#### [在线预览](https://jsrun.net/GehKp/edit)
+#### [在线预览](https://jsrun.pro/GehKp/edit)
 
 #### Maker
 ```js

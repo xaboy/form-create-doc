@@ -1,6 +1,6 @@
 # ColorPicker 颜色选择框
 
-#### [在线预览](https://jsrun.net/tehKp/edit)
+#### [在线预览](https://jsrun.pro/tehKp/edit)
 
 #### Maker
 ```js

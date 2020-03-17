@@ -1,6 +1,6 @@
 # Input 输入框
 
-#### [在线预览](https://jsrun.net/7ehKp/edit)
+#### [在线预览](https://jsrun.pro/7ehKp/edit)
 
 #### Maker
 ```js

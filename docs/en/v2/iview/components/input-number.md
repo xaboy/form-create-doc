@@ -1,6 +1,6 @@
 # InputNumber 数字输入框
 
-#### [在线预览](https://jsrun.net/xehKp/edit)
+#### [在线预览](https://jsrun.pro/xehKp/edit)
 
 #### Maker
 ```js

@@ -6,7 +6,7 @@
 
 :::
 
-#### [在线预览](https://jsrun.net/EehKp/edit)
+#### [在线预览](https://jsrun.pro/EehKp/edit)
 
 #### Maker
 ```js

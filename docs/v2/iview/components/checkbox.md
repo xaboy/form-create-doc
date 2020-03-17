@@ -1,6 +1,6 @@
 # Checkbox 多选框
 
-#### [在线预览](https://jsrun.net/JehKp/edit)
+#### [在线预览](https://jsrun.pro/JehKp/edit)
 
 #### Maker
 ```js

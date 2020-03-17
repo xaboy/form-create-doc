@@ -1,6 +1,6 @@
 # Rate 评分
 
-#### [在线预览](https://jsrun.net/CehKp/edit)
+#### [在线预览](https://jsrun.pro/CehKp/edit)
 
 #### Maker
 ```js

@@ -2,7 +2,7 @@
 
 frame 框架打开的子页面要关闭时,需要通过调用父级页面的`$f.closeModel`方法关闭
 
-#### [在线预览](https://jsrun.net/mehKp/edit)
+#### [在线预览](https://jsrun.pro/mehKp/edit)
 
 #### Maker
 ```js
