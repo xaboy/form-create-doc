@@ -2,12 +2,50 @@
 
 以下是 from-create 的功能演示和参考案例
 
+## 简单示例
 
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
 
-## 案例
-
-- [CRMEB客户管理+电商管理系统](https://gitee.com/ZhongBangKeJi/CRMEB) ([演示站](http://demo25.crmeb.net) 账号：demo 密码：crmeb.com)
-- [深入使用 maker 自定义组件案例](https://github.com/HeyMrLin/fc-demo)
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    },
+                    resetBtn:true
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'goods_name',
+                        title:'商品名称'
+                    },
+                    {
+                        type:'checkbox',
+                        field:'label',
+                        title:'标签',
+                        options: [
+                            {label:'好用',value:0},
+                            {label:'快速',value:1},
+                            {label:'高效',value:2},
+                            {label:'全能',value:3},
+                        ]
+                    },
+                ]
+            }
+            
+        }
+    }
+</script>
+```
+:::
 
 ## 组件示例
 
@@ -41,3 +79,9 @@
 - [Generate 生成任意组件](http://jsrun.pro/ychKp/edit)
 - [Event 事件扩展](http://jsrun.pro/XchKp/edit)
 - [Col 栅格布局规则](http://jsrun.pro/gchKp/edit)
+
+
+## 案例
+
+- [CRMEB客户管理+电商管理系统](https://gitee.com/ZhongBangKeJi/CRMEB) ([演示站](http://demo25.crmeb.net) 账号：demo 密码：crmeb.com)
+- [深入使用 maker 自定义组件案例](https://github.com/HeyMrLin/fc-demo)

@@ -9,5 +9,11 @@
     "iview": "^3.4.2",
     "vuepress": "^1.0.0-rc.1",
     "vuepress-plugin-demo-code": "^0.3.5"
+  },
+  "dependencies": {
+    "@form-create/element-ui": "^1.0.8",
+    "element-ui": "^2.13.0",
+    "vue": "^2.6.11",
+    "vuepress-plugin-demo-block": "^0.7.2"
   }
 }

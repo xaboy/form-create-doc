@@ -1,117 +1,263 @@
-# 绑定事件
+# 事件监听
 
-例如给`i-input`组件添加`on-change`事件,事件名称参考[Input](/v2/iview/components/input.html#events)
+**通过配置项`on`,`emit`可监听组件内抛出的事件**, 例如监听`input`组件的`change`事件,事件名称参考[Input](/v2/element-ui/components/input.html#events)
 
-```js
-{
-    type:'input',
-    field: 'test',
-    title: 'test',
-    value: '',
-    on: {
-        'on-change': function(){
-            console.log('value 发生变化');
+## 通过配置项`on`监听事件
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'event',
+                        title:'change 事件',
+                        on:{
+                            change:()=>{
+                                alert(`change!![${this.fApi.getValue('event')}]`);
+                            }
+                        }
+                    }
+                ]
+            }
+            
         }
     }
-}
+</script>
 ```
+:::
 
-### 通过 emit 方式绑定事件
+## 通过配置项`emit`监听事件
 
-只支持在组件模式下
-
-```js
-//rule
-[{
-     type:'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change']
- }]
-```
+> 只支持在组件模式下使用
 
 事件名称为`${field}-${eventName}`
+
+::: demo
 ```html
-<form-create :rule="rule" @test-on-change="onChange"> </form-create>
-```
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @input-field-change="change" @input-field2-blur="blur"/>
+</template>
 
-### 通过 `emitPrefix` 自定义事件前缀
-
-```js
-//rule
-[{
-     type:'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change'],
-     emitPrefix: 'xaboy',
- }]
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change 事件',
+                        emit:['change']
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur 事件',
+                        emit:['blur']
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        }
+    }
+</script>
 ```
+:::
+
+
+## 通过配置项`emitPrefix`自定义事件前缀
 
 事件名称为`${emitPrefix}-${eventName}`
+
+::: demo
 ```html
-<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change" @prefix2-blur="blur"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change 事件',
+                        emit:['change', 'blur'],
+                        emitPrefix:'prefix1'
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur 事件',
+                        emit:['blur'],
+                        emitPrefix:'prefix2'
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        }
+    }
+</script>
 ```
+:::
 
-### 通过 on 方法绑定事件 <Badge type="warn" text="1.0.2+"/>
 
-```js
-//rule
-[{
-     type:'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change'],
-     emitPrefix: 'xaboy',
- }]
-```
+## 通过`on`方法监听事件
 
-```js
-$f.on('xaboy-on-change',function(){
-    //TODO
-})
 
-```
-
-### 向事件中注入`$f`和自定义参数
-
-```js
-//rule
-[{
-     type:'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: [{
-        name: 'on-change',
-        inject: ['自定义参数,数据类型不限']
-     }],
-     emitPrefix: 'xaboy',
- }]
-```
-
+::: demo
 ```html
-<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
-```
-向事件中注入参数后,事件会额外增加一个参数
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
 
-```js
-//未注入
-{
-    onChange: function(val){
-
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change 事件',
+                        emit:['change', 'blur'],
+                        emitPrefix:'prefix1'
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur 事件',
+                        emit:['blur'],
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        },
+        mounted(){
+            this.$nextTick(()=>{
+                this.fApi.on('prefix1-change',this.change);
+                this.fApi.on('input-field2-blur',this.blur);
+            })
+        }
     }
-}
-//注入后
-{
-    onChange: function(inject, val){
-
-    }
-}
+</script>
 ```
+:::
+
+## 向事件中注入`$f`和自定义参数
+
+>支持多种方式开启事件注入
+
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change 事件',
+                        emit: [{
+                            name: 'change',
+                            inject: ['自定义参数,数据类型不限']
+                        }],
+                        emitPrefix:'prefix1',
+     
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur 事件',
+                        inject:true,
+                        on:{
+                            blur: this.blur
+                        }
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(inject){
+                alert(`change: ${inject.inject}[${inject.$f.getValue('inputField')}]`);
+            },
+            blur(inject){
+                alert(`blur: ${inject.self.title}`);
+            }
+        }
+    }
+</script>
+```
+:::
 
 inject 参数的数据结构
 ```ts

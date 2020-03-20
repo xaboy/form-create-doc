@@ -4,7 +4,7 @@
 
 ### 隐藏默认按钮
 
-首先通过设置全局配置隐藏默认的提交按钮和重置按钮
+首先通过设置全局配置隐藏表单默认的操作按钮
 ```js
 {
   submitBtn: false,
@@ -13,39 +13,55 @@
 ```
 
 
-### 生成自定义按钮组件
->示例中使用的是 ElementUI
+### 自定义表单操作按钮
 
-![default-button.png](/img/default-button.png)
+::: demo
+```html
+<template>
+     <div>
+        <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+        <ElButton type="primary" plain @click="submit">提交</ElButton>
+        <ElButton aligen="center" plain @click="reset">重置</ElButton>
+    </div>
+</template>
 
-```js
-[
-	{
-		type: 'input',
-		field: 'field-1',
-		title: 'test',
-		value: 'test submit',
-		col: {
-			span:6
-		}
-
-	},
-	{
-		type: 'el-button',
-		on: {
-			click: function(){
-				//TODO 提交表单
-				$f.submit();
-				//或者
-				$f.resetFields();
-			}
-	    },
-		col: {
-			span:3,
-			push: 1
-		},
-		children: ['submit']
-
-	}
-]
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                     submitBtn:false
+                },
+                rule:[
+                    {
+                        type:'checkbox',
+                        field:'label',
+                        title:' 标签',
+                        value: [],
+                        options:[
+                            {label:'有用',value:0},
+                            {label:'快速',value:1},
+                            {label:'高效',value:2},
+                            {label:'全能',value:3},
+                        ],
+                        validate: [{type: 'array', min:3, required: true, message:'最少选择3个'}]
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            submit(){
+                this.fApi.submit((formData, $f)=>{
+                    alert(JSON.stringify(formData));
+                })
+            },
+            reset(){
+                this.fApi.resetFields();
+            }
+        }
+    }
+</script>
 ```
+:::
