@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: http://file.lotkk.com/form-create.png?3
-description: 轻松搞定 form 表单，让你不在为表单而烦恼。
+description: 轻松搞定 form 表单，让你不再为表单而烦恼。
 actionText: 快速上手 →
 actionLink: /v2/guide/
 features:
