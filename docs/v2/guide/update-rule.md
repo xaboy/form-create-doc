@@ -144,7 +144,7 @@
 ```
 :::
 
-## 修改组件的`value`
+## 修改表单组件的`value`
 
 ::: demo
 ```html
@@ -282,72 +282,3 @@
 </script>
 ```
 :::
-
-## 更新规则
-
-### 在尾部增加规则
-
-```js
-rule.push({
-   type:"input",
-   title:"商品简介",
-   field:"goods_info",
-   value:"",
-   props: {
-       "type": "text",
-       "placeholder": "请输入商品简介",
-   },
-   validate:[
-       { required: true, message: '请输入商品简介', trigger: 'blur' },
-   ],
-})
-```
-
-### 通过$f添加规则
-
-在 goods_name 字段后面增加一份图片上传组件,默认添加到尾部
-```js
-$f.append({
-    type:"input",
-    title:"商品简介",
-    field:"goods_info",
-    value:"",
-    props: {
-     "type": "text",
-     "placeholder": "请输入商品简介",
-    },
-    validate:[
-     { required: true, message: '请输入商品简介', trigger: 'blur' },
-    ],
-},'goods_name');
-```
-
-在 goods_name 字段之前增加一份 input 组件,默认添加到头部
-```js
-$f.prepend({
-    type:"input",
-    title:"商品简介",
-    field:"goods_info",
-    value:"",
-    props: {
-      "type": "text",
-      "placeholder": "请输入商品简介",
-    },
-    validate:[
-      { required: true, message: '请输入商品简介', trigger: 'blur' },
-    ],
-},'goods_name');
-```
-
-### 删除第一条规则
-```js
-rule.splice(0,1);
-```
-### 删除表单组件
-```js
-$f.removeField('test');
-```
-### 删除自定义组件
-```js
-$f.removeField('btn');
-```
