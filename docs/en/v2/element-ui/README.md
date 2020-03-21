@@ -1,8 +1,8 @@
-# 安装
+# Install
 
-### CDN 引入
+### CDN
 
-目前可以通过 [unpkg.com/@form-create/element-ui](https://unpkg.com/@form-create/element-ui/) 获取到最新版本的资源，在页面上引入 js 即可开始使用。
+Currently, you can get the latest version of the resource through [unpkg.com/@form-create/element-ui](https://unpkg.com/@form-create/element-ui/), and you can introduce js on the page. start using.
 
 ```html
 <!-- import Vue.js -->
@@ -19,25 +19,25 @@
 
 ### NPM 
 
-**安装**
+**install**
 
-推荐使用 npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
+It is recommended to use npm to install, it can be used better with [webpack](https://webpack.js.org/) packaging tool.
 
 ```
 npm i @form-create/element-ui
 ```
 
-**引入**
+**import**
 
 ```js
 import formCreate, {maker} from '@form-create/element-ui'
 ```
 
-### 兼容
+### compatible
 
 - element-ui ^2.8.2
 
 
-### 图例
+### legend
 
 ![form-create 图例](/img/form-create.elm.png)

@@ -1,8 +1,8 @@
-# 安装
+# Install
 
-### CDN 引入
+### CDN
 
-目前可以通过 [unpkg.com/@form-create/iview](https://unpkg.com/@form-create/iview/) 获取到最新版本的资源，在页面上引入 js 即可开始使用。
+Currently, you can get the latest version of the resource through [unpkg.com/@form-create/iview](https://unpkg.com/@form-create/iview/), and you can start using js by introducing js on the page.
 
 ```html
 <!-- import Vue.js -->
@@ -19,21 +19,21 @@
 
 ### NPM 
 
-**安装**
+**install**
 
-推荐使用 npm 的方式安装，它能更好地和 [webpack](https://webpack.js.org/) 打包工具配合使用。
+It is recommended to use npm to install, it can be used better with [webpack](https://webpack.js.org/) packaging tool.
 
-iview 3.x,^2.13版本
+iview 3.x,^2.13
 ```
 npm i @form-create/iview
 ```
-iview 4.x版本
+iview 4.x
 
 ```
 npm i @form-create/iview4
 ```
 
-**引入**
+**import**
 
 ```js
 import formCreate, {maker} from '@form-create/iview'
@@ -41,7 +41,7 @@ import formCreate, {maker} from '@form-create/iview'
 import formCreate, {maker} from '@form-create/iview4'
 ```
 
-### 兼容
+### Compatible
 
 - iview 2.13.0
 
@@ -50,15 +50,15 @@ import formCreate, {maker} from '@form-create/iview4'
 - iview 4.x
 
 
-### 图例
+### Legend
 
 ![form-create 图例](https://raw.githubusercontent.com/xaboy/form-create/dev/images/sample110.jpg?1)
 
 
 
-### 示例
+### Example
 
-通过 CDN 可以快速使用 iView 写出一个示例，您可以复制下面代码或[在线预览](http://fiddle.jshell.net/xaboy/j2zg6et0/show)。
+CDN can quickly write an example using iView, you can copy the code below or [online preview](http://fiddle.jshell.net/xaboy/j2zg6et0/show)。
 
 <ClientOnly>
 
