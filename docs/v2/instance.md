@@ -521,7 +521,7 @@ const hiddenStatus = $f.hiddenStatus();
 - **用法**：
 
   ```js
-  $f.updateOptions(({
+  $f.updateOptions({
       onSubmit:(formData)=>{
           //提交表单
       }
