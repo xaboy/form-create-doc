@@ -317,7 +317,7 @@ $f.config
 - **Parameter**：
     - `{object} rule`
     - `{stirng} [field|name]`
-    - `{boolean} isChild` 是否添加到 `[field|name]` 组件的子级
+    - `{boolean} isChild` Whether to add to the children of the `[field|name]` component
 
 - **Usage**：
 
