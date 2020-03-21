@@ -42,7 +42,7 @@ maker.create('input','test','textTitle').props({
 ### **field**
 
 - **Type**: `String`
-- **Description **: Set the field name of the **form component**, **Custom component can not be configured**
+- **Description**: Set the field name of the **form component**, **Custom component can not be configured**
 
 
 ### **title**
@@ -66,16 +66,16 @@ maker.create('input','test','textTitle').props({
 - **Description**: Whether to generate components as they are, not nested in `FormItem`
 
 
-### **hidden** <Badge type="warn" text="1.0.5+"/>
+### **hidden**
 
-- ​**类型**:  `Bool`
-- **说明**: Set whether the component is displayed
+- ​**Type**:  `Bool`
+- **Description**: Set whether the component is displayed
 
-### **info** <Badge type="warn" text="0.0.4+"/>
+### **info**
 
 - **Type**: `String`
 - **Description**: Set the prompt information for the component
-- Global Configuration Description: [iview](/v2/iview/global.html) | [element-ui](/v2/element-ui/global.html)
+- Global Configuration Description: [iview](/en/v2/iview/global.html) | [element-ui](/en/v2/element-ui/global.html)
 
 ### **className**
 

@@ -1,5 +1,5 @@
 ---
-title: Control configuration [new]
+title: Control configuration
 ---
 
 

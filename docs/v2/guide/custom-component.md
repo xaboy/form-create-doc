@@ -49,7 +49,7 @@ form-create 支持的在表单内部生成任何 vue 组件
 ```js
 formCreate.maker.create('i-button').props({
     type:'primary',
-    field:'btn'
+    field:'btn',
     loading:true
   }).children(['加载中']).name('btn');
 ```
@@ -79,7 +79,7 @@ let rule = [
         },
         children:[
           formCreate.maker.input('商品名称','goods_name','iphone'),
-          formCreate.maker.number('商品加个','goods_price',8688)
+          formCreate.maker.number('商品价格','goods_price',8688)
         ]
       },
       {

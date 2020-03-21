@@ -37,11 +37,11 @@ Iview 4.x
 
 ## Navigation
 
-- [ElementUI](/v2/element-ui/)
-- [Iview](/v2/iview/)
-- [Instance](/v2/guide/instance.html)
-- [Custom component](/v2/guide/custom-component.html)
-- [Third party component](/v2/guide/component/)
+- [ElementUI](/en/v2/element-ui/)
+- [Iview](/en/v2/iview/)
+- [API](/en/v2/instance.html)
+- [Custom component](/en/v2/guide/custom-component.html)
+- [Third party component](/en/v2/guide/component/)
 
 ## Features
 

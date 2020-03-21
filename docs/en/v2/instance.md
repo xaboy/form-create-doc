@@ -4,7 +4,7 @@ sidebarDepth: 3
 
 # API
 
-## Get API `$ f`
+## Get API `$f`
 
 
 
@@ -324,15 +324,14 @@ $f.config
   ```js
   $f.prepend({
          type:"input",
-         title:"商品简介",
+         title:"goods info",
          field:"goods_info",
          value:"",
          props: {
              "type": "text",
-             "placeholder": "请输入商品简介",
          },
          validate:[
-             { required: true, message: '请输入商品简介', trigger: 'blur' },
+             { required: true, trigger: 'blur' },
          ],
   }, 'goods-name', false);
   ```
@@ -352,15 +351,14 @@ $f.config
   ```js
   $f.prepend({
          type:"input",
-         title:"商品简介",
+         title:"goods info",
          field:"goods_info",
          value:"",
          props: {
              "type": "text",
-             "placeholder": "请输入商品简介",
          },
          validate:[
-             { required: true, message: '请输入商品简介', trigger: 'blur' },
+             { required: true, trigger: 'blur' },
          ],
   }, 'goods-name', false);
   ```

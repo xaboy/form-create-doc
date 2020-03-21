@@ -149,7 +149,7 @@ fetch('api').then(rule=>{
 
 ## 获取 $f
 
-[参考](/v2/guide/instance.html)
+[参考](/v2/instance.html)
 
 ## 在配置项中调用外层组件的方法
 

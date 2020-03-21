@@ -1,36 +1,89 @@
 # Component common configuration
 
-The common configuration of components can be implemented through the `global` configuration item in the global configuration, and all configuration items of the component are supported.
+Through the `global` configuration items in the global configuration, you can implement the common configuration of the component, and support setting all configuration items
 
-[Global Configuration](/en/v2/guide/global-options)
+[Global configuration](/en/v2/guide/global-options)
 
-### Set `col` for all components to `{span:6}` and disable
-```js
-{
-    global: {
-      '*': {
-          props: {
-              disabled: true
-          },
-          col: {
-              span: 6
-          }
-      }
+### Example
+
+1. Set col for all components to `{span: 6}` and disable it
+2. Set callback events for all upload components that fail to upload
+
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    },
+                    global: {
+                        '*': {
+                            props: {
+                                disabled: true
+                            },
+                            col: {
+                                span: 12
+                            }
+                        },
+                        upload: {
+                            props: {
+                                onError: function(r){
+                                  alert('upload failed');
+                                }
+                            }
+                        }
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'input1',
+                        title:'input1'
+                    },
+                    {
+                        type:'input',
+                        field:'input2',
+                        title:'input2'
+                    },
+                    {
+                        type:'input',
+                        field:'input3',
+                        title:'input3',
+                        col:{
+                            span:24
+                        }
+                    },
+                    {
+                        type:'input',
+                        field:'input3',
+                        title:'input3',
+                        col:{
+                            span:24
+                        }
+                    },
+                    {
+                        type:'upload',
+                        field:'upload',
+                        title:'upload image',
+                        value:'',
+                        props:{
+                            disabled: false,
+                            action: '/'
+                        }
+                    }
+                ]
+            }
+            
+        }
     }
-}
+</script>
 ```
-### Setting up the `upload` component to upload a successful callback event
-
-```js
-{
-    global: {
-      upload: {
-          props: {
-              onSuccess: function(res, file){
-                file.url = res.data.url;
-              }
-          }
-      }
-    }
-}
-```
+:::

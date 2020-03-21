@@ -1,51 +1,67 @@
-# Modify default button
+# Modify the default button
 
-This article describes how to use the custom component button instead of the default button.
+This article will show you how to use a custom component button instead of the default button
 
-### Hide default button
+### Hide the default button
 
-First hide the default submit button and reset button by setting the global configuration
+First hide the default action button of the form by setting the global configuration
 ```js
 {
-   submitBtn: false,
-   resetBtn: false
+  submitBtn: false,
+  resetBtn: false
 }
 ```
 
 
-### Build a custom button component
->The example used in ElementUI
+### Custom form action buttons
 
-![default-button.png](/img/default-button.png)
+::: demo
+```html
+<template>
+     <div>
+        <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+        <ElButton type="primary" plain @click="submit">Submit</ElButton>
+        <ElButton aligen="center" plain @click="reset">Reset</ElButton>
+    </div>
+</template>
 
-```js
-[
-	{
-		type: 'input',
-		field: 'field-1',
-		title: 'test',
-		value: 'test submit',
-		col: {
-			span:6
-		}
-
-	},
-	{
-		type: 'el-button',
-		on: {
-			click: function(){
-				//TODO submit Form
-				$f.submit();
-				//OR
-				$f.resetFields();
-			}
-	    },
-		col: {
-			span:3,
-			push: 1
-		},
-		children: ['submit']
-
-	}
-]
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                     submitBtn:false
+                },
+                rule:[
+                    {
+                        type:'checkbox',
+                        field:'label',
+                        title:'label',
+                        value: [],
+                        options:[
+                            {label:'easyToUse',value:0},
+                            {label:'fast',value:1},
+                            {label:'efficient',value:2},
+                            {label:'allRound',value:3},
+                        ],
+                        validate: [{type: 'array', min:3, required: true, message:'Select at least 3'}]
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            submit(){
+                this.fApi.submit((formData, $f)=>{
+                    alert(JSON.stringify(formData));
+                })
+            },
+            reset(){
+                this.fApi.resetFields();
+            }
+        }
+    }
+</script>
 ```
+:::

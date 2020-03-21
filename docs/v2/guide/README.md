@@ -38,7 +38,7 @@ Iview 4.x
 
 - [ElementUI](/v2/element-ui/)
 - [Iview](/v2/iview/)
-- [实例方法](/v2/guide/instance.html)
+- [实例方法](/v2/instance.html)
 - [自定义组件](/v2/guide/custom-component.html)
 - [第三方组件](/v2/guide/component/)
 

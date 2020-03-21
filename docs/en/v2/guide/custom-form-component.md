@@ -1,23 +1,23 @@
-# 自定义表单组件
+# Custom form components
 
-> **实现`v-model`的组件都可以称为表单组件**
+> **The components that implement `v-model` can all be called form components**
 
 
-表单组件可以通过`$f.formData`,`$f.getValue`,`$f.setValue`,`$f.disabled`等方法修改组件状态
+Form components can modify the component state through methods such as $ f.formData, $ f.getValue, $ f.setValue, $ f.disabled, etc.
 
 
 ### 预定义
-**定义好以下属性和事件,就能达到和内置组件相同的效果.赶快试一试吧**
+**Define the following properties and events to achieve the same effect as the built-in components.**
 
 **props**
 
-在自定义组件内部通过`props`接收一下属性
+Receive properties via custom properties inside custom components
 
-- `value` 组件的值
-- `disabled` 组件的禁用状态
+- `value` Component value
+- `disabled` Disabled state of the component
 
 
-例如:
+E.g:
 ```js
 vm = Vue({
   props:{
@@ -27,11 +27,11 @@ vm = Vue({
 })
 ```
 
-**input 事件**
+**input event**
 
-通过`input`事件更新组件内部的值
+Update the value inside the component through the input event
 
-当组件值发生变化后,通过 input 事件更新值.例如:
+When the component value changes, update the value through the input event. For example:
 ```js
 vm.$emit('input',newValue);
 ```
@@ -39,11 +39,11 @@ vm.$emit('input',newValue);
 
 
 
-### 挂载自定义组件
+### Mounting custom components
 
-要生成的自定义组件必须通过`vue.component`方法挂载到全局,或者通过`formCreate.component`方法挂载
+The custom component to be generated must be mounted globally via the `vue.component` method, or via the` formCreate.component` method
 
-例如:
+E.g:
 
 ```js
 formCreate.component('TestComponent',component);
@@ -52,7 +52,7 @@ formCreate.component('TestComponent',component);
 
 ### 生成
 
-**表单组件必须定义`field`属性**
+**The form component must define the field attribute**
 
 **JSON**
 ```js
@@ -60,22 +60,22 @@ formCreate.component('TestComponent',component);
     type:'TestComponent',
     value:'test',
     field:'testField',
-    title:'自定义组件'
+    title:'Custom form component'
 }
 ```
 
 **Maker**
 
 ```js
-formCreate.maker.create('TestComponent','testField','自定义组件').value('test')
+formCreate.maker.create('TestComponent','testField','Custom form component').value('test')
 ```
 
-现在这个自定义组件就可以跟内置组件一样的去操作了
+Now this custom component can be operated like the built-in component.
 
 
-## 示例
+## Example
 
-自定义计数器按钮组件,获取按钮点击数.该组件的功能和内置组件相同
+Customize the counter button component and get the number of button clicks. The function of this component is the same as the built-in component
 
 ::: demo
 ```html
@@ -95,7 +95,7 @@ formCreate.maker.create('TestComponent','testField','自定义组件').value('te
                     resetBtn:true
                 },
                 rule:[
-                    this.$formCreate.maker.template('<el-button @click="onClick" long :disabled="disabled">计数器-{{num}}</el-button>', function(){
+                    this.$formCreate.maker.template('<el-button @click="onClick" long :disabled="disabled">counter-{{num}}</el-button>', function(){
                         return new Vue({
                                  data: function () {
                                    return {
@@ -103,25 +103,25 @@ formCreate.maker.create('TestComponent','testField','自定义组件').value('te
                                    }
                                  },
                                  props:{
-                                   //预定义
+                                   //Predefined
                                    disabled:Boolean,
                                    value:Number,
                                  },
                                  watch:{
                                    value(n){
-                                       //同步 value 的值
+                                       //Sync value
                                        this.num = n;
                                    }
                                  },
                                  methods: {
                                    onClick: function () {
                                        this.num++;
-                                       //更新组件内部的值
+                                       //Update the value inside the component
                                        this.$emit('input',this.num);
                                    },
                                  },
                                });
-                    },'btn','自定义表单组件').value(10)
+                    },'btn','Custom form components').value(10)
                 ]
             }
             

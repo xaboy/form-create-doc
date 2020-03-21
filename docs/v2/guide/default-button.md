@@ -37,7 +37,7 @@
                     {
                         type:'checkbox',
                         field:'label',
-                        title:' 标签',
+                        title:'标签',
                         value: [],
                         options:[
                             {label:'有用',value:0},

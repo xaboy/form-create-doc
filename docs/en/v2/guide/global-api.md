@@ -142,7 +142,7 @@
   Vue.component('form-create',$formCreate);
   ```
 
-## parseJson <Badge type="warn" text="0.0.4+"/>
+## parseJson
 
 - **Type**:`Function`
 
@@ -150,10 +150,10 @@
 
 - **Usage**:
 
-   ```js
-    const json = $f.toJson();
-    const rule = formCreate.parseJson(json);
-   ```
+    ```js
+    const json = $f.toJson();
+    const rule = formCreate.parseJson(json);
+    ```
 
 ## vm.$formCreate
 

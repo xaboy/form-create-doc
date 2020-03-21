@@ -1,128 +1,273 @@
-# Event
+# Event listener
 
-For example, add the `on-change` event to the `i-input` component. The event name refers to [Input](/en/v2/iview/components/input.html#events)
+**Through the configuration items `on` and` emit`, you can listen to events thrown in the component**, such as listening to the `change` event of the` input` component. For the event name, refer to [Input](/en/v2/element-ui/components/input.html#events)
 
-```js
-{
-    type: 'input',
-    Field: 'test',
-    TITLE: 'test',
-    value: '',
-    on: {
-        'on-change': function(){
-            console.log('value changes');
-        }
-    }
-}
-```
-
-### Binding events by emit
-
-Only supported in component mode
-
-```js
-//rule
-[{
-     type: 'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change']
- }]
-```
-
-The event name is `${field}-${eventName}`
+## Listening to events through the configuration item `on`
+::: demo
 ```html
-<form-create :rule="rule" @test-on-change="onChange"> </form-create>
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'event',
+                        title:'change',
+                        on:{
+                            change:()=>{
+                                alert(`change!![${this.fApi.getValue('event')}]`);
+                            }
+                        }
+                    }
+                ]
+            }
+            
+        }
+    }
+</script>
 ```
+:::
 
-### Custom event prefix with `emitPrefix`
+## Listen for events via the configuration item `emit`
 
-```js
-//rule
-[{
-     type: 'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change'],
-     emitPrefix: 'xaboy',
- }]
-```
+> Only supported in component mode
 
-The event name is `${emitPrefix}-${eventName}`
+Event name is `${field}-${eventName}`
+
+::: demo
 ```html
-<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @input-field-change="change" @input-field2-blur="blur"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change',
+                        emit:['change']
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur',
+                        emit:['blur']
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        }
+    }
+</script>
 ```
+:::
 
 
-### Bind events using the `on` method <Badge type="warn" text="1.0.2+"/>
+## Customize event prefix via configuration item `emitPrefix`
 
-```js
-//rule
-[{
-     type:'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: ['on-change'],
-     emitPrefix: 'xaboy',
- }]
-```
+Event name is `${emitPrefix}-${eventName}`
 
-```js
-$f.on('xaboy-on-change',function(){
-    //TODO
-})
-
-```
-
-### Inject `$f` and custom parameters into the event
-
-```js
-//rule
-[{
-     type: 'input',
-     field: 'test',
-     title: 'test',
-     value: '',
-     emit: [{
-        name: 'on-change',
-        inject: ['Custom parameters, data type is not limited']
-     }],
-     emitPrefix: 'xaboy',
- }]
-```
-
+::: demo
 ```html
-<form-create :rule="rule" @xaboy-on-change="onChange"> </form-create>
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change" @prefix2-blur="blur"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change',
+                        emit:['change', 'blur'],
+                        emitPrefix:'prefix1'
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur',
+                        emit:['blur'],
+                        emitPrefix:'prefix2'
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        }
+    }
+</script>
 ```
-After injecting parameters into the event, the event adds an additional parameter.
+:::
 
-```js
-//not injected
-{
-    onChange: function(val){
 
-    }
-}
-// after injection
-{
-    onChange: function(inject, val){
+## Listening to events via the `on` method
 
-    }
-}
+
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change',
+                        emit:['change', 'blur'],
+                        emitPrefix:'prefix1'
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur',
+                        emit:['blur'],
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(){
+                alert(`change!![${this.fApi.getValue('inputField')}]`);
+            },
+            blur(){
+                alert('blur!');
+            }
+        },
+        mounted(){
+            this.$nextTick(()=>{
+                this.fApi.on('prefix1-change',this.change);
+                this.fApi.on('input-field2-blur',this.blur);
+            })
+        }
+    }
+</script>
 ```
+:::
+
+## Inject `$f` and custom parameters into the event
+
+>Support multiple ways to enable event injection
+
+::: demo
+```html
+<template>
+    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change"/>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {
+                fApi:{},
+                options:{
+                    onSubmit:(formData)=>{
+                        alert(JSON.stringify(formData));
+                    }
+                },
+                rule:[
+                    {
+                        type:'input',
+                        field:'inputField',
+                        title:'change',
+                        emit: [{
+                            name: 'change',
+                            inject: ['Custom parameters, unlimited data types']
+                        }],
+                        emitPrefix:'prefix1',
+     
+                    },
+                    {
+                        type:'input',
+                        field:'inputField2',
+                        title:'blur',
+                        inject:true,
+                        on:{
+                            blur: this.blur
+                        }
+                    }
+                ]
+            }
+            
+        },
+        methods:{
+            change(inject){
+                alert(`change: ${inject.inject}[${inject.$f.getValue('inputField')}]`);
+            },
+            blur(inject){
+                alert(`blur: ${inject.self.title}`);
+            }
+        }
+    }
+</script>
+```
+:::
 
 Data structure of the inject parameter
 ```ts
 {
-    $f:Object,//api
-    rule:Array, // ​​generation rules
-    self:Object, // current generation rule
-    option:Object, // ​​global configuration
-    inject:Any, // ​​custom injection parameters
+    $f:Object,//api
+    rule:Array,//Generation rule
+    self:Object,//Current generation rule
+    option:Object,//Global configuration
+    inject:Any,//Custom injection parameters
 }
 ```
 
-**Parameter injection can also be enabled via the global configuration item `injectEvent:true`**
+**Parameter injection can also be enabled via the global configuration item `injectEvent: true`**

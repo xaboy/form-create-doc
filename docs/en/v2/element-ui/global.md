@@ -128,7 +128,7 @@
 
   提交按钮配置,设置submitBtn=false或submitBtn.show=false时不显示按钮
 
-- 参考: [布局规则](/v2/element-ui/col.html) | [Button_props](http://element.eleme.io/#/zh-CN/component/button)
+- 参考: [布局规则](/en/v2/element-ui/col.html) | [Button_props](http://element.eleme.io/#/zh-CN/component/button)
 
 
 ## resetBtn
@@ -161,7 +161,7 @@
 
   重置按钮默认配置,设置resetBtn=true或resetBtn.show=true时显示
 
-- 参考: [布局规则](/v2/element-ui/col.html) | [Button_props](http://element.eleme.io/#/zh-CN/component/button)
+- 参考: [布局规则](/en/v2/element-ui/col.html) | [Button_props](http://element.eleme.io/#/zh-CN/component/button)
 
 ## info <Badge type="warn" text="0.0.4+"/>
 

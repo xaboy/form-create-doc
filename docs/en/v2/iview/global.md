@@ -115,7 +115,7 @@
 
   提交按钮配置,设置submitBtn=false或submitBtn.show=false时不显示按钮
 
-- 参考: [布局规则](/v2/iview/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
+- 参考: [布局规则](/en/v2/iview/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
 
 
 
@@ -151,7 +151,7 @@
 
   重置按钮默认配置,设置resetBtn=true或resetBtn.show=true时显示
 
-- 参考: [布局规则](/v2/iview/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
+- 参考: [布局规则](/en/v2/iview/col.html) | [Button_props](https://www.iviewui.com/components/button#Button_props)
 
 
 

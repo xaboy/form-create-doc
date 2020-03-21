@@ -142,7 +142,7 @@ Set the global configuration `options.resetBtn = true` to display
 
 ## Obtain $f
 
-[reference](/en/v2/guide/instance.html)
+[reference](/en/v2/instance.html)
 
 ## Method of calling an outer component in a configuration item
 

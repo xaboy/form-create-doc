@@ -1,5 +1,5 @@
 ---
-title: Group component [new]
+title: Group component
 ---
 
 

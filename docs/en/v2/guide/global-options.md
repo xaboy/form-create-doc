@@ -160,11 +160,11 @@ The global configuration consists of the following sections.
 
 ### formData <Badge type="warn" text="1.0.4+"/>
 
-- **类型**：`Object`
+- **Type**：`Object`
 
-- **说明**：Set the form initial value
+- **Description**：Set the form initial value
 
-- **示例**：
+- **Example**：
 
   ```js
   {

@@ -3,9 +3,9 @@
 **The maker component generator is a helper method for generating component rules, which can quickly generate corresponding component rules through chain operations.**
 
 
-## 获取 maker 生成器
+## Get maker
 
-**浏览器**
+**Browser**
 
 `window.formCreate.maker`
 
@@ -20,9 +20,9 @@
 ## Maker.parse
 
 
-- **参数**：`{string|array} Json`、`{bool} toMaker=false`
+- **Parameter**：`{string|array} Json`、`{bool} toMaker=false`
 
-- **用法**：
+- **Usage**：
 
   ```js
   let rules = maker.parse(json);
@@ -32,9 +32,9 @@
     //TODO
   }
   ```
-将 json 转换为生成规则,**转换后可使用 find()方法快速查找指定`field`字段**
+Convert the json into a generation rule. **After conversion, you can use the find () method to quickly find the specified field.**
 
-## 生成组件
+## Build component
 
 
 - [Iview](/en/v2/iview/maker.html)
