@@ -2,23 +2,33 @@
 sidebarDepth: 3
 ---
 
-# 实例方法
+# API
 
-## 获取实例对象 $f
+## 获取API`$f`
 
 
 
 - 全局方法
 
-  - $f = formCreate.create(rules)
-  - $f = vm.\$formCreate(rules)
+    ```js
+    $f = formCreate.create(rules)
+    $f = vm.$formCreate(rules)
+    ```
 
 - 组件模式
 
   ```html
   <form-create v-model="fApi"></form-create>
   ```
-  - $f = vm.fApi
+  ```js
+  new Vue({
+    data(){
+      return {
+          fApi:{}
+      }
+    }
+    })
+  ```
 
 
 ## 属性
