@@ -1,10 +1,15 @@
 ---
-title: Update log (1.0.8)
+title: Update log (1.0.9)
 ---
 
-### Current version 1.0.8
+### Current version 1.0.9
 
 --------
+
+#### 1.0.9 (2020-03-24)
+-Fixed `field 'duplicate issue
+-Fixed an issue where the DatePicker component may fail during validation
+
 #### 1.0.8 (2020-03-15)
 - Fix error when merging common layout rules #181
 - Fixed an issue where the `group` component might report an error
