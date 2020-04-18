@@ -30,8 +30,6 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 
 import formCreate from '@form-create/iview'
-// Get the generator
-import { maker } from '@form-create/iview'
 
 Vue.use(iView);
 Vue.use(formCreate)

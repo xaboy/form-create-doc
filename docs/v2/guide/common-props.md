@@ -2,7 +2,7 @@
 
 通过全局配置中的`global`配置项可实现组件的公共配置,支持设置组件所有的配置项
 
-[全局配置](/v2/guide/global-options)
+[全局配置](/v2/guide/global-options.html)
 
 ### 示例
 

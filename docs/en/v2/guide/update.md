@@ -1,14 +1,31 @@
 ---
-title: Update log (1.0.9)
+title: Update log (1.0.10)
 ---
 
-### Current version 1.0.9
+### Current version 1.0.10
 
 --------
 
+#### 1.0.10 (2020-04-18)
+- Fix the problem that the timePicker component cannot be selected occasionally
+- Fixed possible error in `ie10`
+- Fixed the problem that the parseJson method may report an error
+- Fix the problem that `control` may not take effect
+- Refactored `vData` class to support repeated monitoring of events
+- Fix the error reported by `onSubmit` method
+- Fixed the problem of wrong type attribute of `frame` component width, height
+- Fixed the problem that `checkbox` component may report an error
+- Fix `control` control rules to wrap a layer of` div` #199
+- Added `frame` component to add` srcKey` configuration item, support `value` as object
+- Added `group` component to add` change` event
+- Added the change event of the whole form
+- Optimized the multi-line style of `ElementUI label`
+- Optimized ts #196
+
+
 #### 1.0.9 (2020-03-24)
--Fixed `field 'duplicate issue
--Fixed an issue where the DatePicker component may fail during validation
+- Fixed `field 'duplicate issue
+- Fixed an issue where the DatePicker component may fail during validation
 
 #### 1.0.8 (2020-03-15)
 - Fix error when merging common layout rules #181

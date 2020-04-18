@@ -2,6 +2,20 @@
 
 # Global config
 
+## Setting global configuration
+
+- Component mode
+
+```html
+<form-create :option="option"></form-create>
+```
+
+- Global method
+
+```js
+Vm.$formCreate(rule,option)
+window.formCreate.create(rule,option)
+```
 
 
 ## Structure

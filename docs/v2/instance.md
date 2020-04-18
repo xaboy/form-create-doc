@@ -350,7 +350,7 @@ $f.config
 - **用法**：
 
   ```js
-  $f.prepend({
+  $f.append({
          type:"input",
          title:"商品简介",
          field:"goods_info",

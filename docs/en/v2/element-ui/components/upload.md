@@ -42,7 +42,6 @@ $formCreate.maker.upload('轮播图','pic',['http://img1.touxiang.cn/uploads/201
         "name":"pic",
         "multiple": true,
         "accept":"image\/*",
-        "format":["jpg","jpeg","png","gif"],
         "limit": 2,
         "onSuccess":function (res, file) {
             file.url = res.data.filePath;

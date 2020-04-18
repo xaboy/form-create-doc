@@ -45,8 +45,9 @@ maker.frame('素材','fodder',["/uploads/20131030/30-075657_191.jpg"]).props({
 | helper | 开启框架页面内助手方法                                  | Boolean | false                           |
 | disabled  | 禁用组件                                    | Boolean |  false                            |
 | icon | 打开弹出框的按钮图标                              | String | -                           |
-| width    | 弹出框宽度                                      | Number   | -                              |
-| height    | 弹出框高度           | Number  | - |
+| srcKey    |  当`value`为`Array<Object>`时需要定义 srcKey       | String   | -                              |
+| width    | 弹出框宽度                                      | String   | -                              |
+| height    | 弹出框高度           | String  | - |
 | okBtnText      | 弹出框确定按钮文字 | String  | '确定'                             |
 | closeBtnText | 弹出框关闭按钮文字 |  String | '关闭' |
 | modalTitle | 图片预览弹出框标题文字 |  String | '预览' |

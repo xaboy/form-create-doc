@@ -2,6 +2,8 @@
 
 ## formCreate
 
+[如何导入 formCreate ](/v2/guide/start.html#%E5%BC%95%E5%85%A5-form-create-v2)
+
 **全局挂载**
 ```js
 Vue.use(formCreate);

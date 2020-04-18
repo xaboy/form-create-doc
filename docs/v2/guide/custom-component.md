@@ -6,7 +6,7 @@ form-create 支持的在表单内部生成任何 vue 组件
 
 - **自定义组件必须在生成之前[挂载或注册](/v2/guide/mount.html#自定义组件)**
 - 只有当你需要通过`$f.component()`方法获取该组件的生成规则时,需要定义`name`属性
-- 当你需要让自定义组件和内置组件具有一样的功能时,可以将其转换为[表单组件](/v2/guide/custom-component.html#表单组件)
+- 当你需要让自定义组件和内置组件具有一样的功能时,可以将其转换为[表单组件](/v2/guide/custom-form-component.html)
 
 :::
 

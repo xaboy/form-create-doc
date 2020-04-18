@@ -349,7 +349,7 @@ $f.config
 - **Usage**：
 
   ```js
-  $f.prepend({
+  $f.append({
          type:"input",
          title:"goods info",
          field:"goods_info",

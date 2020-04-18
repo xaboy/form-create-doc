@@ -33,8 +33,6 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 
 import formCreate from '@form-create/iview'
-//获取生成器
-import { maker } from '@form-create/iview'
 
 Vue.use(iView);
 Vue.use(formCreate)

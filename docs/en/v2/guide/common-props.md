@@ -2,7 +2,7 @@
 
 Through the `global` configuration items in the global configuration, you can implement the common configuration of the component, and support setting all configuration items
 
-[Global configuration](/en/v2/guide/global-options)
+[Global configuration](/en/v2/guide/global-options.html)
 
 ### Example
 

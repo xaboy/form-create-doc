@@ -2,7 +2,7 @@
 
 The layout of the component can be achieved by setting the configuration item `col`
 
-[iview Col](/en/v2/iview/col) | [element-ui Col](/en/v2/element-ui/col)
+[iview Col](/en/v2/iview/col.html) | [element-ui Col](/en/v2/element-ui/col.html)
 - **Use built-in `col` layout rules**
 > Default is {span: 24} when col is not set
 ::: demo

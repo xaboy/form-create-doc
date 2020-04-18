@@ -71,7 +71,7 @@ maker.create('input','test','textTitle').props({
 
 - ​**类型**:  `String`
 - **说明**: 设置组件的提示信息
-- 全局配置说明: [iview](/v2/iview/global.html) | [element-ui](/v2/element-ui/globa.htmll)
+- 全局配置说明: [iview](/v2/iview/global.html) | [element-ui](/v2/element-ui/globa.html)
 
 ### **native**
 

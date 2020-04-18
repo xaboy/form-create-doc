@@ -2,7 +2,7 @@
 
 通过设置配置项`col`可以实现组件的布局
 
-[iview Col](/v2/iview/col) | [element-ui Col](/v2/element-ui/col)
+[iview Col](/v2/iview/col.html) | [element-ui Col](/v2/element-ui/col.html)
 - **使用内置`col`布局规则**
 > 当没有设置col时默认为{span:24}
 ::: demo

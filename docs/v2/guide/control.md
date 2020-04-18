@@ -1,5 +1,5 @@
 ---
- title: control 配置项 [新]
+ title: control 配置项
 ---
 
 

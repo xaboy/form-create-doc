@@ -3,6 +3,22 @@
 # UI配置
 
 
+## 设置全局配置
+
+- 组件模式
+
+```html
+<form-create :option="option"></form-create>
+```
+
+- 全局方法
+
+```js
+vm.$formCreate(rule,option)
+window.formCreate.create(rule,option)
+```
+
+
 
 ## 构成
 

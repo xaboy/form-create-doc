@@ -2,6 +2,8 @@
 
 ## formCreate
 
+[How to import formCreate ](/en/v2/guide/start.html)
+
 **Global Mount**
 ```js
 Vue.use(formCreate);
