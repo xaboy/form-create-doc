@@ -2,6 +2,8 @@
 
 This article will show you how to use a custom component button instead of the default button
 
+[Set global configuration](/en/v2/guide/global-options.html)
+
 ### Hide the default button
 
 First hide the default action button of the form by setting the global configuration

@@ -26,23 +26,30 @@ ElementUI
 
 `npm i @form-create/element-ui`
 
-Iview 2.x|3.x
+Iview `2.x|3.x`
 
 `npm i @form-create/iview`
 
-Iview 4.x
+Iview `4.x`
 
 `npm i @form-create/iview4`
+
+Ant-design-vue `1.5.3+`
+
+`npm i @form-create/ant-design-vue`
 
 ## 导航
 
 - [ElementUI](/v2/element-ui/)
 - [Iview](/v2/iview/)
+- [Ant-design-vue](/v2/ant-design-vue/)
 - [实例方法](/v2/instance.html)
 - [自定义组件](/v2/guide/custom-component.html)
 - [第三方组件](/v2/guide/component/)
 
 ## 功能
+
+- 支持3种 UI 框架
 
 - 自定义组件
 

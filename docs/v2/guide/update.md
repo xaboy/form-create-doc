@@ -1,10 +1,19 @@
 ---
- title: 更新日志 (1.0.10)
+ title: 更新日志 (1.0.11)
 ---
 
-### 当前版本 1.0.10
+### 当前版本 1.0.11
 
 --------
+#### 1.0.11 (2020-04-21)
+- 移除 `ElementUI label`多行的样式
+- 修复 ts `vue.use(formCreate)`类型报错问题 #196
+- 新增 `maker` 实例增加`inject`方法
+- 修复 `maker` 二次追加属性不生效问题
+- 支持 `ant-design-vue` [文档](/v2/ant-design-vue/)
+    ```sh
+    npm i @form-create/ant-design-vue
+    ```
 
 #### 1.0.10 (2020-04-18)
 - 修复 `timePicker`组件偶尔无法选择问题

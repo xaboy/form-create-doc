@@ -35,7 +35,7 @@ import formCreate, {maker} from '@form-create/element-ui'
 
 ### compatible
 
-- element-ui ^2.8.2
+- ant-design-vue ^1.5.3
 
 
 ### legend

@@ -4,6 +4,8 @@
 
 [ElementUI](/v2/element-ui/)
 
+[AntDesignVue](/v2/ant-design-vue)
+
 ## 引入 form-create V2
 
 #### 浏览器

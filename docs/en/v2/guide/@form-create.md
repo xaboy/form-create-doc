@@ -21,4 +21,9 @@
     - dist/form-create.js
     - dist/form-create.min.js
 
+- @form-create/ant-design-vue `ant-design-vue 版表单生成器`
+
+    - dist/form-create.js
+    - dist/form-create.min.js
+
 - @form-create/utils `表单生成器工具包`

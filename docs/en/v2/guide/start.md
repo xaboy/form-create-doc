@@ -4,6 +4,8 @@ This section will use **iview version** as an example to show how to use form-cr
 
 [ElementUI](/en/v2/element-ui/)
 
+[AntDesignVue](/en/v2/ant-design-vue)
+
 ## Introducing form-create V2
 
 #### Browser

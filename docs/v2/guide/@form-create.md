@@ -21,6 +21,11 @@
     - dist/form-create.js
     - dist/form-create.min.js
 
+- @form-create/ant-design-vue `ant-design-vue 版表单生成器`
+
+    - dist/form-create.js
+    - dist/form-create.min.js
+
 - @form-create/data `省市区联动数据`
 
     - dist/province_city.js

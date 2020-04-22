@@ -26,24 +26,30 @@ ElementUI
 
 `npm i @form-create/element-ui`
 
-Iview 2.x|3.x
+Iview `2.x|3.x`
 
 `npm i @form-create/iview`
 
-Iview 4.x
+Iview `4.x`
 
 `npm i @form-create/iview4`
 
+Ant-design-vue `1.5.3+`
+
+`npm i @form-create/ant-design-vue`
 
 ## Navigation
 
 - [ElementUI](/en/v2/element-ui/)
 - [Iview](/en/v2/iview/)
+- [Ant-design-vue](/en/v2/ant-design-vue/)
 - [API](/en/v2/instance.html)
 - [Custom component](/en/v2/guide/custom-component.html)
 - [Third party component](/en/v2/guide/component/)
 
 ## Features
+
+- Support 3 kinds of UI framework
 
 - Custom components
 

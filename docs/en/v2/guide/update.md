@@ -1,10 +1,21 @@
 ---
-title: Update log (1.0.10)
+title: Update log (1.0.11)
 ---
 
-### Current version 1.0.10
+### Current version 1.0.11
 
 --------
+
+#### 1.0.11 (2020-04-21)
+- Remove the multi-line style of `ElementUI label`
+- Fixed ts `vue.use (formCreate)` type error issue #196
+- Added `maker` instance and added` inject` method
+- Fixed the issue that the second appended attribute of `maker` does not take effect
+- Support `ant-design-vue` [Doc](/en/v2/ant-design-vue/)
+    ```sh
+    npm i @form-create/ant-design-vue
+    ```
+
 
 #### 1.0.10 (2020-04-18)
 - Fix the problem that the timePicker component cannot be selected occasionally
