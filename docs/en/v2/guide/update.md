@@ -10,6 +10,7 @@ title: Update log (1.0.11)
 - Remove the multi-line style of `ElementUI label`
 - Fixed ts `vue.use (formCreate)` type error issue #196
 - Added `maker` instance and added`inject,model` method
+- Added built-in `fragment` component
 - Fixed the issue that the second appended attribute of `maker` does not take effect
 - Support `ant-design-vue` [Doc](/en/v2/ant-design-vue/)
     ```sh
