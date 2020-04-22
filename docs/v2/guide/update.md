@@ -8,7 +8,7 @@
 #### 1.0.11 (2020-04-21)
 - 移除 `ElementUI label`多行的样式
 - 修复 ts `vue.use(formCreate)`类型报错问题 #196
-- 新增 `maker` 实例增加`inject`方法
+- 新增 `maker` 实例增加`inject,model`方法
 - 修复 `maker` 二次追加属性不生效问题
 - 支持 `ant-design-vue` [文档](/v2/ant-design-vue/)
     ```sh
