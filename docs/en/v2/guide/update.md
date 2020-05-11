@@ -1,10 +1,22 @@
 ---
-title: Update log (1.0.11)
+title: Update log (1.0.13)
 ---
 
-### Current version 1.0.11
+### Current version 1.0.13
 
 --------
+#### 1.0.13 (2020-05-11)
+- Optimized the methods of `$f.append` and`$f.prepend`
+- Modify the built-in `copyRule` method
+- Optimize the conditions of automatic copy generation rules
+- Support to control whether to automatically generate `col`,`row` components and set `class`
+
+#### 1.0.12 (2020-04-30)
+- Fixed the error reported by `fragment` component during partial mounting
+- Fix the problem that `removeField` may be invalid
+- Added formData `$f.form` for two-way data binding
+- Added `control` event, triggered when`control` takes effect or is removed
+
 
 #### 1.0.11 (2020-04-21)
 - Remove the multi-line style of `ElementUI label`
@@ -46,9 +58,9 @@ title: Update log (1.0.11)
 - Fixed `DatePicker` component value conversion problem
 - Update `TypeScript`
 - Added optimized `method` method to get return value
-- Added `index` in event of` group` component #183
+- Added `index` in event of`group` component #183
 - Add **`control` configuration item, Can be used to control other component displays**
-- Added `options.form.className` configuration item to support setting` class` of the form
+- Added `options.form.className` configuration item to support setting`class` of the form
 
 #### 1.0.7 (2020-03-02)
 - Fix field error when initializing global configuration #166
