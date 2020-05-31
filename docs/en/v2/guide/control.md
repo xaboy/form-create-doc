@@ -67,7 +67,7 @@ maker.radio('Whether or not', 'is_postage', 0).options([
 - **handle `Function`**: Display the components in`rule` when the `handle` method returns` true`
 ```js
 {
-    handle: function (val) {
+    handle: function (val, $f) {
         return val === 1;
     },
     rule: [...]
@@ -77,7 +77,7 @@ maker.radio('Whether or not', 'is_postage', 0).options([
 - **rule `Array`**: This component controls the displayed components
 ```js
 {
-    handle: 1
+    value: 1,
     rule: [
         maker.number ('Full Amount', 'postage_money', 0)
     ]

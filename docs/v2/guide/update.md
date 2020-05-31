@@ -1,10 +1,28 @@
 ---
- title: 更新日志 (1.0.13)
+ title: 更新日志 (1.0.15)
 ---
 
-### 当前版本 1.0.13
+### 当前版本 1.0.15
 
 --------
+
+#### 1.0.15 (2020-05-31)
+- 优化 `parseJson`,`toJson` 方法,避免错误解析`function`
+- 优化 对生成规则的深拷贝
+- 优化 `group` 组件生成的子表单自动跟随父表单的配置
+- 新增 `control.handle` 方法增加第二个参数`$f`
+- 新增 `frame` 组件支持`reload,okBtn,closeBtn`配置,`form_create_helper`增加`onOk`,`onClose`方法可设置页面关闭回调事件
+- 重构 `frame,upload` 组件的弹出框,移除原有的`modal`
+- 修复 `upload` 预览可能死循环问题
+- 修复 `group` 组件验证可能不通过问题
+- 修复 `toJson` 可能出现规则丢失问题
+- 修复 全局配置`labelCol,wrapperCol`不生效问题
+- 修复 `hidden` 组件可能会渲染问题
+
+#### 1.0.14 (2020-05-14)
+- 优化 `frame` 组件 value 类型
+- 修复 `frame` 组件 在`safari`浏览器下无法正常关闭问题
+
 #### 1.0.13 (2020-05-11)
 - 优化 `$f.append`,`$f.prepend`方法
 - 修改 内置的`copyRule`方法

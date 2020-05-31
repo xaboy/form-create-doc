@@ -146,13 +146,17 @@
 
 - **Type**:`Function`
 
-- **Description**: Convert json to build rule
+- **Parameter**：
+  - `String` json
+  - `Boolean` mode <Badge type="warn" text="1.0.5"/>
+
+- **Description**: Convert json to a generation rule, add a second parameter for backward compatibility, use the new version to parse when `mode: true` (version> 1.0.5 recommends that the second parameter is fixed to true)
 
 - **Usage**:
 
     ```js
     const json = $f.toJson();
-    const rule = formCreate.parseJson(json);
+    const rule = formCreate.parseJson(json, true);
     ```
 
 ## vm.$formCreate

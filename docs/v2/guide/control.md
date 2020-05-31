@@ -67,7 +67,7 @@ maker.radio('是否包邮', 'is_postage', 0).options([
 - **handle `Function`** : 当`handle`方法返回`true`时显示`rule`中的组件
 ```js
 {
-    handle:function(val){
+    handle:function(val, $f){
         return val === 1;
     },
     rule:[...]
@@ -77,10 +77,9 @@ maker.radio('是否包邮', 'is_postage', 0).options([
 - **rule `Array`** : 该组件控制显示的组件
 ```js
 {
-    handle:1
+    value:1,
     rule:[
         maker.number('满额包邮','postage_money',0)
     ]
 }
 ```
-

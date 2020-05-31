@@ -150,13 +150,17 @@
 
 - **类型**：`Function`
 
-- **说明**：将json转换为生成规则
+- **参数**：
+  - `String` json
+  - `Boolean` mode <Badge type="warn" text="1.0.5"/>
+  
+- **说明**：将json转换为生成规则,为向下兼容增加第二个参数,`mode:true`时使用新版本解析(版本>1.0.5推荐第二个参数固定传 true)
 
 - **用法**：
 
   ```js
    const json = $f.toJson();
-   const rule = formCreate.parseJson(json);
+   const rule = formCreate.parseJson(json, true);
   ```
 
 ## vm.$formCreate
