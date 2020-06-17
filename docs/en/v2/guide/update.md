@@ -1,10 +1,21 @@
 ---
-title: Update log (1.0.13)
+title: Update log (1.0.16)
 ---
 
-### Current version 1.0.13
+### Current version 1.0.16
 
 --------
+#### 1.0.16 (2020-06-17)
+- Fixed possible endless loop when rendering
+- Fixed the problem of modifying value of `antd.switch` component
+- Fixed `antd.select` placeholder not showing
+- Update `TypeScript`
+- Fixed the problem that the UI may not update when the value of the `group` component remove event is changed
+- Fixed the issue that `frame` component preview may not display properly
+- The new `group` component supports control button hidden button capitalization and custom buttons,
+    - props `fontSize,button,`
+    - slot `button,default`
+
 
 #### 1.0.15 (2020-05-31)
 - Optimize the `parseJson` and` toJson` methods to avoid wrong parsing` function`

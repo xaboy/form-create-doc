@@ -1,10 +1,22 @@
 ---
- title: 更新日志 (1.0.15)
+ title: 更新日志 (1.0.16)
 ---
 
-### 当前版本 1.0.15
+### 当前版本 1.0.16
 
 --------
+
+#### 1.0.16 (2020-06-17)
+- 修复 渲染时可能出现死循环
+- 修复 `antd.switch` 组件修改值问题
+- 修复 `antd.select` placeholder 不显示
+- 更新 `TypeScript`
+- 修复 `group` 组件`remove`事件修改值时UI可能不更新问题
+- 修复 `frame` 组件预览可能无法正常显示问题
+- 新增 `group` 组件支持控制按钮隐藏按钮大写和自定义按钮,
+    - 配置项 `fontSize,button,`
+    - 插槽 `button,default`
+
 
 #### 1.0.15 (2020-05-31)
 - 优化 `parseJson`,`toJson` 方法,避免错误解析`function`
