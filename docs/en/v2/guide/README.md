@@ -20,6 +20,12 @@
 Form-create is a form generator that can generate dynamic rendering, data collection, validation, and submission via JSON. And support for generating any Vue components. Combined with the built-in 17 common form components and custom components, complex forms can be easily handled.
 
 
+## Download
+You can view all source files of the entire project from github. If it helps you, you can click "star" to support it Thank you!
+
+<iframe src="https://ghbtns.com/github-btn.html?user=xaboy&repo=form-create&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+
+
 ## Install
 
 ElementUI

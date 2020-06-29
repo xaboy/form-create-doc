@@ -20,6 +20,11 @@
 
 form-create 是一个可以通过 JSON 生成具有动态渲染、数据收集、验证和提交功能的表单生成器。并且支持生成任何 Vue 组件。结合内置17种常用表单组件和自定义组件，再复杂的表单都可以轻松搞定。
 
+## 下载
+从Github上可以查看整个项目的所有源文件。如果对您有帮助，您可以点 "Star" 支持一下 谢谢！
+
+<iframe src="https://ghbtns.com/github-btn.html?user=xaboy&repo=form-create&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+
 ## 安装
 
 ElementUI
