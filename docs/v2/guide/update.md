@@ -1,10 +1,32 @@
 ---
- title: 更新日志 (1.0.16)
+ title: 更新日志 (1.0.17)
 ---
 
-### 当前版本 1.0.16
+### 当前版本 1.0.17
 
 --------
+
+#### 1.0.17 (2020-07-16)
+- 修复 `hidden` 可能会失效问题
+- 修复 `group` 组件可能会额外生成多组的问题
+- 修复 `control` 可能会失效的问题
+- 修复 `datePicker`,`timePicker`组件 `formatValue` 可能导致报错的问题
+- 新增 `frame` 组件支持通过`previewMask`配置预览图片弹窗的遮罩是否显示
+- 优化 `$emit` 事件
+- 优化 表单销毁时可能报错
+- 优化 `frame`组件助手方法加载时机
+- 新增 支持设置 `title` 的 `class,style` 等属性
+    ```javascript
+   let rule = {
+      title:{
+          class:'titleClass',
+          style:'backgroundColor:red',
+          title:'商品名称'
+      }
+      //title:'商品名称'    
+  }
+    ```
+
 
 #### 1.0.16 (2020-06-17)
 - 修复 渲染时可能出现死循环

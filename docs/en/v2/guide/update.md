@@ -1,10 +1,33 @@
 ---
-title: Update log (1.0.16)
+title: Update log (1.0.17)
 ---
 
-### Current version 1.0.16
+### Current version 1.0.17
 
 --------
+
+#### 1.0.17 (2020-07-16)
+- Fix the issue that `hidden` may fail
+- Fix the problem that the `group` component may generate multiple additional groups
+- Fix the problem that `control` may fail
+- Fix the problem that `datePicker`, `timePicker` component `formatValue` may cause errors
+- The new `frame` component supports configuring whether the mask of the preview image popup window is displayed through `previewMask`
+- Optimize the $emit event
+- Optimization may report an error when the form is destroyed
+- Optimize loading timing of `frame` component helper method
+- Added support for setting `class, style` and other attributes of `title`
+    ```javascript
+       let rule = {
+          title:{
+              class:'titleClass',
+              style:'backgroundColor:red',
+              title:'GoodsName'
+          }  
+          //title:'GoodsName'      
+      }
+    ```
+
+
 #### 1.0.16 (2020-06-17)
 - Fixed possible endless loop when rendering
 - Fixed the problem of modifying value of `antd.switch` component
