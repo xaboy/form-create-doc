@@ -1,10 +1,16 @@
 ---
- title: 更新日志 (1.0.17)
+ title: 更新日志 (1.0.18)
 ---
 
-### 当前版本 1.0.17
+### 当前版本 1.0.18
 
 --------
+
+#### 1.0.18
+- 修复 `Group` 组件可能出现赋值失效问题 [#240](https://github.com/xaboy/form-create/issues/240)
+- 修复 `ElmentUI.Upload`组件可能出现报错问题 [#207](https://github.com/xaboy/form-create/issues/207)
+- 修复 `emit` 事件可能会触发两次的问题
+- 更新 `TypeScript`
 
 #### 1.0.17 (2020-07-16)
 - 修复 `hidden` 可能会失效问题

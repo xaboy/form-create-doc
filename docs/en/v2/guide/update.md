@@ -1,10 +1,16 @@
 ---
-title: Update log (1.0.17)
+title: Update log (1.0.18)
 ---
 
-### Current version 1.0.17
+### Current version 1.0.18
 
 --------
+
+#### 1.0.18
+- Fix the problem that the `Group` component may have invalid assignment [#240](https://github.com/xaboy/form-create/issues/240)
+- Fix the problem that the `ElmentUI.Upload` component may report an error [#207](https://github.com/xaboy/form-create/issues/207)
+- Fix the issue that the `emit` event may be triggered twice
+- Update `TypeScript`
 
 #### 1.0.17 (2020-07-16)
 - Fix the issue that `hidden` may fail

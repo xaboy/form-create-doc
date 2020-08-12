@@ -1,5 +1,6 @@
 # Rule
 
+![rule-info](/img/rule-info.png)
 
 ## Description
 **The configuration item name of the JSON rule is the same as the configuration method name of the component generator, and the configuration parameters are the same**
