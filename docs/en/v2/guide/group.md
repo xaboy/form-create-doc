@@ -58,10 +58,13 @@ maker.group('label', 'label', []).props({
 
 | Property | Description | Type | Default |
 | :-------- | :-------------------------------------------------- | :------ | :-----------------------------|
-rule | Rules for nested components. When set through this property, the value is `Array` ** (the component rule that needs to get the value must define the field, if there are multiple defaults, the first one is taken) |
-rules | Rules for nested components. When set through this property, the value is `Array <Object>` ** (component rules that need to get values, field must be defined) ** | Array |-|
+rule | Rules for nested components. When set through this property, the value is `Array` **(the component rule that needs to get the value must define the field, if there are multiple defaults, the first one is taken)** |
+rules | Rules for nested components. When set through this property, the value is `Array <Object>` **(component rules that need to get values, field must be defined)** | Array |-|
 | min | Add a few items | Number |-|
 | max | Add up to a few items | Number |-|
+| expand  | Expand several items by default                                    |  Number |  -                            |
+| button  | Whether to show operation buttons                                    |  Boolean |  -                            |
+| fontSize  | Action button font size                               |  Number |  28                            |
 | disabled | disabled | Boolean | false |
 
 #### events
@@ -71,3 +74,4 @@ rules | Rules for nested components. When set through this property, the value i
 add | Trigger after adding an item |-|
 remove | Triggered after removing an item |-|
 | itemMounted | Triggered when the new subform is initialized |-|
+| [`field-emitName`]   | Subform `emit` event              | -      

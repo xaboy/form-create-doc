@@ -1,12 +1,43 @@
 ---
-title: Update log (1.0.18)
+title: Update log (1.0.19)
 ---
 
-### Current version 1.0.18
+### Current version 1.0.19
 
 --------
 
-#### 1.0.18
+
+#### 1.0.19 (2020-09-11)
+- Add the expand attribute of the `Group` component to control the number of default open
+- Added monitoring of sub-form events through the `Group` component
+    ```js
+    {
+        type:'group',
+        //...
+        props: {
+            rules: [
+                {
+                    type: 'input',
+                    field: 'test',
+                    emit: ['change'],
+                    //...
+                }   
+            ]   
+        },
+        on: {
+            ['test-change']: function () {
+                //TODO input component change event
+            }
+        }
+    }
+    ```
+- Fix the problem that the value of the `Group` component may not be synchronized
+- Fix the issue of invalid `previewMask` parameter of `upload` component
+- Optimize the triggering of `emit` event
+- Added `emit-event` event, triggered when there is `emit`
+
+
+#### 1.0.18 (2020-08-12)
 - Fix the problem that the `Group` component may have invalid assignment [#240](https://github.com/xaboy/form-create/issues/240)
 - Fix the problem that the `ElmentUI.Upload` component may report an error [#207](https://github.com/xaboy/form-create/issues/207)
 - Fix the issue that the `emit` event may be triggered twice

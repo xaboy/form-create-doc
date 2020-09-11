@@ -159,6 +159,60 @@
     const rule = formCreate.parseJson(json, true);
     ```
 
+
+
+## Event
+
+#### change
+
+- **Parameter**：
+  - `field`
+  - `value`
+  - `$f` api
+  
+- **Directions**： Triggered when the value of the form component changes within the component
+
+#### set-value
+
+- **Parameter**：
+  - `field`
+  - `value`
+  - `$f` api
+  
+- **Directions**： Triggered when the value of the form component modified externally
+
+#### emit-event
+
+- **Parameter**：
+  - `emitName`
+  - `...args` event Parameter
+  
+- **Directions**： Triggered when the component's `emit` event triggered
+
+#### control
+
+- **Parameter**：
+  - `rule` rule
+  - `$f` api
+  
+- **Directions**： Triggered when the component's `control` becomes effective or invalid
+
+#### mounted
+
+- **Parameter**：
+  - `$f` api
+  
+- **Directions**： Triggered after the form rendered for the first time
+
+#### on-submit
+
+- **Parameter**：
+  - `formData`
+  - `$f` api
+  
+- **Directions**： Triggered when the form submit button clicked
+
+
 ## vm.$formCreate
 
 - **Type**:`Function`

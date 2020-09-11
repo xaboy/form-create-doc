@@ -24,7 +24,7 @@ sidebarDepth: 3
   new Vue({
     data(){
       return {
-          fApi:{}
+          fApi:{} //fApi 等同于 $f
       }
     }
     })

@@ -62,6 +62,9 @@ maker.group('标签',' label',[]).props({
 | rules | 嵌套组件的规则,通过此属性设置时,值为`Array<Object>`**(需要获取值的组件规则,必须定义 field)**            |  Array | -                            |
 | min |  最少添加几项                                |  Number | -                           |
 | max  | 最多添加几项                                    |  Number |  -                            |
+| expand  | 默认展开几项                                    |  Number |  -                            |
+| button  | 是否显示操作按钮                                    |  Boolean |  -                            |
+| fontSize  | 操作按钮字体大小                               |  Number |  28                            |
 | disabled |  禁用                         |  Boolean | false                           |
 
 #### events
@@ -71,3 +74,4 @@ maker.group('标签',' label',[]).props({
 | add           | 增加一项后触发                              | - |
 | remove        | 删除一项后触发                              | -                                                |
 | itemMounted   | 新增的子表单初始化完成后触发                   | -                                                            |
+| [`field-emitName`]   | 子表单 emit 事件              | -                                                            |

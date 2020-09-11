@@ -163,6 +163,59 @@
    const rule = formCreate.parseJson(json, true);
   ```
 
+
+## 事件
+
+#### change
+
+- **参数**：
+  - `field` 字段名
+  - `value` 组件值
+  - `$f` api
+  
+- **说明**： 当表单组件的值在组件内部发生变化时触发
+
+#### set-value
+
+- **参数**：
+  - `field` 字段名
+  - `value` 组件值
+  - `$f` api
+  
+- **说明**： 当表单组件的值在外部被修改时触发
+
+#### emit-event
+
+- **参数**：
+  - `emitName` 事件名
+  - `...args` 事件参数
+  
+- **说明**： 在组件的 `emit` 事件触发时触发
+
+#### control
+
+- **参数**：
+  - `rule` 生成规则
+  - `$f` api
+  
+- **说明**： 在组件的`control`生效或失效时触发
+
+#### mounted
+
+- **参数**：
+  - `$f` api
+  
+- **说明**： 在表单首次渲染完成后触发
+
+#### on-submit
+
+- **参数**：
+  - `formData` 表单数据
+  - `$f` api
+  
+- **说明**： 点击表单提交按钮时触发
+
+
 ## vm.$formCreate
 
 - **类型**：`Function`

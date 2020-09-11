@@ -1,12 +1,41 @@
 ---
- title: 更新日志 (1.0.18)
+ title: 更新日志 (1.0.19)
 ---
 
-### 当前版本 1.0.18
+### 当前版本 1.0.19
 
 --------
 
-#### 1.0.18
+#### 1.0.19 (2020-09-11)
+- 新增 `Group` 组件 expand 属性,控制默认打开个数
+- 新增 通过 `Group` 组件监听子表单的事件
+    ```js
+    {
+        type:'group',
+        //...
+        props: {
+            rules: [
+                {
+                    type: 'input',
+                    field: 'test',
+                    emit: ['change'],
+                    //...
+                }   
+            ]   
+        },
+        on: {
+            ['test-change']: function () {
+                //TODO input 组件 change 事件
+            }
+        }
+    }
+    ```
+- 修复 `Group`组件value可能会不同步问题
+- 修复 `upload` 组件`previewMask`参数无效问题
+- 优化 `emit` 事件触发
+- 新增 `emit-event` 事件,有 `emit` 时触发
+
+#### 1.0.18 (2020-08-12)
 - 修复 `Group` 组件可能出现赋值失效问题 [#240](https://github.com/xaboy/form-create/issues/240)
 - 修复 `ElmentUI.Upload`组件可能出现报错问题 [#207](https://github.com/xaboy/form-create/issues/207)
 - 修复 `emit` 事件可能会触发两次的问题

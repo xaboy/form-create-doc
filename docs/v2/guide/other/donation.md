@@ -1,5 +1,5 @@
-### 捐赠🌹
+### 打赏🌹
 
-![https://raw.githubusercontent.com/xaboy/form-create/dev/images/donation.jpg](https://raw.githubusercontent.com/xaboy/form-create/dev/images/donation.jpg)
+![/img/donation.jpg](/img/donation.jpg)
 
 > 感谢支持, 谢谢大佬!

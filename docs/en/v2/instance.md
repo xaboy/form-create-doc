@@ -24,7 +24,7 @@ sidebarDepth: 3
   new Vue({
     data(){
       return {
-          fApi:{}
+          fApi:{} //fApi is equivalent to $f
       }
     }
     })

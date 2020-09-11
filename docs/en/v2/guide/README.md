@@ -28,19 +28,19 @@ You can view all source files of the entire project from github. If it helps you
 
 ## Install
 
-ElementUI
+ElementUI version
 
 `npm i @form-create/element-ui`
 
-Iview `2.x|3.x`
+Iview version `2.x|3.x`
 
 `npm i @form-create/iview`
 
-Iview `4.x`
+Iview version `4.x`
 
 `npm i @form-create/iview4`
 
-Ant-design-vue `1.5.3+`
+Ant-design-vue version `1.5.3+`
 
 `npm i @form-create/ant-design-vue`
 
