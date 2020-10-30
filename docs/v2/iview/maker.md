@@ -573,7 +573,7 @@
 - **用法**：
 
   ```js
-  maker.tree('field','title',10)
+  maker.frame('field','title',10)
   ```
 
   生成一个 frame 组件

@@ -1,11 +1,18 @@
 ---
-title: Update log (1.0.19)
+title: Update log (1.0.20)
 ---
 
-### Current version 1.0.19
+### Current version 1.0.20
 
 --------
 
+#### 1.0.20 (2020-10-29)
+- Optimization error message
+- Optimize the `group` component ʻexpand` configuration item
+- Optimized the problem that the upload component cannot be previewed when it is disabled #268
+- Fix the issue that the `hidden` configuration item may fail
+- Fix the problem that the `hidden` component cannot be reset
+- Fix `maker.group` method does not exist
 
 #### 1.0.19 (2020-09-11)
 - Add the expand attribute of the `Group` component to control the number of default open

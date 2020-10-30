@@ -681,6 +681,11 @@ const hiddenStatus = $f.hiddenStatus();
 
    -If both an event and a callback are provided, only the listener for this callback is removed.
    
+  ```js  
+  $f.off('goods-name-on-change');
+  // $f.off('goods-name-on-change', fn);
+  ```
+   
 ### $f.set
    
    - **Parameter**：

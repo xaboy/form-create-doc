@@ -23,7 +23,53 @@ maker.cascader('所在区域','address',['陕西省','西安市','新城区']).p
     field:"address",
     value:['陕西省','西安市','新城区'],
     props:{
-        data:window.province || [],
+        data:[{
+            value: 'beijing',
+            label: '北京',
+            children: [
+                {
+                    value: 'gugong',
+                    label: '故宫'
+                },
+                {
+                    value: 'tiantan',
+                    label: '天坛'
+                },
+                {
+                    value: 'wangfujing',
+                    label: '王府井'
+                }
+            ]
+        }, {
+            value: 'jiangsu',
+            label: '江苏',
+            children: [
+                {
+                    value: 'nanjing',
+                    label: '南京',
+                    children: [
+                        {
+                            value: 'fuzimiao',
+                            label: '夫子庙',
+                        }
+                    ]
+                },
+                {
+                    value: 'suzhou',
+                    label: '苏州',
+                    children: [
+                        {
+                            value: 'zhuozhengyuan',
+                            label: '拙政园',
+                        },
+                        {
+                            value: 'shizilin',
+                            label: '狮子林',
+                        }
+                    ]
+                }
+            ]
+        }]
     }
 }
 ```

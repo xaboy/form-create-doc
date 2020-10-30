@@ -167,7 +167,7 @@ rules = [{//emit 方式触发 change 事件
 },{// 直接在规则写回调方法
      field:'goods_tag',
      //...
-     event:{
+     on:{
          change:function() {
            //TODO
          }

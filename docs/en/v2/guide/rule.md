@@ -166,7 +166,7 @@ rules = [{//emit mode triggers change event
 },{// write the callback method directly in the rule
      field: 'goods_tag',
      //...
-     event:{
+     on:{
          change:function() {
            //TODO
          }

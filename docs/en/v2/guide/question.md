@@ -35,8 +35,8 @@ $f.setValue({[field1]:value1,[field2]:value2})
               "type": "select",
               "uploadType": "image",
               "name": "file",
-              "onSuccess": function () {
-                  return 'http://img1.touxiang.cn/uploads/20131030/30-075657_191.jpg';
+              "onSuccess": function (res, file) {
+                  file.url = res.data;
               }
          })
          .validate({required:true, type: 'array', min: 1, message: '请上传1张图片', trigger: 'change'}

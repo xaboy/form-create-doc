@@ -682,7 +682,12 @@ const hiddenStatus = $f.hiddenStatus();
    - 如果只提供了事件，则移除该事件所有的监听器；
 
    - 如果同时提供了事件与回调，则只移除这个回调的监听器。
-   
+    
+  ```js  
+  $f.off('goods-name-on-change');
+  // $f.off('goods-name-on-change', fn);
+   ```
+      
 ### $f.set
    
    - **参数**：
