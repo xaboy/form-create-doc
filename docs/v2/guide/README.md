@@ -22,6 +22,8 @@ form-create 是一个可以通过 JSON 生成具有动态渲染、数据收集�
 
 [form-create QQ交流群](https://jq.qq.com/?_wv=1027&k=54aKUVw)：**28963712**
 
+<img src="/img/wechat_qr.png" width="240px">
+
 ## 下载
 从Github上可以查看整个项目的所有源文件。如果对您有帮助，您可以点 "Star" 支持一下 谢谢！
 
