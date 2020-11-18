@@ -21,7 +21,7 @@ First hide the default action button of the form by setting the global configura
 ```html
 <template>
      <div>
-        <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+        <form-create :rule="rule" v-model="fApi" :option="options"/>
         <ElButton type="primary" plain @click="submit">Submit</ElButton>
         <ElButton aligen="center" plain @click="reset">Reset</ElButton>
     </div>

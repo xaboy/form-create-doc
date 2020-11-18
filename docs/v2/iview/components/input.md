@@ -61,7 +61,7 @@ maker.input('商品名称','goods_name').props({
 | spellcheck   | 原生的 spellcheck 属性                                       | Boolean           | false  |
 | wrap         | 原生的 wrap 属性，可选值为 hard 和 soft，仅在 textarea 下生效 | String            | soft   |
 
-#### events
+#### on 事件
 
 | 事件名         | 说明                                           | 返回值 |
 | :------------- | :--------------------------------------------- | :----- |

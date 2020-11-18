@@ -8,7 +8,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>
@@ -88,7 +88,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>

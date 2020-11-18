@@ -31,7 +31,7 @@ $formCreate.maker.color('颜色','color','#ff7271')
 | popperClass | ColorPicker 下拉框的类名  | string  | —                     | —                                                     |
 | predefine    | 预定义颜色                | array   | —                     | —                                                     |
 
-#### events
+#### on 事件
 
 | 事件名称      | 说明                               | 回调参数         |
 | ------------- | ---------------------------------- | ---------------- |

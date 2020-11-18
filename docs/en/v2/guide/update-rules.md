@@ -13,7 +13,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <p>Append components to the end of the form</p>
     <ElButton @click="append1">Way 1</ElButton>
@@ -85,7 +85,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <p>Adding components to the top of the form</p>
     <ElButton @click="append1">Way 1</ElButton>
@@ -152,7 +152,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <p>Added inside the col component</p>
     <ElButton @click="append1">Way 1</ElButton>

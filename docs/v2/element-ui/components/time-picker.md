@@ -67,7 +67,7 @@ $formCreate.maker.time('活动时间','section_time').props({
 
 
 
-#### events
+#### on 事件
 
 | 事件名 | 说明                    | 参数       |
 | ------ | ----------------------- | ---------- |

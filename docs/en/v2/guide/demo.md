@@ -7,7 +7,7 @@ The following is a demo and reference case for from-create
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>

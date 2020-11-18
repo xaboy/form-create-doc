@@ -80,7 +80,7 @@ Customize the counter button component and get the number of button clicks. The 
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>

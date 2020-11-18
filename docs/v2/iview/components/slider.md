@@ -47,7 +47,7 @@ maker.slider('滑块','slider',[0,52]).props({
 | input-size          | 数字输入框的尺寸，可选值为`large`、`small`、`default`或者不填，仅在开启 show-input 时有效 | String          | default |
 | active-change 3.4.0 | 同 InputNumber 的 active-change                              | Boolean         | true    |
 
-#### events
+#### on 事件
 
 | 事件名    | 说明                                                       | 返回值 |
 | :-------- | :--------------------------------------------------------- | :----- |

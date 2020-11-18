@@ -9,7 +9,7 @@ Set the default slot for the component
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </div>
 </template>
 
@@ -56,7 +56,7 @@ Set prefix and suffix icons for input components via `prefix` and` suffix` slots
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </div>
 </template>
 

@@ -46,7 +46,7 @@ $formCreate.maker.radio('是否包邮','is_postage','0').options([
 | size        | 大小，只对按钮样式生效                                 | `large` | `default` | `small`                                | `default` |
 | buttonStyle | RadioButton 的风格样式，目前有描边和填色两种风格       | `outline` | `solid`                                          | `outline` |
 
-#### events
+#### on 事件
 
 | 事件名称 | 说明                 | 回调参数          |
 | -------- | -------------------- | ----------------- |

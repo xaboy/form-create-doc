@@ -7,7 +7,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2 v-text="disabled? 'cancel' : 'disable'"></h2>
     <ElButton @click="disabled1">Way1</ElButton>
     <ElButton @click="disabled2">Way2</ElButton>
@@ -84,7 +84,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <p>Increase option of select component</p>
     <ElButton @click="add1">Way1</ElButton>
@@ -150,7 +150,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <ElButton @click="changeValue1">Way1</ElButton>
     <ElButton @click="changeValue2">Way2</ElButton>
@@ -216,7 +216,7 @@ After defining the custom component name, you can get the component rules throug
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>Operate</h2>
     <p>Modify the type property of the button component</p>
     <ElButton @click="changeType1">Way 1</ElButton>

@@ -80,7 +80,7 @@ formCreate.maker.create('TestComponent','testField','自定义组件').value('te
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>

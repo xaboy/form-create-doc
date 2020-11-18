@@ -6,7 +6,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>
@@ -48,7 +48,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options" @input-field-change="change" @input-field2-blur="blur"/>
+    <form-create :rule="rule" v-model="fApi" :option="options" @input-field-change="change" @input-field2-blur="blur"/>
 </template>
 
 <script>
@@ -99,7 +99,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change" @prefix2-blur="blur"/>
+    <form-create :rule="rule" v-model="fApi" :option="options" @prefix1-change="change" @prefix2-blur="blur"/>
 </template>
 
 <script>
@@ -151,7 +151,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
 </template>
 
 <script>
@@ -208,7 +208,7 @@
 ::: demo
 ```html
 <template>
-    <FormCreate :rule="rule" v-model="fApi" :option="options" @prefix1-change="change"/>
+    <form-create :rule="rule" v-model="fApi" :option="options" @prefix1-change="change"/>
 </template>
 
 <script>

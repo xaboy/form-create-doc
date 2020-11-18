@@ -47,7 +47,7 @@ maker.tree('权限','rule',[]).props({
 | check-strictly       | 在显示复选框的情况下，是否严格的遵循父子不互相关联的做法     | Boolean  | false    |
 | check-directly 3.3.0 | 开启后，在 show-checkbox 模式下，select 的交互也将转为 check | Boolean  | false    |
 
-#### events
+#### on 事件
 
 | 事件名           | 说明                   | 返回值                       |
 | :--------------- | :--------------------- | :--------------------------- |

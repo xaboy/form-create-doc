@@ -51,7 +51,7 @@ $formCreate.maker.slider('滑块','slider',[0,52]).props({
 | debounce            | 输入时的去抖延迟，毫秒，仅在`show-input`等于true时有效 | number          | —                             | 300    |
 | tooltipClass       | tooltip 的自定义类名                                   | string          | —                             | —      |
 
-#### events
+#### on 事件
 
 | 事件名称 | 说明                                               | 回调参数   |
 | -------- | -------------------------------------------------- | ---------- |

@@ -49,7 +49,7 @@ maker.radio('是否包邮','is_postage','0').options([
 | size     | 尺寸，可选值为`large`、`small`、`default`或者不设置     | String           | -      |
 | vertical | 是否垂直排列，按钮样式下无效                            | Boolean          | false  |
 
-#### events
+#### on 事件
 
 | 事件名    | 说明                                                         | 返回值 |
 | :-------- | :----------------------------------------------------------- | :----- |

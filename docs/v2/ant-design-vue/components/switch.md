@@ -39,7 +39,7 @@ $formCreate.maker.switch('是否上架','is_show','1').props({
 | size              | 开关大小，可选值：`default` `small` | string       | default |
 | unCheckedChildren | 非选中时的内容                      | string\|slot |         |
 
-#### event
+#### on 事件
 
 | 事件名称 | 说明           | 回调参数                                 |
 | :------- | :------------- | :--------------------------------------- |

@@ -21,7 +21,7 @@
 ```html
 <template>
      <div>
-        <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+        <form-create :rule="rule" v-model="fApi" :option="options"/>
         <ElButton type="primary" plain @click="submit">提交</ElButton>
         <ElButton aligen="center" plain @click="reset">重置</ElButton>
     </div>

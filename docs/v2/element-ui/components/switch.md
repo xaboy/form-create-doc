@@ -42,7 +42,7 @@ $formCreate.maker.switch('是否上架','is_show','1').props({
 | inactiveColor      | switch 关闭时的背景色                                        | string                    | —      | #C0CCDA |
 | name                | switch 对应的 name 属性                                      | string                    | —      | —       |
 
-#### event
+#### on 事件
 
 | 事件名称 | 说明                            | 回调参数   |
 | -------- | ------------------------------- | ---------- |

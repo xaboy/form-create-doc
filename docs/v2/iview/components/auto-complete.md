@@ -59,7 +59,7 @@ maker.auto('自动完成', 'auto', 'xaboy').props({
 | transfer      | 是否将弹层放置于 body 内，在 Tabs、带有 fixed 的 Table 列内使用时，建议添加此属性，它将不受父级样式影响，从而达到更好的效果 | Boolean             | false  |
 | element-id    | 给表单元素设置 `id`，详见 Form 用法。                        | String              | -      |
 
-#### events
+#### on 事件
 
 
 | 事件名         | 说明                                              | 返回值 |

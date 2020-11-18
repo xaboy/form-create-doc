@@ -50,7 +50,7 @@ maker.checkbox('标签','label',["1","2","3"]).options([
 
 
 
-#### events
+#### on 事件
 
 
 | 事件名    | 说明                                                         | 返回值        |

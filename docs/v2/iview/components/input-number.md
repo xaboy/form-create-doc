@@ -42,7 +42,7 @@ maker.number('排序','sort',0)
 | element-id    | 给表单元素设置 `id`，详见 Form 用法。                      | String   | -         |
 | active-change | 是否实时响应数据，设置为 false 时，只会在失焦时更改数据    | Boolean  | true      |
 
-#### events
+#### on 事件
 
 | 事件名    | 说明                         | 返回值 |
 | :-------- | :--------------------------- | :----- |

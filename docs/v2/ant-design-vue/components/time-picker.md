@@ -47,7 +47,7 @@ $formCreate.maker.time('活动时间','section_time', '')
 | clearIcon           | 自定义的清除图标                                             | string \| VNode \| slot                | -            |
 | use12Hours          | 使用 12 小时制，为 true 时 `format` 默认为 `h:mm:ss a`       | boolean                                | false        |
 
-#### events
+#### on 事件
 
 | 事件名称   | 说明                  | 回调参数                                         |
 | :--------- | :-------------------- | :----------------------------------------------- |

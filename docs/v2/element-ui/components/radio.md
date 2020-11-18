@@ -45,7 +45,7 @@ $formCreate.maker.radio('是否包邮','is_postage','0').options([
 | textColor | 按钮形式的 Radio 激活时的文本颜色                          | string  | —                     | #ffffff |
 | fill       | 按钮形式的 Radio 激活时的填充色和边框色                    | string  | —                     | #409EFF |
 
-#### events
+#### on 事件
 
 | 事件名称 | 说明                   | 回调参数              |
 | -------- | ---------------------- | --------------------- |

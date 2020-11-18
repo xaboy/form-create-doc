@@ -46,7 +46,7 @@ maker.rate('推荐级别','rate',2)
 | icon        | 使用图标                                    | String  | -      |
 | custom-icon | 使用自定义图标                              | String  | -      |
 
-### events
+#### on 事件
 
  
 | 事件名    | 说明           | 返回值 |

@@ -13,7 +13,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <p>在表单尾部追加组件</p>
     <ElButton @click="append1">方式1</ElButton>
@@ -85,7 +85,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <p>在表单顶部增加组件</p>
     <ElButton @click="append1">方式1</ElButton>
@@ -152,7 +152,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <p>在 col 组件内部增加</p>
     <ElButton @click="append1">方式1</ElButton>

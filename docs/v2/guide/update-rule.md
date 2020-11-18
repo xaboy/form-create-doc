@@ -7,7 +7,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2 v-text="disabled? '取消' : '禁用'"></h2>
     <ElButton @click="disabled1">方式1</ElButton>
     <ElButton @click="disabled2">方式2</ElButton>
@@ -84,7 +84,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <p>增加 select 组件的 option</p>
     <ElButton @click="add1">方式1</ElButton>
@@ -150,7 +150,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <ElButton @click="changeValue1">方式1</ElButton>
     <ElButton @click="changeValue2">方式2</ElButton>
@@ -216,7 +216,7 @@
 ```html
 <template>
 <div>
-    <FormCreate :rule="rule" v-model="fApi" :option="options"/>
+    <form-create :rule="rule" v-model="fApi" :option="options"/>
     <h2>操作</h2>
     <p>修改 button 组件的 type 属性</p>
     <ElButton @click="changeType1">方式1</ElButton>

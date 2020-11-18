@@ -39,7 +39,7 @@ maker.color('颜色','color','#ff7271').props({
 | format    | 颜色的格式，可选值为 hsl、hsv、hex、rgb             | String  | 开启 alpha 时为 rgb，其它为 hex |
 | size      | 尺寸，可选值为`large`、`small`、`default`或者不设置 | String  | -                               |
 
-#### events
+#### on 事件
 
 
 | 事件名           | 说明                               | 返回值           |
