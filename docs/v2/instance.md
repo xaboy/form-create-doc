@@ -527,6 +527,10 @@ const hiddenStatus = $f.hiddenStatus();
       }
   })
   ```
+- **例子🌰**：
+
+    [CodeSandbox](https://codesandbox.io/s/form-creategechongwentidemojihe-gengxinoptionsguize-8demk?file=/src/App.vue)
+  
 
 ### 修改表单提交的回调
 
