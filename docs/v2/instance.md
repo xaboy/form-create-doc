@@ -169,6 +169,14 @@ $f.config
     }
   })
   ```
+- **例子**🌰:
+
+    [CodeSandbox](https://codesandbox.io/s/form-creategechongwentidemojihe-gengxinrules-8694h?file=/src/App.vue)
+    
+- **例子🌰(@vue/componsition-api版本)**：
+
+    [CodeSandbox](https://codesandbox.io/s/form-creategechongwentidemojihe-gaibianzhidingzujiandeguizecomponsition-apibanbenstyle-pgvx1?file=/src/useApp.js)
+   
 
 ### 批量更新组件规则
 
