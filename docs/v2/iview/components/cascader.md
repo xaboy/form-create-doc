@@ -15,7 +15,7 @@ maker.cascader('所在区域','address',['陕西省','西安市','新城区']).p
 })
 ```
 
-#### Maker
+#### JSON
 ```json
 {
     type:"cascader",
